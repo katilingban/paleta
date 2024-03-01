@@ -9,9 +9,9 @@ Authors@R: person(
       email = "ernest@guevarra.io", 
       role = c("aut", "cre")
     )
-Description: A collection of palettes, themes, and theme components based on
-    branding guidelines of various international non-governmental organisations
-    and United Nations units.
+Description: A collection of palettes, themes, and theme components based on 
+    publicly available branding guidelines of various non-governmental 
+    organisations, government agencies, and United Nations units.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true

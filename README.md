@@ -12,9 +12,9 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-A collection of palettes, themes, and theme components based on branding
-guidelines of various international non-governmental organisations and
-United Nations units.
+A collection of palettes, themes, and theme components based on publicly
+available branding guidelines of various non-governmental organisations,
+government agencies, and United Nations units.
 
 ## What does `motif` do?
 
