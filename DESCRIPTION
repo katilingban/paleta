@@ -1,0 +1,18 @@
+Package: motif
+Type: Package
+Title: Collection of Palettes, Themes, and Theme Components
+Version: 0.0.0.9000
+Authors@R: person(
+      given = "Ernest", 
+      family = "Guevarra", 
+      comment = c(ORCID = "0000-0002-4887-4415"), 
+      email = "ernest@guevarra.io", 
+      role = c("aut", "cre")
+    )
+Description: A collection of palettes, themes, and theme components based on
+    branding guidelines of various international non-governmental organisations
+    and United Nations units.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
