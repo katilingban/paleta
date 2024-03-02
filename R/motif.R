@@ -10,5 +10,6 @@
 #' @docType package
 #' @author Ernest Guevarra (ernest@guevarra.io)
 #' @keywords internal
+#' @importFrom stringr str_detect
 #'
 "_PACKAGE"
