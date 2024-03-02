@@ -11,5 +11,6 @@
 #' @author Ernest Guevarra (ernest@guevarra.io)
 #' @keywords internal
 #' @importFrom stringr str_detect
+#' @importFrom systemfonts system_fonts
 #'
 "_PACKAGE"

@@ -21,6 +21,16 @@ government agencies, and United Nations units.
 
 ## What does `motif` do?
 
+`motif` provides or will be providing utilities for applying the various
+visual identity and/or branding guidlines of various non-governmental
+organisations, government agencies, and United Nations units.
+
+Currently, `motif` has colours, palettes, and `ggplot2` themes based on
+the [Africa CDC](https://africacdc.org/) [visual identity
+guidelines](https://africacdc.org/download/visual-identity-africa-cdc-branding-guide/).
+
+Additional colours, palettes, and themes will be provided over time.
+
 ## Installation
 
 `motif` is not yet available on [CRAN](https://cran.r-project.org) but
@@ -38,6 +48,27 @@ install.packages(
 ```
 
 ## Usage
+
+### Africa CDC colours, palettes, and `ggplot2` theme
+
+``` r
+ggplot(
+  data = mtcars,
+  mapping = aes(
+  x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")),
+  fill = factor(cyl))
+) +
+  geom_bar() +
+  scale_fill_manual(name = "Cylinders", values = acdc_palettes$acdc_secondary) +
+  labs(
+    title = "Plot of mtcars using theme_acdc_light",
+    subtitle = "Using the Africa CDC secondary palette",
+    x = "Engine Shape", y = "Counts"
+  ) +
+  theme_acdc_light()
+```
+
+<img src="man/figures/README-mtcars-acdc-1.png" style="display: block; margin: auto;" />
 
 ## Community guidelines
 

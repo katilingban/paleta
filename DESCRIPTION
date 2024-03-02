@@ -16,8 +16,9 @@ License: GPL (>= 3)
 Depends: 
     R (>= 2.10)
 Imports: 
-    stringr
+    ggplot2,
+    stringr,
+    systemfonts
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.1
-
