@@ -2,8 +2,8 @@
 % Please edit documentation in R/motif.R
 \docType{package}
 \name{motif}
-\alias{motif}
 \alias{motif-package}
+\alias{motif}
 \title{Collection of Palette, Theme, and Theme Components}
 \description{
 A collection of palettes, themes, and theme components based on branding
