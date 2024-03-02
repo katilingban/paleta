@@ -29,5 +29,7 @@ acdc_fonts <- list(
 
 
 
-
+use_acdc_font <- function() {
+  ## Detect which fonts are available to the system
+}
 
