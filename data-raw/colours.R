@@ -8,6 +8,10 @@ acdc_colours <- tibble::tibble(
     "ACDC Green", "ACDC Gold", "ACDC Black", "ACDC Brown",
     "ACDC Yellow", "ACDC Orange", "ACDC Red", "ACDC Dark Green"
   ),
+  code = c(
+    "acdc_green", "acdc_gold", "acdc_black", "acdc_brown",
+    "acdc_yellow", "acdc_orange", "acdc_red", "acdc_dark_green"
+  ),
   rgb = c(
     "52, 143, 65", "180, 162, 105", "0, 0, 0", "107, 76, 36",
     "224, 143, 42", "196, 91, 57", "120, 44, 45", "75, 84, 48"

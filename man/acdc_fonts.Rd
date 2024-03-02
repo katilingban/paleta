@@ -5,7 +5,7 @@
 \alias{acdc_fonts}
 \title{Africa CDC fonts}
 \format{
-An object of class \code{list} of length 2.
+An object of class \code{list} of length 4.
 }
 \usage{
 acdc_fonts
