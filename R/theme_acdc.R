@@ -50,8 +50,16 @@ acdc_dark_green <- "#4B5430"
 #' @export
 #'
 acdc_palettes <- list(
-  acdc_primary   = c("#348F41", "#B4A269", "#000000"),
-  acdc_secondary = c("#6B4C24", "#E08F2A", "#C45B39", "#782C2D", "#4B5430")
+  acdc_primary     = c("#348F41", "#B4A269", "#000000"),
+  acdc_secondary   = c("#6B4C24", "#E08F2A", "#C45B39", "#782C2D", "#4B5430"),
+  acdc_greens      = c("#348F41", "#5CA567", "#85BB8D", "#ADD2B3", "#D6E8D9"),
+  acdc_golds       = c("#B4A269", "#C3B487", "#D2C7A5", "#E1D9C3", "#F0ECE1"),
+  acdc_blacks      = c("#000000", "#333333", "#666666", "#999999", "#CCCCCC"),
+  acdc_browns      = c("#6B4C24", "#886F4F", "#A6937B", "#C3B7A7", "#E1DBD3"),
+  acdc_yellows     = c("#E08F2A", "#E6A554", "#ECBB7F", "#F2D2A9", "#F8E8D4"),
+  acdc_oranges     = c("#C45B39", "#CF7B60", "#DB9C88", "#E7BDAF", "#F3DED7"),
+  acdc_reds        = c("#782C2D", "#935657", "#AE8081", "#C9AAAB", "#E4D4D5"),
+  acdc_dark_greens = c("#4B5430", "#6F7659", "#939882", "#B7BAAC", "#DBDCD5" )
 )
 
 
