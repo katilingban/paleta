@@ -67,6 +67,8 @@ reference:
     contents:
     - get_colour
     - print.palette
+    - tint_colour
+    - shade_colour
 
   - title: Datasets
     contents:

@@ -59,7 +59,12 @@ acdc_palettes <- list(
   acdc_yellows     = c("#E08F2A", "#E6A554", "#ECBB7F", "#F2D2A9", "#F8E8D4"),
   acdc_oranges     = c("#C45B39", "#CF7B60", "#DB9C88", "#E7BDAF", "#F3DED7"),
   acdc_reds        = c("#782C2D", "#935657", "#AE8081", "#C9AAAB", "#E4D4D5"),
-  acdc_dark_greens = c("#4B5430", "#6F7659", "#939882", "#B7BAAC", "#DBDCD5" )
+  acdc_dark_greens = c("#4B5430", "#6F7659", "#939882", "#B7BAAC", "#DBDCD5"),
+  acdc_triad_1     = c("#E08F2A", "#C45B39", "#782C2D"),
+  acdc_triad_2     = c("#782C2D", "#E08F2A", "#348F41"),
+  acdc_triad_3     = c("#782C2D", "#E08F2A", "#6B4C24"),
+  acdc_triad_3     = c("#782C2D", "#C45B39", "#6B4C24"),
+  acdc_triad_4     = c("#E08F2A", "#348F41", "#4B5430")
 )
 
 
@@ -91,7 +96,7 @@ acdc_fonts <- list(
 #' @param alt A character value for font family to use if all of the Africa
 #'   CDC fonts are not available in the system.
 #'
-#' @return A character value for font family to use as Africa CDC font.
+#' @returns A character value for font family to use as Africa CDC font.
 #'
 #' @examples
 #' set_acdc_font()
@@ -174,7 +179,7 @@ set_acdc_font <- function(alt = motif_fonts$motif_noto) {
 #' @param axis Add x or y axes? `TRUE`, `FALSE`, "`xy`". Default is FALSE.
 #' @param ticks Logical. Should ticks be added? Default is FALSE.
 #'
-#' @return A [ggplot2] theme.
+#' @returns A [ggplot2] theme.
 #'
 #' @examples
 #' \dontrun{
@@ -231,233 +236,6 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
     axis = axis,
     ticks = ticks
   )
-
-
-  # ## Set theme_minial ----
-  # design <- ggplot2::theme_minimal(
-  #   base_family = base_family, base_size = base_size
-  # )
-  #
-  # ## Set legend design ----
-  # design <- design +
-  #   ggplot2::theme(
-  #     legend.background = ggplot2::element_blank(),
-  #     legend.key = ggplot2::element_blank(),
-  #     legend.title = ggplot2::element_text(
-  #       family = base_family, colour = acdc_gold
-  #     ),
-  #     legend.text = ggplot2::element_text(
-  #       family = base_family, colour = acdc_gold
-  #     )
-  #   )
-  #
-  # ## Set grid design ----
-  # if (inherits(grid, "character") | grid == TRUE) {
-  #   design <- design +
-  #     ggplot2::theme(
-  #       panel.grid = ggplot2::element_line(color = grid_col, size = 0.2)
-  #     )
-  #
-  #   design <- design +
-  #     ggplot2::theme(
-  #       panel.grid.major = ggplot2::element_line(color = grid_col, size = 0.2)
-  #     )
-  #
-  #   design <- design +
-  #     ggplot2::theme(
-  #       panel.grid.minor = ggplot2::element_line(color = grid_col, size = 0.05)
-  #     )
-  #
-  #   if (inherits(grid, "character")) {
-  #     if (regexpr("X", grid)[1] < 0)
-  #       design <- design +
-  #         ggplot2::theme(panel.grid.major.x = ggplot2::element_blank())
-  #
-  #     if (regexpr("Y", grid)[1] < 0)
-  #       design <- design +
-  #         ggplot2::theme(panel.grid.major.y = ggplot2::element_blank())
-  #
-  #     if (regexpr("x", grid)[1] < 0)
-  #       design <- design +
-  #         ggplot2::theme(panel.grid.minor.x = ggplot2::element_blank())
-  #
-  #     if (regexpr("y", grid)[1] < 0)
-  #       design <- design +
-  #         ggplot2::theme(panel.grid.minor.y = ggplot2::element_blank())
-  #   }
-  # } else {
-  #   design <- design +
-  #     ggplot2::theme(panel.grid = ggplot2::element_blank())
-  # }
-  #
-  # ## Set axis design ----
-  # if (inherits(axis, "character") | axis == TRUE) {
-  #   design <- design +
-  #     ggplot2::theme(
-  #       axis.line = ggplot2::element_line(color = acdc_gold, size = 0.15)
-  #     )
-  #
-  #   if (inherits(axis, "character")) {
-  #     axis <- tolower(axis)
-  #
-  #     if (regexpr("x", axis)[1] < 0) {
-  #       design <- design +
-  #         ggplot2::theme(axis.line.x = ggplot2::element_blank())
-  #     } else {
-  #       design <- design +
-  #         ggplot2::theme(
-  #           axis.line.x = ggplot2::element_line(color = axis_col, size = 0.15)
-  #         )
-  #     }
-  #
-  #     if (regexpr("y", axis)[1] < 0) {
-  #       design <- design +
-  #         ggplot2::theme(axis.line.y = ggplot2::element_blank())
-  #     } else {
-  #       design <- design +
-  #         ggplot2::theme(
-  #           axis.line.y = ggplot2::element_line(color = axis_col, size = 0.15)
-  #         )
-  #     }
-  #   } else {
-  #     design <- design +
-  #       ggplot2::theme(
-  #         axis.line.x = ggplot2::element_line(color = axis_col, size = 0.15)
-  #       )
-  #
-  #     design <- design +
-  #       ggplot2::theme(
-  #         axis.line.y = ggplot2::element_line(color = axis_col, size = 0.15)
-  #       )
-  #   }
-  # } else {
-  #   design <- design + ggplot2::theme(axis.line = ggplot2::element_blank())
-  # }
-  #
-  # ## Set ticks design ----
-  # if (!ticks) {
-  #   design <- design + ggplot2::theme(axis.ticks = ggplot2::element_blank())
-  #   design <- design + ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
-  #   design <- design + ggplot2::theme(axis.ticks.y = ggplot2::element_blank())
-  # } else {
-  #   design <- design +
-  #     ggplot2::theme(axis.ticks = ggplot2::element_line(linewidth = 0.15))
-  #   design <- design +
-  #     ggplot2::theme(axis.ticks.x = ggplot2::element_line(linewidth = 0.15))
-  #   design <- design +
-  #     ggplot2::theme(axis.ticks.y = ggplot2::element_line(linewidth = 0.15))
-  #   design <- design +
-  #     ggplot2::theme(axis.ticks.length = grid::unit(5, "pt"))
-  # }
-  #
-  # ## Set axis text design ----
-  # xj <- switch(
-  #   tolower(substr(axis_title_just, 1, 1)),
-  #   b = 0, l = 0, m = 0.5, c = 0.5, r = 1, t = 1
-  # )
-  # yj <- switch(
-  #   tolower(substr(axis_title_just, 2, 2)),
-  #   b = 0, l = 0, m = 0.5, c = 0.5, r = 1, t = 1
-  # )
-  #
-  # ### x-axis text ----
-  # design <- design +
-  #   ggplot2::theme(
-  #     axis.text.x = ggplot2::element_text(
-  #       size = axis_text_size, margin = ggplot2::margin(t = 0)
-  #     )
-  #   )
-  #
-  # ### y-axis text ----
-  # design <- design +
-  #   ggplot2::theme(
-  #     axis.text.y = ggplot2::element_text(
-  #       size = axis_text_size, margin = ggplot2::margin(r = 0)
-  #     )
-  #   )
-  #
-  # ### axis titles ----
-  # design <- design +
-  #   ggplot2::theme(
-  #     axis.title = ggplot2::element_text(
-  #       size = axis_title_size, family = axis_title_family,
-  #       colour = axis_title_colour
-  #     )
-  #   )
-  #
-  # ### axis title adjustment ----
-  # design <- design +
-  #   ggplot2::theme(
-  #     axis.title.x = ggplot2::element_text(
-  #       hjust = xj, size = axis_title_size,
-  #       family = axis_title_family, face = axis_title_face
-  #   )
-  # )
-  #
-  # design <- design +
-  #   ggplot2::theme(
-  #     axis.title.y = ggplot2::element_text(
-  #       hjust = yj, size = axis_title_size,
-  #       family = axis_title_family, face = axis_title_face
-  #     )
-  #   )
-  #
-  # ### y-axis on the right ----
-  # design <- design +
-  #   ggplot2::theme(
-  #     axis.title.y.right = ggplot2::element_text(
-  #       hjust = yj, size = axis_title_size, angle = 90,
-  #       family = axis_title_family, face = axis_title_face
-  #     )
-  #   )
-  #
-  # ### Set facet label design ----
-  # design <- design +
-  #   ggplot2::theme(
-  #     strip.text = ggplot2::element_text(
-  #       hjust = 0, size = strip_text_size,
-  #       face = strip_text_face, family = strip_text_family
-  #     )
-  #   )
-  #
-  # ### Set facet design ----
-  # design <- design +
-  #   ggplot2::theme(panel.spacing = grid::unit(2, "lines"))
-  #
-  # ### Set plot title design ----
-  # design <- design +
-  #   ggplot2::theme(
-  #     plot.title = ggplot2::element_text(
-  #       hjust = 0, size = plot_title_size, colour = plot_title_colour,
-  #       margin = ggplot2::margin(b = plot_title_margin),
-  #       family = plot_title_family, face = plot_title_face)
-  #   )
-  #
-  # ### Set plot subtitle design ----
-  # design <- design +
-  #   ggplot2::theme(
-  #     plot.subtitle = ggplot2::element_text(
-  #       hjust = 0, size = subtitle_size, colour = subtitle_colour,
-  #       margin = ggplot2::margin(b = subtitle_margin),
-  #       family = subtitle_family, face = subtitle_face
-  #     )
-  #   )
-  #
-  # ### Set plot caption design ----
-  # design <- design +
-  #   ggplot2::theme(
-  #     plot.caption = ggplot2::element_text(
-  #       hjust = 1, size = caption_size, colour = caption_colour,
-  #       margin = ggplot2::margin(t = caption_margin),
-  #       family = caption_family, face = caption_face
-  #     )
-  #   )
-  #
-  # ### Set plot margins ----
-  # design <- design + ggplot2::theme(plot.margin = plot_margin)
-  #
-  # ## return design ----
-  # design
 }
 
 
@@ -474,7 +252,7 @@ theme_acdc_dark <- function(base_family = set_acdc_font(),
                             axis_title_colour = acdc_black,
                             legend_title_colour = acdc_black,
                             legend_text_colour = acdc_black,
-                            plot_background_fill = acdc_gold,
+                            plot_background_fill = tint_colours(acdc_gold, 0.2),
                             grid_col = acdc_green,
                             grid = TRUE,
                             axis_col = acdc_green,

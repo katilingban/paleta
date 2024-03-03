@@ -5,7 +5,7 @@
 \alias{acdc_palettes}
 \title{Africa CDC palettes}
 \format{
-An object of class \code{list} of length 10.
+An object of class \code{list} of length 15.
 }
 \usage{
 acdc_palettes
