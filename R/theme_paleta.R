@@ -2,58 +2,58 @@
 #' Base package fonts
 #'
 #' @examples
-#' motif_fonts
+#' paleta_fonts
 #'
 #' @export
 #'
 
-motif_fonts <- list(
-  motif_noto = "Noto Sans",
-  motif_roboto = "Roboto",
-  motif_arial_narrow = "Arial Narrow"
+paleta_fonts <- list(
+  paleta_noto = "Noto Sans",
+  paleta_roboto = "Roboto",
+  paleta_arial_narrow = "Arial Narrow"
 )
 
 #'
-#' Set motif font based on what is available in the system
+#' Set paleta font based on what is available in the system
 #'
-#' The function will search the system for availability of any of the motif
+#' The function will search the system for availability of any of the paleta
 #' fonts in heirarchical order starting with *Arial Narrow*, then *Noto Sans*,
 #' and then *Roboto*.
 #'
-#' @return A character value for font family to use as motif font.
+#' @return A character value for font family to use as paleta font.
 #'
 #' @examples
-#' set_motif_font()
+#' set_paleta_font()
 #'
-#' @rdname motif_font
+#' @rdname paleta_font
 #' @export
 #'
 #'
-set_motif_font <- function() {
+set_paleta_font <- function() {
   ## Detect which fonts are available to the system ----
   fonts <- systemfonts::system_fonts()
 
-  ## Check which motif font is available ----
-  if (any(fonts$family == motif_fonts$motif_arial_narrow)) {
-    motif_font <- motif_fonts$motif_arial_narrow
+  ## Check which paleta font is available ----
+  if (any(fonts$family == paleta_fonts$paleta_arial_narrow)) {
+    paleta_font <- paleta_fonts$paleta_arial_narrow
   } else {
-    if (any(fonts$family == motif_fonts$motif_noto)) {
-      motif_font <- motif_fonts$motif_noto
+    if (any(fonts$family == paleta_fonts$paleta_noto)) {
+      paleta_font <- paleta_fonts$paleta_noto
     } else {
-      motif_font <- motif_fonts$motif_roboto
+      paleta_font <- paleta_fonts$paleta_roboto
     }
   }
 
-  ## Return motif_font ----
-  motif_font
+  ## Return paleta_font ----
+  paleta_font
 }
 
 
 #'
-#' A generic/base [ggplot2] theme for the motif package
+#' A generic/base [ggplot2] theme for the paleta package
 #'
 #' This generic/base [ggplot2] theme is the template from which all other
-#' themes in the [motif] package is built on. This theme is inspired by
+#' themes in the [paleta] package is built on. This theme is inspired by
 #' Bob Rudis' [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes) package
 #' drawing heavily on its typography-centric focus.
 #'
@@ -68,7 +68,7 @@ set_motif_font <- function() {
 #' [Google Fonts](https://fonts.google.com/).
 #'
 #' @param base_family Base font family using Africa CDC fonts. Default is set
-#'   by what Africa CDC font is available in the system via `set_motif_font()`.
+#'   by what Africa CDC font is available in the system via `set_paleta_font()`.
 #' @param base_size Base font size. Default is 11.5.
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
@@ -130,43 +130,43 @@ set_motif_font <- function() {
 #'
 #' @return A [ggplot2] theme.
 #'
-theme_motif <- function(base_family = set_motif_font(),
-                        base_size = 11.5,
-                        plot_title_family = base_family,
-                        plot_title_size = 18,
-                        plot_title_face = "bold",
-                        plot_title_colour = NULL,
-                        plot_title_margin = 10,
-                        subtitle_family = base_family,
-                        subtitle_size = 12,
-                        subtitle_face = "plain",
-                        subtitle_colour = NULL,
-                        subtitle_margin = 15,
-                        strip_text_family = base_family,
-                        strip_text_size = 12,
-                        strip_text_face = "plain",
-                        caption_family = base_family,
-                        caption_size = 9,
-                        caption_face = "italic",
-                        caption_colour = NULL,
-                        caption_margin = 10,
-                        axis_text_size = base_size,
-                        axis_title_family = subtitle_family,
-                        axis_title_size = 9,
-                        axis_title_colour = NULL,
-                        axis_title_face = "plain",
-                        axis_title_just = "rt",
-                        legend_title_family = subtitle_family,
-                        legend_title_colour = NULL,
-                        legend_text_family = subtitle_family,
-                        legend_text_colour = NULL,
-                        plot_margin = ggplot2::margin(30, 30, 30, 30),
-                        plot_background_fill = NULL,
-                        grid_col = NULL,
-                        grid = TRUE,
-                        axis_col = NULL,
-                        axis = FALSE,
-                        ticks = FALSE) {
+theme_paleta <- function(base_family = set_paleta_font(),
+                         base_size = 11.5,
+                         plot_title_family = base_family,
+                         plot_title_size = 18,
+                         plot_title_face = "bold",
+                         plot_title_colour = NULL,
+                         plot_title_margin = 10,
+                         subtitle_family = base_family,
+                         subtitle_size = 12,
+                         subtitle_face = "plain",
+                         subtitle_colour = NULL,
+                         subtitle_margin = 15,
+                         strip_text_family = base_family,
+                         strip_text_size = 12,
+                         strip_text_face = "plain",
+                         caption_family = base_family,
+                         caption_size = 9,
+                         caption_face = "italic",
+                         caption_colour = NULL,
+                         caption_margin = 10,
+                         axis_text_size = base_size,
+                         axis_title_family = subtitle_family,
+                         axis_title_size = 9,
+                         axis_title_colour = NULL,
+                         axis_title_face = "plain",
+                         axis_title_just = "rt",
+                         legend_title_family = subtitle_family,
+                         legend_title_colour = NULL,
+                         legend_text_family = subtitle_family,
+                         legend_text_colour = NULL,
+                         plot_margin = ggplot2::margin(30, 30, 30, 30),
+                         plot_background_fill = NULL,
+                         grid_col = NULL,
+                         grid = TRUE,
+                         axis_col = NULL,
+                         axis = FALSE,
+                         ticks = FALSE) {
   ## Set theme_minial ----
   design <- ggplot2::theme_minimal(
     base_family = base_family, base_size = base_size
