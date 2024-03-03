@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup, echo = FALSE}
-library(motif)
+library(paleta)
 ```
 
 A **data visualisation design system** is a framework or set of guidelines that provides standards, components, and best practices for creating effective and consistent data visualisations within an organization or project. It's essentially a systematic approach to designing and implementing data visualisations to ensure they are both visually appealing and communicate insights effectively.
@@ -40,11 +40,11 @@ Key components of a data visualisation design system include:
 
 Overall, a data visualisation design system serves as a valuable resource for designers, developers, and analysts to create high-quality and consistent data visualisations that effectively communicate insights and drive decision-making. It promotes efficiency, scalability, and collaboration within an organization by providing a common language and framework for visualizing data.
 
-With more and more organisations developing their style guidelines and making them available publicly, the `motif` package aims to consolidate these guidelines and express them within the R language for statistical computing's graphics and publishing ecosystem.
+With more and more organisations developing their style guidelines and making them available publicly, the `paleta` package aims to consolidate these guidelines and express them within the R language for statistical computing's graphics and publishing ecosystem.
 
-`motif` provides or will be providing utilities for applying the visual identity and/or branding guidelines of various non-governmental organisations, government agencies, and United Nations units.
+`paleta` provides or will be providing utilities for applying the visual identity and/or branding guidelines of various non-governmental organisations, government agencies, and United Nations units.
 
-Currently, `motif` has colours, palettes, and `ggplot2` themes based on the following organisations' branding/visual identity guidelines:
+Currently, `paleta` has colours, palettes, and `ggplot2` themes based on the following organisations' branding/visual identity guidelines:
 
 * [Africa CDC](https://africacdc.org/) [visual identity guidelines](https://africacdc.org/download/visual-identity-africa-cdc-branding-guide/).
 

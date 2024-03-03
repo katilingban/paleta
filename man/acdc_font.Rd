@@ -11,7 +11,7 @@ An object of class \code{list} of length 4.
 \usage{
 acdc_fonts
 
-set_acdc_font(alt = motif_fonts$motif_noto)
+set_acdc_font(alt = paleta_fonts$paleta_noto)
 }
 \arguments{
 \item{alt}{A character value for font family to use if all of the Africa

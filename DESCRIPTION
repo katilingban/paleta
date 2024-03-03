@@ -1,4 +1,4 @@
-Package: motif
+Package: paleta
 Type: Package
 Title: Collection of Palettes, Themes, and Theme Components
 Version: 0.0.0.9000
@@ -25,9 +25,10 @@ Suggests:
     rmarkdown,
     spelling
 Encoding: UTF-8
+Language: en-GB
 LazyData: true
 RoxygenNote: 7.3.1
 Roxygen: list(markdown = TRUE)
 VignetteBuilder: knitr
-URL: https://github.com/katilingban/motif,http://katilingban.io/motif/
-Language: en-GB
+URL: https://github.com/katilingban/paleta,http://katilingban.io/paleta/
+

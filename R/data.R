@@ -13,7 +13,7 @@
 #' | *pantone* | Pantone colour name |
 #'
 #' @examples
-#' motif_colours
+#' paleta_colours
 #'
 #'
-"motif_colours"
+"paleta_colours"

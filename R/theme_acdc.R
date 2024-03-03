@@ -105,7 +105,7 @@ acdc_fonts <- list(
 #' @export
 #'
 
-set_acdc_font <- function(alt = motif_fonts$motif_noto) {
+set_acdc_font <- function(alt = paleta_fonts$paleta_noto) {
   ## Detect which fonts are available to the system ----
   fonts <- systemfonts::system_fonts()
 
@@ -136,7 +136,7 @@ set_acdc_font <- function(alt = motif_fonts$motif_noto) {
 #'
 #' A [ggplot2] theme using Africa CDC fonts, colours, and palettes
 #'
-#' These are wrappers for `theme_motif()` that use colours and fonts from the
+#' These are wrappers for `theme_paleta()` that use colours and fonts from the
 #' Africa CDC visual identity guidelines.
 #'
 #' @section Colours:
@@ -221,7 +221,7 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
                              axis_col = acdc_gold,
                              axis = FALSE,
                              ticks = FALSE) {
-  theme_motif(
+  theme_paleta(
     base_family = base_family,
     plot_title_family = plot_title_family,
     plot_title_colour = plot_title_colour,
@@ -259,7 +259,7 @@ theme_acdc_dark <- function(base_family = set_acdc_font(),
                             axis_col = acdc_green,
                             axis = FALSE,
                             ticks = FALSE) {
-  theme_motif(
+  theme_paleta(
     base_family = base_family,
     plot_title_family = plot_title_family,
     plot_title_colour = plot_title_colour,

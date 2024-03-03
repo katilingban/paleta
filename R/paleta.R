@@ -6,7 +6,7 @@
 #' United Nations units.
 #'
 #' @md
-#' @name motif
+#' @name paleta
 #' @docType package
 #' @author Ernest Guevarra (ernest@guevarra.io)
 #' @keywords internal

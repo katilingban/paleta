@@ -51,16 +51,16 @@ get_colour <- function(pattern = NULL,
   model <- match.arg(model)
 
   ## Get df ----
-  df <- motif::motif_colours
+  df <- paleta::paleta_colours
 
   ## Determine if there is something specific to search for ----
   if (!is.null(pattern)) {
     ## Get colours vector ----
-    motif_cols <- df[c("name", model)][stringr::str_detect(df$name, pattern = pattern), ]
+    paleta_cols <- df[c("name", model)][stringr::str_detect(df$name, pattern = pattern), ]
 
 
     if (named) {
-      motif_cols <- motif_cols |>
+      paleta_cols <- paleta_cols |>
         (\(x)
          {
            cols <- x[[model]]
@@ -69,18 +69,18 @@ get_colour <- function(pattern = NULL,
         }
         )()
     } else {
-      motif_cols <- motif_cols[[model]]
+      paleta_cols <- paleta_cols[[model]]
     }
   } else {
     ## Get colours vector ----
-    motif_cols <- df[[model]]
+    paleta_cols <- df[[model]]
 
     if (named) {
-      names(motif_cols) <- df[["name"]]
+      names(paleta_cols) <- df[["name"]]
     }
   }
 
-  motif_cols
+  paleta_cols
 }
 
 #'
@@ -93,16 +93,16 @@ get_colours <- function(pattern = NULL,
                         named = FALSE) {
   ## Return all or just specific colours ----
   if (is.null(pattern)) {
-    motif_cols <- get_colour(pattern = pattern, model = model, named = named)
+    paleta_cols <- get_colour(pattern = pattern, model = model, named = named)
   } else {
-    motif_cols <- lapply(
+    paleta_cols <- lapply(
       X = pattern, FUN = get_colour, model = model, named = named
     ) |>
       unlist()
   }
 
-  ## Return motif_cols ----
-  motif_cols
+  ## Return paleta_cols ----
+  paleta_cols
 }
 
 

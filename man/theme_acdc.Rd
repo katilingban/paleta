@@ -85,7 +85,7 @@ NULL.}
 A \link{ggplot2} theme.
 }
 \description{
-These are wrappers for \code{theme_motif()} that use colours and fonts from the
+These are wrappers for \code{theme_paleta()} that use colours and fonts from the
 Africa CDC visual identity guidelines.
 }
 \section{Colours}{

@@ -31,6 +31,6 @@ acdc_colours <- tibble::tibble(
 )
 
 
-motif_colours <- rbind(acdc_colours)
+paleta_colours <- rbind(acdc_colours)
 
-usethis::use_data(motif_colours, overwrite = TRUE, compress = "xz")
+usethis::use_data(paleta_colours, overwrite = TRUE, compress = "xz")
