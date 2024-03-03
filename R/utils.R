@@ -105,3 +105,74 @@ get_colours <- function(pattern = NULL,
   motif_cols
 }
 
+
+#'
+#' Get tint of colours
+#'
+#' @param hex A character value or vector of character of values for hex code
+#'   of colour/s to tint.
+#' @param p Range from 0 to 1 for proportion to tint the colour/s with.
+#'
+#' @returns A character value or vector of character values of hex code/s
+#'   tinted to the desired proportion.
+#'
+#' @examples
+#' tint_colour(acdc_green, p = 0.2)
+#' tint_colours(acdc_palettes$acdc_palettes$acdc_secondary, p = 0.4)
+#'
+#' @rdname tint_colour
+#' @export
+#'
+tint_colour <- function(hex, p) {
+  col_rgb <- grDevices::col2rgb(col = hex)
+
+  (255 - col_rgb) |>
+    (\(x) x * p)() |>
+    (\(x) col_rgb + x)() |>
+    (\(x) grDevices::rgb(x[1], x[2], x[3], maxColorValue = 255))()
+}
+
+#'
+#' @rdname tint_colour
+#' @export
+#'
+tint_colours <- function(hex, p) {
+  lapply(X = hex, FUN = tint_colour, p = p) |>
+    unlist()
+}
+
+
+#'
+#' Get shade of colours
+#'
+#' @param hex A character value or vector of character of values for hex code
+#'   of colour/s to shade.
+#' @param p Range from 0 to 1 for proportion to shade the colour/s with.
+#'
+#' @returns A character value or vector of character values of hex code/s
+#'   shaded to the desired proportion.
+#'
+#' @examples
+#' shade_colour(acdc_green, p = 0.2)
+#' shade_colours(acdc_palettes$acdc_secondary, p = 0.4)
+#'
+#' @rdname shade_colour
+#' @export
+#'
+shade_colour <- function(hex, p) {
+  col_rgb <- grDevices::col2rgb(col = hex)
+
+  (col_rgb * p) |>
+    (\(x) col_rgb - x)() |>
+    round() |>
+    (\(x) grDevices::rgb(x[1], x[2], x[3], maxColorValue = 255))()
+}
+
+#'
+#' @rdname shade_colour
+#' @export
+#'
+shade_colours <- function(hex, p) {
+  lapply(X = hex, FUN = shade_colour, p = p) |>
+    unlist()
+}
