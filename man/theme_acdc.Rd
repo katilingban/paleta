@@ -2,6 +2,7 @@
 % Please edit documentation in R/africa_cdc.R
 \name{theme_acdc_light}
 \alias{theme_acdc_light}
+\alias{theme_acdc_dark}
 \title{A [ggplot2] theme using Africa CDC fonts, colours, and palettes}
 \usage{
 theme_acdc_light(
@@ -23,7 +24,7 @@ theme_acdc_light(
   caption_family = base_family,
   caption_size = 9,
   caption_face = "italic",
-  caption_colour = acdc_green,
+  caption_colour = acdc_gold,
   caption_margin = 10,
   axis_text_size = base_size,
   axis_title_family = subtitle_family,
@@ -38,38 +39,126 @@ theme_acdc_light(
   axis = FALSE,
   ticks = FALSE
 )
+
+theme_acdc_dark(
+  base_family = set_acdc_font(),
+  base_size = 11.5,
+  plot_title_family = base_family,
+  plot_title_size = 18,
+  plot_title_face = "bold",
+  plot_title_colour = acdc_green,
+  plot_title_margin = 10,
+  subtitle_family = base_family,
+  subtitle_size = 12,
+  subtitle_face = "plain",
+  subtitle_colour = acdc_black,
+  subtitle_margin = 15,
+  strip_text_family = base_family,
+  strip_text_size = 12,
+  strip_text_face = "plain",
+  caption_family = base_family,
+  caption_size = 9,
+  caption_face = "italic",
+  caption_colour = acdc_black,
+  caption_margin = 10,
+  axis_text_size = base_size,
+  axis_title_family = subtitle_family,
+  axis_title_size = 9,
+  axis_title_colour = acdc_black,
+  axis_title_face = "plain",
+  axis_title_just = "rt",
+  plot_margin = ggplot2::margin(30, 30, 30, 30),
+  grid_col = acdc_green,
+  grid = TRUE,
+  axis_col = acdc_green,
+  axis = FALSE,
+  ticks = FALSE
+)
 }
 \arguments{
-\item{base_family}{Base font family. Default is set by what is available in
-the sytem via `set_acdc_font()`.}
+\item{base_family}{Base font family using Africa CDC fonts. Default is set
+by what Africa CDC font is available in the sytem via `set_acdc_font()`. If
+none of the Africa CDC fonts are available, the default becomes Noto Sans.}
 
-\item{base_size}{Base font size. Default is 11.5}
+\item{base_size}{Base font size. Default is 11.5.}
 
-\item{plot_title_family, plot_title_face, plot_title_size, plot_title_margin, plot_title_colour}{plot title family, face, size and margi}
+\item{plot_title_family}{Font family to use for the plot title. Default is
+`base_family`.}
 
-\item{subtitle_family, subtitle_face, subtitle_size, subtitle_colour}{plot subtitle family, face and size}
+\item{plot_title_size}{Plot title text size in pts. Default is 18.}
 
-\item{subtitle_margin}{plot subtitle margin bottom (single numeric value)}
+\item{plot_title_face}{Font face ("plain", "italic", "bold", "bold.italic")
+for plot title. Default is "bold".}
 
-\item{strip_text_family, strip_text_face, strip_text_size}{facet label font family, face and size}
+\item{plot_title_colour}{Colour of the plot title text. Default
+is `acdc_green`.}
 
-\item{caption_family, caption_face, caption_size, caption_margin, caption_colour}{plot caption family, face, size and margin}
+\item{plot_title_margin}{Margin at the bottom of the plot title. Default
+set at 10.}
 
-\item{axis_text_size}{font size of axis text}
+\item{subtitle_family}{Font family to use for the plot subtitle. Default is
+`base_family`.}
 
-\item{axis_title_family, axis_title_face, axis_title_size, axis_title_colour}{axis title font family, face and size}
+\item{subtitle_size}{Plot subtitle text size in pts. Default is 12.}
 
-\item{axis_title_just}{axis title font justification, one of `[blmcrt]`}
+\item{subtitle_face}{Font face ("plain", "italic", "bold", "bold.italic")
+for plot subtitle. Default is "plain".}
 
-\item{plot_margin}{plot margin (specify with `ggplot2::margin()`)}
+\item{subtitle_colour}{Colour of the subtitle text. Default is `acdc_gold`.}
 
-\item{grid_col, axis_col}{grid & axis colors; both default to `#cccccc`}
+\item{subtitle_margin}{Margin at the bottom of the plot subtitle. Default
+set at 15.}
 
-\item{grid}{panel grid (`TRUE`, `FALSE`, or a combination of `X`, `x`, `Y`, `y`)}
+\item{strip_text_family}{Font family to use for the facet label. Default is
+`base_family`.}
 
-\item{axis}{add x or y axes? `TRUE`, `FALSE`, "`xy`"}
+\item{strip_text_size}{Facet label text size in pts. Default is 12.}
 
-\item{ticks}{ticks if `TRUE` add ticks}
+\item{strip_text_face}{Font face ("plain", "italic", "bold", "bold.italic")
+for facet label. Default is "plain".}
+
+\item{caption_family}{Font family to use for the caption text. Default is
+`base_family`.}
+
+\item{caption_size}{Caption text size in pts. Default is 9.}
+
+\item{caption_face}{Font face ("plain", "italic", "bold", "bold.italic") for
+caption text. Default is "plain".}
+
+\item{caption_colour}{Colour of the caption text. Default is `acdc_gold`.}
+
+\item{caption_margin}{Margin at the top of the plot caption text. Default is
+set at 10.}
+
+\item{axis_text_size}{Axis text size in pts. Default is `base_size`.}
+
+\item{axis_title_family}{Font family to use for the axis title. Default is
+`base_family`.}
+
+\item{axis_title_size}{Axis title text size in pts. Default is 9.}
+
+\item{axis_title_colour}{Colour of the axis title text. Default is
+`acdc_gold`.}
+
+\item{axis_title_face}{Font face ("plain", "italic", "bold", "bold.italic")
+for axis title. Default is "plain".}
+
+\item{axis_title_just}{Axis title font justification, one of
+"bl" (bottom-left), "m" (middle), "rt" (right-top). Default is "rt".}
+
+\item{plot_margin}{Plot margins (specify with `ggplot2::margin()`)}
+
+\item{grid_col}{Grid colour. Default to `acdc_gold`.}
+
+\item{grid}{Panel grid. Either `TRUE`, `FALSE`, or a combination of
+`X` (major x grid), `x` (minor x grid), `Y` (major y grid), and/or
+`y` (minor y grid). Default is TRUE.}
+
+\item{axis_col}{Axis colors. Default to `acdc_gold`.}
+
+\item{axis}{Add x or y axes? `TRUE`, `FALSE`, "`xy`". Default is FALSE.}
+
+\item{ticks}{Logical. Should ticks be added? Default is FALSE.}
 }
 \value{
 A [ggplot2] theme.

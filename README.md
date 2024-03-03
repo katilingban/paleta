@@ -49,26 +49,17 @@ install.packages(
 
 ## Usage
 
-### Africa CDC colours, palettes, and `ggplot2` theme
+### Africa CDC colours and palettes
 
-``` r
-ggplot(
-  data = mtcars,
-  mapping = aes(
-  x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")),
-  fill = factor(cyl))
-) +
-  geom_bar() +
-  scale_fill_manual(name = "Cylinders", values = acdc_palettes$acdc_secondary) +
-  labs(
-    title = "Plot of mtcars using theme_acdc_light",
-    subtitle = "Using the Africa CDC secondary palette",
-    x = "Engine Shape", y = "Counts"
-  ) +
-  theme_acdc_light()
-```
+<img src="man/figures/README-acdc-primary-1.png" style="display: block; margin: auto;" />
 
-<img src="man/figures/README-mtcars-acdc-1.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-acdc-secondary-1.png" style="display: block; margin: auto;" />
+
+### Africa CDC `ggplot2` theme
+
+<img src="man/figures/README-mtcars-bar-acdc-1.png" width="50%" /><img src="man/figures/README-mtcars-bar-acdc-2.png" width="50%" />
+
+<img src="man/figures/README-mtcars-scatter-acdc-1.png" width="50%" /><img src="man/figures/README-mtcars-scatter-acdc-2.png" width="50%" />
 
 ## Community guidelines
 

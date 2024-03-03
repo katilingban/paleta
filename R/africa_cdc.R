@@ -122,22 +122,58 @@ set_acdc_font <- function(alt = motif_fonts$motif_noto) {
 #'
 #' A [ggplot2] theme using Africa CDC fonts, colours, and palettes
 #'
-#' @param base_family Base font family. Default is set by what is available in
-#'   the sytem via `set_acdc_font()`.
-#' @param base_size Base font size. Default is 11.5
-#' @param plot_title_family,plot_title_face,plot_title_size,plot_title_margin,plot_title_colour plot title family, face, size and margi
-#' @param subtitle_family,subtitle_face,subtitle_size,subtitle_colour plot subtitle family, face and size
-#' @param subtitle_margin plot subtitle margin bottom (single numeric value)
-#' @param strip_text_family,strip_text_face,strip_text_size facet label font family, face and size
-#' @param caption_family,caption_face,caption_size,caption_margin,caption_colour plot caption family, face, size and margin
-#' @param axis_title_family,axis_title_face,axis_title_size,axis_title_colour axis title font family, face and size
-#' @param axis_title_just axis title font justification, one of `[blmcrt]`
-#' @param plot_margin plot margin (specify with `ggplot2::margin()`)
-#' @param grid_col,axis_col grid & axis colors; both default to `#cccccc`
-#' @param grid panel grid (`TRUE`, `FALSE`, or a combination of `X`, `x`, `Y`, `y`)
-#' @param axis_text_size font size of axis text
-#' @param axis add x or y axes? `TRUE`, `FALSE`, "`xy`"
-#' @param ticks ticks if `TRUE` add ticks
+#' @param base_family Base font family using Africa CDC fonts. Default is set
+#'   by what Africa CDC font is available in the sytem via `set_acdc_font()`. If
+#'   none of the Africa CDC fonts are available, the default becomes Noto Sans.
+#' @param base_size Base font size. Default is 11.5.
+#' @param plot_title_family Font family to use for the plot title. Default is
+#'   `base_family`.
+#' @param plot_title_face Font face ("plain", "italic", "bold", "bold.italic")
+#'   for plot title. Default is "bold".
+#' @param plot_title_size Plot title text size in pts. Default is 18.
+#' @param plot_title_margin Margin at the bottom of the plot title. Default
+#'   set at 10.
+#' @param plot_title_colour Colour of the plot title text. Default
+#'   is `acdc_green`.
+#' @param subtitle_family Font family to use for the plot subtitle. Default is
+#'   `base_family`.
+#' @param subtitle_face Font face ("plain", "italic", "bold", "bold.italic")
+#'   for plot subtitle. Default is "plain".
+#' @param subtitle_size Plot subtitle text size in pts. Default is 12.
+#' @param subtitle_colour Colour of the subtitle text. Default is `acdc_gold`.
+#' @param subtitle_margin Margin at the bottom of the plot subtitle. Default
+#'   set at 15.
+#' @param strip_text_family Font family to use for the facet label. Default is
+#'   `base_family`.
+#' @param strip_text_face Font face ("plain", "italic", "bold", "bold.italic")
+#'   for facet label. Default is "plain".
+#' @param strip_text_size Facet label text size in pts. Default is 12.
+#' @param caption_family Font family to use for the caption text. Default is
+#'   `base_family`.
+#' @param caption_face Font face ("plain", "italic", "bold", "bold.italic") for
+#'   caption text. Default is "plain".
+#' @param caption_size Caption text size in pts. Default is 9.
+#' @param caption_margin Margin at the top of the plot caption text. Default is
+#'   set at 10.
+#' @param caption_colour Colour of the caption text. Default is `acdc_gold`.
+#' @param axis_title_family Font family to use for the axis title. Default is
+#'   `base_family`.
+#' @param axis_title_face Font face ("plain", "italic", "bold", "bold.italic")
+#'   for axis title. Default is "plain".
+#' @param axis_title_size Axis title text size in pts. Default is 9.
+#' @param axis_title_colour Colour of the axis title text. Default is
+#'   `acdc_gold`.
+#' @param axis_title_just Axis title font justification, one of
+#'   "bl" (bottom-left), "m" (middle), "rt" (right-top). Default is "rt".
+#' @param plot_margin Plot margins (specify with `ggplot2::margin()`)
+#' @param grid_col Grid colour. Default to `acdc_gold`.
+#' @param axis_col Axis colors. Default to `acdc_gold`.
+#' @param grid Panel grid. Either `TRUE`, `FALSE`, or a combination of
+#'   `X` (major x grid), `x` (minor x grid), `Y` (major y grid), and/or
+#'   `y` (minor y grid). Default is TRUE.
+#' @param axis_text_size Axis text size in pts. Default is `base_size`.
+#' @param axis Add x or y axes? `TRUE`, `FALSE`, "`xy`". Default is FALSE.
+#' @param ticks Logical. Should ticks be added? Default is FALSE.
 #'
 #' @return A [ggplot2] theme.
 #'
@@ -184,7 +220,7 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
                              caption_family = base_family,
                              caption_size = 9,
                              caption_face = "italic",
-                             caption_colour = acdc_green,
+                             caption_colour = acdc_gold,
                              caption_margin = 10,
                              axis_text_size = base_size,
                              axis_title_family = subtitle_family,
@@ -255,6 +291,7 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
       ggplot2::theme(panel.grid = ggplot2::element_blank())
   }
 
+  ## Set axis design ----
   if (inherits(axis, "character") | axis == TRUE) {
     design <- design +
       ggplot2::theme(
@@ -298,6 +335,7 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
     design <- design + ggplot2::theme(axis.line = ggplot2::element_blank())
   }
 
+  ## Set ticks design ----
   if (!ticks) {
     design <- design + ggplot2::theme(axis.ticks = ggplot2::element_blank())
     design <- design + ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
@@ -313,6 +351,275 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
       ggplot2::theme(axis.ticks.length = grid::unit(5, "pt"))
   }
 
+  ## Set axis text design ----
+  xj <- switch(
+    tolower(substr(axis_title_just, 1, 1)),
+    b = 0, l = 0, m = 0.5, c = 0.5, r = 1, t = 1
+  )
+  yj <- switch(
+    tolower(substr(axis_title_just, 2, 2)),
+    b = 0, l = 0, m = 0.5, c = 0.5, r = 1, t = 1
+  )
+
+  ### x-axis text ----
+  design <- design +
+    ggplot2::theme(
+      axis.text.x = ggplot2::element_text(
+        size = axis_text_size, margin = ggplot2::margin(t = 0)
+      )
+    )
+
+  ### y-axis text ----
+  design <- design +
+    ggplot2::theme(
+      axis.text.y = ggplot2::element_text(
+        size = axis_text_size, margin = ggplot2::margin(r = 0)
+      )
+    )
+
+  ### axis titles ----
+  design <- design +
+    ggplot2::theme(
+      axis.title = ggplot2::element_text(
+        size = axis_title_size, family = axis_title_family,
+        colour = axis_title_colour
+      )
+    )
+
+  ### axis title adjustment ----
+  design <- design +
+    ggplot2::theme(
+      axis.title.x = ggplot2::element_text(
+        hjust = xj, size = axis_title_size,
+        family = axis_title_family, face = axis_title_face
+    )
+  )
+
+  design <- design +
+    ggplot2::theme(
+      axis.title.y = ggplot2::element_text(
+        hjust = yj, size = axis_title_size,
+        family = axis_title_family, face = axis_title_face
+      )
+    )
+
+  ### y-axis on the right ----
+  design <- design +
+    ggplot2::theme(
+      axis.title.y.right = ggplot2::element_text(
+        hjust = yj, size = axis_title_size, angle = 90,
+        family = axis_title_family, face = axis_title_face
+      )
+    )
+
+  ### Set facet label design ----
+  design <- design +
+    ggplot2::theme(
+      strip.text = ggplot2::element_text(
+        hjust = 0, size = strip_text_size,
+        face = strip_text_face, family = strip_text_family
+      )
+    )
+
+  ### Set facet design ----
+  design <- design +
+    ggplot2::theme(panel.spacing = grid::unit(2, "lines"))
+
+  ### Set plot title design ----
+  design <- design +
+    ggplot2::theme(
+      plot.title = ggplot2::element_text(
+        hjust = 0, size = plot_title_size, colour = plot_title_colour,
+        margin = ggplot2::margin(b = plot_title_margin),
+        family = plot_title_family, face = plot_title_face)
+    )
+
+  ### Set plot subtitle design ----
+  design <- design +
+    ggplot2::theme(
+      plot.subtitle = ggplot2::element_text(
+        hjust = 0, size = subtitle_size, colour = subtitle_colour,
+        margin = ggplot2::margin(b = subtitle_margin),
+        family = subtitle_family, face = subtitle_face
+      )
+    )
+
+  ### Set plot caption design ----
+  design <- design +
+    ggplot2::theme(
+      plot.caption = ggplot2::element_text(
+        hjust = 1, size = caption_size, colour = caption_colour,
+        margin = ggplot2::margin(t = caption_margin),
+        family = caption_family, face = caption_face
+      )
+    )
+
+  ### Set plot margins ----
+  design <- design + ggplot2::theme(plot.margin = plot_margin)
+
+  ## return design ----
+  design
+}
+
+
+#'
+#' @rdname theme_acdc
+#' @export
+#'
+theme_acdc_dark <- function(base_family = set_acdc_font(),
+                            base_size = 11.5,
+                            plot_title_family = base_family,
+                            plot_title_size = 18,
+                            plot_title_face = "bold",
+                            plot_title_colour = acdc_green,
+                            plot_title_margin = 10,
+                            subtitle_family = base_family,
+                            subtitle_size = 12,
+                            subtitle_face = "plain",
+                            subtitle_colour = acdc_black,
+                            subtitle_margin = 15,
+                            strip_text_family = base_family,
+                            strip_text_size = 12,
+                            strip_text_face = "plain",
+                            caption_family = base_family,
+                            caption_size = 9,
+                            caption_face = "italic",
+                            caption_colour = acdc_black,
+                            caption_margin = 10,
+                            axis_text_size = base_size,
+                            axis_title_family = subtitle_family,
+                            axis_title_size = 9,
+                            axis_title_colour = acdc_black,
+                            axis_title_face = "plain",
+                            axis_title_just = "rt",
+                            plot_margin = ggplot2::margin(30, 30, 30, 30),
+                            grid_col = acdc_green,
+                            grid = TRUE,
+                            axis_col = acdc_green,
+                            axis = FALSE,
+                            ticks = FALSE) {
+  ## Set theme_minial ----
+  design <- ggplot2::theme_minimal(
+    base_family = base_family, base_size = base_size
+  )
+
+  ## Set plot background design ----
+  design <- design +
+    ggplot2::theme(plot.background = ggplot2::element_rect(fill = acdc_gold))
+
+  ## Set legend design ----
+  design <- design +
+    ggplot2::theme(
+      legend.background = ggplot2::element_blank(),
+      legend.key = ggplot2::element_blank(),
+      legend.title = ggplot2::element_text(
+        family = base_family, colour = acdc_black
+      ),
+      legend.text = ggplot2::element_text(
+        family = base_family, colour = acdc_black
+      )
+    )
+
+  ## Set grid design ----
+  if (inherits(grid, "character") | grid == TRUE) {
+    design <- design +
+      ggplot2::theme(
+        panel.grid = ggplot2::element_line(color = grid_col, size = 0.2)
+      )
+
+    design <- design +
+      ggplot2::theme(
+        panel.grid.major = ggplot2::element_line(color = grid_col, size = 0.2)
+      )
+
+    design <- design +
+      ggplot2::theme(
+        panel.grid.minor = ggplot2::element_line(color = grid_col, size = 0.05)
+      )
+
+    if (inherits(grid, "character")) {
+      if (regexpr("X", grid)[1] < 0)
+        design <- design +
+          ggplot2::theme(panel.grid.major.x = ggplot2::element_blank())
+
+      if (regexpr("Y", grid)[1] < 0)
+        design <- design +
+          ggplot2::theme(panel.grid.major.y = ggplot2::element_blank())
+
+      if (regexpr("x", grid)[1] < 0)
+        design <- design +
+          ggplot2::theme(panel.grid.minor.x = ggplot2::element_blank())
+
+      if (regexpr("y", grid)[1] < 0)
+        design <- design +
+          ggplot2::theme(panel.grid.minor.y = ggplot2::element_blank())
+    }
+  } else {
+    design <- design +
+      ggplot2::theme(panel.grid = ggplot2::element_blank())
+  }
+
+  ## Set axis design ----
+  if (inherits(axis, "character") | axis == TRUE) {
+    design <- design +
+      ggplot2::theme(
+        axis.line = ggplot2::element_line(color = acdc_green, size = 0.15)
+      )
+
+    if (inherits(axis, "character")) {
+      axis <- tolower(axis)
+
+      if (regexpr("x", axis)[1] < 0) {
+        design <- design +
+          ggplot2::theme(axis.line.x = ggplot2::element_blank())
+      } else {
+        design <- design +
+          ggplot2::theme(
+            axis.line.x = ggplot2::element_line(color = axis_col, size = 0.15)
+          )
+      }
+
+      if (regexpr("y", axis)[1] < 0) {
+        design <- design +
+          ggplot2::theme(axis.line.y = ggplot2::element_blank())
+      } else {
+        design <- design +
+          ggplot2::theme(
+            axis.line.y = ggplot2::element_line(color = axis_col, size = 0.15)
+          )
+      }
+    } else {
+      design <- design +
+        ggplot2::theme(
+          axis.line.x = ggplot2::element_line(color = axis_col, size = 0.15)
+        )
+
+      design <- design +
+        ggplot2::theme(
+          axis.line.y = ggplot2::element_line(color = axis_col, size = 0.15)
+        )
+    }
+  } else {
+    design <- design + ggplot2::theme(axis.line = ggplot2::element_blank())
+  }
+
+  ## Set ticks design ----
+  if (!ticks) {
+    design <- design + ggplot2::theme(axis.ticks = ggplot2::element_blank())
+    design <- design + ggplot2::theme(axis.ticks.x = ggplot2::element_blank())
+    design <- design + ggplot2::theme(axis.ticks.y = ggplot2::element_blank())
+  } else {
+    design <- design +
+      ggplot2::theme(axis.ticks = ggplot2::element_line(linewidth = 0.15))
+    design <- design +
+      ggplot2::theme(axis.ticks.x = ggplot2::element_line(linewidth = 0.15))
+    design <- design +
+      ggplot2::theme(axis.ticks.y = ggplot2::element_line(linewidth = 0.15))
+    design <- design +
+      ggplot2::theme(axis.ticks.length = grid::unit(5, "pt"))
+  }
+
+  ## Set axis text design ----
   xj <- switch(
     tolower(substr(axis_title_just, 1, 1)),
     b = 0, l = 0, m = 0.5, c = 0.5, r = 1, t = 1
@@ -328,12 +635,15 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
         size = axis_text_size, margin = ggplot2::margin(t = 0)
       )
     )
+
   design <- design +
     ggplot2::theme(
       axis.text.y = ggplot2::element_text(
         size = axis_text_size, margin = ggplot2::margin(r = 0)
       )
     )
+
+  ## Set axis title text design ----
   design <- design +
     ggplot2::theme(
       axis.title = ggplot2::element_text(
@@ -341,13 +651,17 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
         colour = axis_title_colour
       )
     )
+
+  ### Set x-axis placement ----
   design <- design +
     ggplot2::theme(
       axis.title.x = ggplot2::element_text(
         hjust = xj, size = axis_title_size,
         family = axis_title_family, face = axis_title_face
+      )
     )
-  )
+
+  ### Set y-axis placement ----
   design <- design +
     ggplot2::theme(
       axis.title.y = ggplot2::element_text(
@@ -355,6 +669,8 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
         family = axis_title_family, face = axis_title_face
       )
     )
+
+  ### Set y-axis right side placement ----
   design <- design +
     ggplot2::theme(
       axis.title.y.right = ggplot2::element_text(
@@ -362,6 +678,8 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
         family = axis_title_family, face = axis_title_face
       )
     )
+
+  ## Set facet label design ----
   design <- design +
     ggplot2::theme(
       strip.text = ggplot2::element_text(
@@ -369,15 +687,21 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
         face = strip_text_face, family = strip_text_family
       )
     )
+
+  ## Set facet spacing design ----
   design <- design +
     ggplot2::theme(panel.spacing = grid::unit(2, "lines"))
+
+  ## Set plot title design ----
   design <- design +
     ggplot2::theme(
       plot.title = ggplot2::element_text(
-        hjust=0, size = plot_title_size, colour = plot_title_colour,
+        hjust = 0, size = plot_title_size, colour = plot_title_colour,
         margin = ggplot2::margin(b = plot_title_margin),
         family = plot_title_family, face = plot_title_face)
     )
+
+  ## Set plot subtitle design ----
   design <- design +
     ggplot2::theme(
       plot.subtitle = ggplot2::element_text(
@@ -386,6 +710,8 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
         family = subtitle_family, face = subtitle_face
       )
     )
+
+  ## Set plot caption design ----
   design <- design +
     ggplot2::theme(
       plot.caption = ggplot2::element_text(
@@ -394,9 +720,12 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
         family = caption_family, face = caption_face
       )
     )
+
+  ## Set plot margin ----
   design <- design + ggplot2::theme(plot.margin = plot_margin)
 
   ## return design ----
   design
 }
+
 
