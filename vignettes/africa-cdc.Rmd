@@ -56,6 +56,58 @@ These are complemented by a set of five secondary colours.
 structure(acdc_palettes$acdc_secondary, class = "palette", name = "Africa CDC Secondary Colours")
 ```
 
+## Africa CDC Palettes
+
+In addition to the primary and secondary colours, a set of tinted palettes for each Africa CDC colour is available.
+
+### Tinted green palette
+
+```{r acdc-green-tint, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_greens, class = "palette", name = "Africa CDC Greens")
+```
+
+### Tinted gold palette
+
+```{r acdc-gold-tint, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_golds, class = "palette", name = "Africa CDC Golds")
+```
+
+### Tinted black palette
+
+```{r acdc-black-tint, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_blacks, class = "palette", name = "Africa CDC Blacks")
+```
+
+### Tinted brown palette
+
+```{r acdc-brown-tint, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_browns, class = "palette", name = "Africa CDC Browns")
+```
+
+### Tinted yellow palette
+
+```{r acdc-yellow-tint, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_yellows, class = "palette", name = "Africa CDC Yellows")
+```
+
+### Tinted orange palette
+
+```{r acdc-orange-tint, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_oranges, class = "palette", name = "Africa CDC Oranges")
+```
+
+### Tinted red palette
+
+```{r acdc-red-tint, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_reds, class = "palette", name = "Africa CDC Reds")
+```
+
+### Tinted dark green palette
+
+```{r acdc-dark-green-tint, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_dark_greens, class = "palette", name = "Africa CDC Dark Greens")
+```
+
 ## Africa CDC `ggplot2` theme
 
 ### Africa CDC light theme

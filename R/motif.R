@@ -15,7 +15,7 @@
 #' @importFrom ggplot2 theme element_rect element_line element_text margin
 #'   theme_minimal element_blank
 #' @importFrom grid unit
-#' @importFrom grDevices col2rgb rgb colorRampPalette
+#' @importFrom grDevices col2rgb rgb
 #' @importFrom graphics rect par image text
 #'
 "_PACKAGE"
