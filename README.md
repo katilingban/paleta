@@ -13,6 +13,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![R-CMD-check](https://github.com/katilingban/motif/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/katilingban/motif/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/katilingban/motif/branch/main/graph/badge.svg)](https://app.codecov.io/gh/katilingban/motif?branch=main)
+[![CodeFactor](https://www.codefactor.io/repository/github/katilingban/motif/badge)](https://www.codefactor.io/repository/github/katilingban/motif)
 <!-- badges: end -->
 
 A collection of palettes, themes, and theme components based on publicly
@@ -21,13 +22,15 @@ government agencies, and United Nations units.
 
 ## What does `motif` do?
 
-`motif` provides or will be providing utilities for applying the various
-visual identity and/or branding guidlines of various non-governmental
+`motif` provides or will be providing utilities for applying the visual
+identity and/or branding guidlines of various non-governmental
 organisations, government agencies, and United Nations units.
 
 Currently, `motif` has colours, palettes, and `ggplot2` themes based on
-the [Africa CDC](https://africacdc.org/) [visual identity
-guidelines](https://africacdc.org/download/visual-identity-africa-cdc-branding-guide/).
+the following organisations’ branding/visual identity guidelines:
+
+- [Africa CDC](https://africacdc.org/) [visual identity
+  guidelines](https://africacdc.org/download/visual-identity-africa-cdc-branding-guide/).
 
 Additional colours, palettes, and themes will be provided over time.
 
@@ -49,17 +52,8 @@ install.packages(
 
 ## Usage
 
-### Africa CDC colours and palettes
-
-<img src="man/figures/README-acdc-primary-1.png" style="display: block; margin: auto;" />
-
-<img src="man/figures/README-acdc-secondary-1.png" style="display: block; margin: auto;" />
-
-### Africa CDC `ggplot2` theme
-
-<img src="man/figures/README-mtcars-bar-acdc-1.png" width="50%" /><img src="man/figures/README-mtcars-bar-acdc-2.png" width="50%" />
-
-<img src="man/figures/README-mtcars-scatter-acdc-1.png" width="50%" /><img src="man/figures/README-mtcars-scatter-acdc-2.png" width="50%" />
+- [Using the Africa CDC colours, palettes, and
+  themes](https://katilingban.io/motif/articles/africa-cdc.html)
 
 ## Community guidelines
 

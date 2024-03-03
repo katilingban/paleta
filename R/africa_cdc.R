@@ -61,6 +61,7 @@ acdc_palettes <- list(
 #' @examples
 #' acdc_fonts
 #'
+#' @rdname acdc_font
 #' @export
 #'
 acdc_fonts <- list(

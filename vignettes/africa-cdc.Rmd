@@ -1,0 +1,128 @@
+---
+title: "Africa CDC Colours, Palettes, and Themes"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Africa CDC Colours, Palettes, and Themes}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, echo = FALSE}
+library(motif)
+library(ggplot2)
+```
+
+Africa Centres for Disease Control and Prevention (Africa CDC) is a specialised technical institution of the African Union established to support public health initiatives of Member States and strengthen the capacity of their public health institutions to detect, prevent, control and respond quickly and effectively to disease threats.
+
+
+## Africa CDC vision and mission
+
+* A safer, healthier, integrated and prosperous Africa, in which Member States can efficiently prevent disease transmission, implement surveillance and detection, and always be prepared to respond effectively to health threats and outbreaks.
+
+* To strengthen the capacity, capability and partnerships of Africa’s public health institutions to detect and respond quickly and effectively to disease threats and outbreaks based on science, policy and data-driven interventions and programmes.
+
+
+## Africa CDC values
+
+* Professionalism
+
+* Equity
+
+* Evidence-based decision-making
+
+* Integrity
+
+* Excellence
+
+
+## Africa CDC Colours
+
+The Africa CDC employs three corporate colours: Green, Gold and Black.
+
+```{r acdc-primary, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_primary, class = "palette", name = "Africa CDC Primary Colours")
+```
+
+These are complemented by a set of five secondary colours.
+
+```{r acdc-secondary, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_secondary, class = "palette", name = "Africa CDC Secondary Colours")
+```
+
+## Africa CDC `ggplot2` theme
+
+### Africa CDC light theme
+
+```{r mtcars-acdc-light-bar, echo = FALSE, fig.align = "center", fig.height = 4, fig.width = 5}
+## barplot using theme_acdc_light
+ggplot(
+  data = mtcars,
+  mapping = aes(
+  x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")),
+  fill = factor(cyl))
+) +
+  geom_bar() +
+  scale_fill_manual(name = "Cylinders", values = acdc_palettes$acdc_secondary) +
+  labs(
+    title = "Light ACDC Theme",
+    subtitle = "Using the Africa CDC secondary palette",
+    x = "Engine Shape", y = "Counts"
+  ) +
+  theme_acdc_light()
+```
+
+```{r mtcars-acdc-light-scatter, echo = FALSE, fig.align = "center", fig.height = 4, fig.width = 5}
+## scatterplot using theme_acdc_light
+ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
+  geom_point(size = 5) +
+  scale_colour_manual(
+    name = "Cylinders", 
+    values = acdc_palettes$acdc_secondary
+  ) +
+  labs(
+    title = "Light ACDC Theme",
+    subtitle = "Using the Africa CDC secondary palette",
+  ) +
+  theme_acdc_light()
+```
+
+
+```{r mtcars-acdc-dark-bar, echo = FALSE, fig.align = "center", fig.height = 4, fig.width = 5}
+## barplot using theme_acdc_dark
+ggplot(
+  data = mtcars,
+  mapping = aes(
+  x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")),
+  fill = factor(cyl))
+) +
+  geom_bar() +
+  scale_fill_manual(name = "Cylinders", values = acdc_palettes$acdc_secondary) +
+  labs(
+    title = "Dark ACDC Theme",
+    subtitle = "Using the Africa CDC secondary palette",
+    x = "Engine Shape", y = "Counts"
+  ) +
+  theme_acdc_dark()
+```
+
+```{r mtcars-acdc-dark-scatter, echo = FALSE, fig.align = "center", fig.height = 4, fig.width = 5}
+## scatterplot using theme_acdc_dark
+ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
+  geom_point(size = 5) +
+  scale_colour_manual(
+    name = "Cylinders", 
+    values = acdc_palettes$acdc_secondary
+  ) +
+  labs(
+    title = "Dark ACDC Theme",
+    subtitle = "Using the Africa CDC secondary palette"
+  ) +
+  theme_acdc_dark()
+```
