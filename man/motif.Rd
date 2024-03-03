@@ -10,6 +10,13 @@ A collection of palettes, themes, and theme components based on branding
 guidelines of various international non-governmental organisations and
 United Nations units.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{http://katilingban.io/motif/}
+}
+
+}
 \author{
 Ernest Guevarra (ernest@guevarra.io)
 }

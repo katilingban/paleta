@@ -22,15 +22,18 @@ library(ggplot2)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/katilingban/motif/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/katilingban/motif/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/katilingban/motif/branch/main/graph/badge.svg)](https://app.codecov.io/gh/katilingban/motif?branch=main)
+[![CodeFactor](https://www.codefactor.io/repository/github/katilingban/motif/badge)](https://www.codefactor.io/repository/github/katilingban/motif)
 <!-- badges: end -->
 
 A collection of palettes, themes, and theme components based on publicly available branding guidelines of various non-governmental organisations, government agencies, and United Nations units.
 
 ## What does `motif` do?
 
-`motif` provides or will be providing utilities for applying the various visual identity and/or branding guidlines of various non-governmental organisations, government agencies, and United Nations units.
+`motif` provides or will be providing utilities for applying the visual identity and/or branding guidlines of various non-governmental organisations, government agencies, and United Nations units.
 
-Currently, `motif` has colours, palettes, and `ggplot2` themes based on the [Africa CDC](https://africacdc.org/) [visual identity guidelines](https://africacdc.org/download/visual-identity-africa-cdc-branding-guide/).
+Currently, `motif` has colours, palettes, and `ggplot2` themes based on the following organisations' branding/visual identity guidelines:
+
+* [Africa CDC](https://africacdc.org/) [visual identity guidelines](https://africacdc.org/download/visual-identity-africa-cdc-branding-guide/).
 
 Additional colours, palettes, and themes will be provided over time.
 
@@ -50,74 +53,7 @@ install.packages(
 
 ## Usage
 
-### Africa CDC colours and palettes
-
-```{r acdc-primary, echo = FALSE, fig.align = "center", fig.height = 1}
-structure(acdc_palettes$acdc_primary, class = "palette", name = "Africa CDC Primary Colours")
-```
-
-```{r acdc-secondary, echo = FALSE, fig.align = "center", fig.height = 1}
-structure(acdc_palettes$acdc_secondary, class = "palette", name = "Africa CDC Secondary Colours")
-```
-
-### Africa CDC `ggplot2` theme
-
-```{r mtcars-bar-acdc, echo = FALSE, fig.show = "hold", fig.height = 6, out.width = "50%"}
-## theme_acdc_light
-ggplot(
-  data = mtcars,
-  mapping = aes(
-  x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")),
-  fill = factor(cyl))
-) +
-  geom_bar() +
-  scale_fill_manual(name = "Cylinders", values = acdc_palettes$acdc_secondary) +
-  labs(
-    title = "Light ACDC Theme",
-    subtitle = "Using the Africa CDC secondary palette",
-    x = "Engine Shape", y = "Counts"
-  ) +
-  theme_acdc_light()
-
-## theme_acdc_dark
-ggplot(
-  data = mtcars,
-  mapping = aes(
-  x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")),
-  fill = factor(cyl))
-) +
-  geom_bar() +
-  scale_fill_manual(name = "Cylinders", values = acdc_palettes$acdc_secondary) +
-  labs(
-    title = "Dark ACDC Theme",
-    subtitle = "Using the Africa CDC secondary palette",
-    x = "Engine Shape", y = "Counts"
-  ) +
-  theme_acdc_dark()
-```
-
-
-```{r mtcars-scatter-acdc, echo = FALSE, fig.show = "hold", fig.height = 6, out.width = "50%"}
-## theme_acdc_light
-ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
-  geom_point(size = 5) +
-  scale_colour_manual(
-    name = "Cylinders", 
-    values = acdc_palettes$acdc_secondary
-  ) +
-  labs(title = "mpg by disp grouped by cyl") +
-  theme_acdc_light()
-
-## theme_acdc_dark
-ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
-  geom_point(size = 5) +
-  scale_colour_manual(
-    name = "Cylinders", 
-    values = acdc_palettes$acdc_secondary
-  ) +
-  labs(title = "mpg by disp grouped by cyl") +
-  theme_acdc_dark()
-```
+* [Using the Africa CDC colours, palettes, and themes](https://katilingban.io/motif/articles/africa-cdc.html)
 
 ## Community guidelines
 

@@ -1,0 +1,69 @@
+title: motif
+
+url: https://katilingban.io/motif/
+
+template:
+  bootstrap: 5
+  bootswatch: cerulean
+  #theme: haddock
+  ganalytics: #
+
+home:
+  links:
+  - text: Learn more about Katilingban
+    href: https://katilingban.io
+
+navbar:
+  bg: info
+  type: light
+  structure:
+    left:  [home, intro, reference, articles, news]
+    right: [mastodon, linkedin, github]
+
+  components:
+    articles:
+      text: Articles
+      menu:
+      - text: "Introduction"
+        href: articles/introduction.html
+      - text: "Africa CDC"
+        href: articles/africa-cdc.html
+    mastodon:
+      icon: "fab fa-mastodon fa-lg"
+      href: https://fosstodon.org/@katilingban
+    linkedin:
+      icon: "fab fa-linkedin fa-lg"
+      href: https://www.linkedin.com/company/katilingban
+
+reference:
+  - title: Description
+    contents:
+    - motif
+
+  - title: motif
+    contents:
+    - motif_colours
+    - motif_fonts
+
+
+  - title: Africa CDC
+    contents:
+    - acdc_palettes
+    - acdc_fonts
+    - acdc_green
+    - acdc_gold
+    - acdc_black
+    - acdc_brown
+    - acdc_yellow
+    - acdc_orange
+    - acdc_red
+    - acdc_dark_green
+    - theme_acdc_light
+    - theme_acdc_dark
+
+
+  - title: Utilities
+    contents:
+    - get_colour
+    - print.palette
+
