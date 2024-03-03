@@ -11,6 +11,7 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/katilingban/motif/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/katilingban/motif/actions/workflows/R-CMD-check.yaml)
+[![test-coverage](https://github.com/katilingban/motif/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/katilingban/motif/actions/workflows/test-coverage.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/katilingban/motif/branch/main/graph/badge.svg)](https://app.codecov.io/gh/katilingban/motif?branch=main)
 [![CodeFactor](https://www.codefactor.io/repository/github/katilingban/motif/badge)](https://www.codefactor.io/repository/github/katilingban/motif)
@@ -23,7 +24,7 @@ government agencies, and United Nations units.
 ## What does `motif` do?
 
 `motif` provides or will be providing utilities for applying the visual
-identity and/or branding guidlines of various non-governmental
+identity and/or branding guidelines of various non-governmental
 organisations, government agencies, and United Nations units.
 
 Currently, `motif` has colours, palettes, and `ggplot2` themes based on
@@ -38,7 +39,7 @@ Additional colours, palettes, and themes will be provided over time.
 
 `motif` is not yet available on [CRAN](https://cran.r-project.org) but
 can be installed through the [Katilingban R
-universe](https://katilingban.r-universe.dev) resository as follows:
+universe](https://katilingban.r-universe.dev) repository as follows:
 
 ``` r
 install.packages(

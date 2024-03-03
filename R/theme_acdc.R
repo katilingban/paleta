@@ -155,8 +155,9 @@ set_acdc_font <- function(alt = motif_fonts$motif_noto) {
 #' [Google Fonts](https://fonts.google.com/).
 #'
 #' @param base_family Base font family using Africa CDC fonts. Default is set
-#'   by what Africa CDC font is available in the sytem via `set_acdc_font()`. If
-#'   none of the Africa CDC fonts are available, the default becomes Noto Sans.
+#'   by what Africa CDC font is available in the system via `set_acdc_font()`.
+#'   If none of the Africa CDC fonts are available, the default becomes Noto
+#'   Sans.
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
 #' @param plot_title_colour Colour of the plot title text. Default
@@ -172,7 +173,7 @@ set_acdc_font <- function(alt = motif_fonts$motif_noto) {
 #' @param plot_background_fill Fill colour for the plot background. Default is
 #'   NULL.
 #' @param grid_col Grid colour. Default to `acdc_gold`.
-#' @param axis_col Axis colors. Default to `acdc_gold`.
+#' @param axis_col Axis colours. Default to `acdc_gold`.
 #' @param grid Panel grid. Either `TRUE`, `FALSE`, or a combination of
 #'   `X` (major x grid), `x` (minor x grid), `Y` (major y grid), and/or
 #'   `y` (minor y grid). Default is TRUE.

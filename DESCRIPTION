@@ -22,10 +22,12 @@ Imports:
     withr
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    spelling
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.1
 Roxygen: list(markdown = TRUE)
 VignetteBuilder: knitr
 URL: https://github.com/katilingban/motif,http://katilingban.io/motif/
+Language: en-GB
