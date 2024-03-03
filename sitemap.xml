@@ -52,9 +52,15 @@
     <loc>https://katilingban.io/motif/reference/print.palette.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/motif/reference/shade_colour.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/motif/reference/theme_acdc.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/motif/reference/theme_motif.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/motif/reference/tint_colour.html</loc>
   </url>
 </urlset>
