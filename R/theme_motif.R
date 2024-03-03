@@ -68,7 +68,7 @@ set_motif_font <- function() {
 #' [Google Fonts](https://fonts.google.com/).
 #'
 #' @param base_family Base font family using Africa CDC fonts. Default is set
-#'   by what Africa CDC font is available in the sytem via `set_motif_font()`.
+#'   by what Africa CDC font is available in the system via `set_motif_font()`.
 #' @param base_size Base font size. Default is 11.5.
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
@@ -120,7 +120,7 @@ set_motif_font <- function() {
 #' @param plot_background_fill Fill colour for the plot background. Default is
 #'   NULL.
 #' @param grid_col Grid colour. Default to NULL.
-#' @param axis_col Axis colors. Default to NULL.
+#' @param axis_col Axis colours. Default to NULL.
 #' @param grid Panel grid. Either `TRUE`, `FALSE`, or a combination of
 #'   `X` (major x grid), `x` (minor x grid), `Y` (major y grid), and/or
 #'   `y` (minor y grid). Default is TRUE.
@@ -195,17 +195,17 @@ theme_motif <- function(base_family = set_motif_font(),
   if (inherits(grid, "character") | grid == TRUE) {
     design <- design +
       ggplot2::theme(
-        panel.grid = ggplot2::element_line(color = grid_col, size = 0.2)
+        panel.grid = ggplot2::element_line(colour = grid_col, size = 0.2)
       )
 
     design <- design +
       ggplot2::theme(
-        panel.grid.major = ggplot2::element_line(color = grid_col, size = 0.2)
+        panel.grid.major = ggplot2::element_line(colour = grid_col, size = 0.2)
       )
 
     design <- design +
       ggplot2::theme(
-        panel.grid.minor = ggplot2::element_line(color = grid_col, size = 0.05)
+        panel.grid.minor = ggplot2::element_line(colour = grid_col, size = 0.05)
       )
 
     if (inherits(grid, "character")) {
@@ -234,7 +234,7 @@ theme_motif <- function(base_family = set_motif_font(),
   if (inherits(axis, "character") | axis == TRUE) {
     design <- design +
       ggplot2::theme(
-        axis.line = ggplot2::element_line(color = axis_col, size = 0.15)
+        axis.line = ggplot2::element_line(colour = axis_col, size = 0.15)
       )
 
     if (inherits(axis, "character")) {
@@ -246,7 +246,7 @@ theme_motif <- function(base_family = set_motif_font(),
       } else {
         design <- design +
           ggplot2::theme(
-            axis.line.x = ggplot2::element_line(color = axis_col, size = 0.15)
+            axis.line.x = ggplot2::element_line(colour = axis_col, size = 0.15)
           )
       }
 
@@ -256,18 +256,18 @@ theme_motif <- function(base_family = set_motif_font(),
       } else {
         design <- design +
           ggplot2::theme(
-            axis.line.y = ggplot2::element_line(color = axis_col, size = 0.15)
+            axis.line.y = ggplot2::element_line(colour = axis_col, size = 0.15)
           )
       }
     } else {
       design <- design +
         ggplot2::theme(
-          axis.line.x = ggplot2::element_line(color = axis_col, size = 0.15)
+          axis.line.x = ggplot2::element_line(colour = axis_col, size = 0.15)
         )
 
       design <- design +
         ggplot2::theme(
-          axis.line.y = ggplot2::element_line(color = axis_col, size = 0.15)
+          axis.line.y = ggplot2::element_line(colour = axis_col, size = 0.15)
         )
     }
   } else {

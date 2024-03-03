@@ -22,7 +22,7 @@ A **data visualisation design system** is a framework or set of guidelines that 
 
 Key components of a data visualisation design system include:
 
-* **Style Guidelines:** Establishing consistent visual styles such as color palettes, typography, iconography, and layout principles to maintain coherence across all visualisations.
+* **Style Guidelines:** Establishing consistent visual styles such as colour palettes, typography, iconography, and layout principles to maintain coherence across all visualisations.
 
 * **Data visualisation Principles:** Defining principles for effective data visualisation design, such as emphasizing clarity, simplicity, accuracy, and relevance.
 
@@ -30,7 +30,7 @@ Key components of a data visualisation design system include:
 
 * **Interaction Patterns:** Defining guidelines for interactive elements within visualisations, including hover effects, click interactions, tooltips, and filtering mechanisms, to enhance user engagement and exploration.
 
-* **Accessibility Standards:** Ensuring that visualisations are accessible to all users, including those with disabilities, by following accessibility standards for color contrast, text size, alternative text, and keyboard navigation.
+* **Accessibility Standards:** Ensuring that visualisations are accessible to all users, including those with disabilities, by following accessibility standards for colour contrast, text size, alternative text, and keyboard navigation.
 
 * **Responsive Design:** Guidelines for designing visualisations that adapt gracefully to different screen sizes and devices, ensuring a consistent user experience across desktop, tablet, and mobile devices.
 
@@ -42,7 +42,7 @@ Overall, a data visualisation design system serves as a valuable resource for de
 
 With more and more organisations developing their style guidelines and making them available publicly, the `motif` package aims to consolidate these guidelines and express them within the R language for statistical computing's graphics and publishing ecosystem.
 
-`motif` provides or will be providing utilities for applying the visual identity and/or branding guidlines of various non-governmental organisations, government agencies, and United Nations units.
+`motif` provides or will be providing utilities for applying the visual identity and/or branding guidelines of various non-governmental organisations, government agencies, and United Nations units.
 
 Currently, `motif` has colours, palettes, and `ggplot2` themes based on the following organisations' branding/visual identity guidelines:
 

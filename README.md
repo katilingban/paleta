@@ -24,7 +24,7 @@ government agencies, and United Nations units.
 ## What does `motif` do?
 
 `motif` provides or will be providing utilities for applying the visual
-identity and/or branding guidlines of various non-governmental
+identity and/or branding guidelines of various non-governmental
 organisations, government agencies, and United Nations units.
 
 Currently, `motif` has colours, palettes, and `ggplot2` themes based on
@@ -39,7 +39,7 @@ Additional colours, palettes, and themes will be provided over time.
 
 `motif` is not yet available on [CRAN](https://cran.r-project.org) but
 can be installed through the [Katilingban R
-universe](https://katilingban.r-universe.dev) resository as follows:
+universe](https://katilingban.r-universe.dev) repository as follows:
 
 ``` r
 install.packages(

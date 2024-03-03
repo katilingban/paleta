@@ -46,7 +46,7 @@ theme_motif(
 }
 \arguments{
 \item{base_family}{Base font family using Africa CDC fonts. Default is set
-by what Africa CDC font is available in the sytem via \code{set_motif_font()}.}
+by what Africa CDC font is available in the system via \code{set_motif_font()}.}
 
 \item{base_size}{Base font size. Default is 11.5.}
 
@@ -136,7 +136,7 @@ NULL.}
 \code{X} (major x grid), \code{x} (minor x grid), \code{Y} (major y grid), and/or
 \code{y} (minor y grid). Default is TRUE.}
 
-\item{axis_col}{Axis colors. Default to NULL.}
+\item{axis_col}{Axis colours. Default to NULL.}
 
 \item{axis}{Add x or y axes? \code{TRUE}, \code{FALSE}, "\code{xy}". Default is FALSE.}
 

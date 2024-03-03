@@ -42,8 +42,9 @@ theme_acdc_dark(
 }
 \arguments{
 \item{base_family}{Base font family using Africa CDC fonts. Default is set
-by what Africa CDC font is available in the sytem via \code{set_acdc_font()}. If
-none of the Africa CDC fonts are available, the default becomes Noto Sans.}
+by what Africa CDC font is available in the system via \code{set_acdc_font()}.
+If none of the Africa CDC fonts are available, the default becomes Noto
+Sans.}
 
 \item{plot_title_family}{Font family to use for the plot title. Default is
 \code{base_family}.}
@@ -71,7 +72,7 @@ is \code{acdc_green}.}
 \code{X} (major x grid), \code{x} (minor x grid), \code{Y} (major y grid), and/or
 \code{y} (minor y grid). Default is TRUE.}
 
-\item{axis_col}{Axis colors. Default to \code{acdc_gold}.}
+\item{axis_col}{Axis colours. Default to \code{acdc_gold}.}
 
 \item{axis}{Add x or y axes? \code{TRUE}, \code{FALSE}, "\code{xy}". Default is FALSE.}
 
