@@ -13,7 +13,7 @@ United Nations units.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{http://katilingban.io/motif/}
+  \item \url{https://github.com/katilingban/motif,http://katilingban.io/motif/}
 }
 
 }

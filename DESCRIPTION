@@ -20,11 +20,12 @@ Imports:
     stringr,
     systemfonts,
     withr
-Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.3.1
 Suggests: 
     knitr,
     rmarkdown
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Roxygen: list(markdown = TRUE)
 VignetteBuilder: knitr
-URL: http://katilingban.io/motif/
+URL: https://github.com/katilingban/motif,http://katilingban.io/motif/

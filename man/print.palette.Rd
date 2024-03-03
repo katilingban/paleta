@@ -7,7 +7,7 @@
 \method{print}{palette}(x, ...)
 }
 \arguments{
-\item{x}{An object of class `palette`}
+\item{x}{An object of class \code{palette}}
 
 \item{...}{Additional arguments to print}
 }
