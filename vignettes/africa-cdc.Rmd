@@ -60,7 +60,7 @@ structure(acdc_palettes$acdc_secondary, class = "palette", name = "Africa CDC Se
 
 ### Africa CDC light theme
 
-```{r mtcars-acdc-light-bar, echo = FALSE, fig.align = "center", fig.height = 4, fig.width = 5}
+```{r mtcars-acdc-light-bar, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
 ## barplot using theme_acdc_light
 ggplot(
   data = mtcars,
@@ -78,10 +78,10 @@ ggplot(
   theme_acdc_light()
 ```
 
-```{r mtcars-acdc-light-scatter, echo = FALSE, fig.align = "center", fig.height = 4, fig.width = 5}
+```{r mtcars-acdc-light-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
 ## scatterplot using theme_acdc_light
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
-  geom_point(size = 5) +
+  geom_point(size = 3) +
   scale_colour_manual(
     name = "Cylinders", 
     values = acdc_palettes$acdc_secondary
@@ -94,7 +94,9 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
 ```
 
 
-```{r mtcars-acdc-dark-bar, echo = FALSE, fig.align = "center", fig.height = 4, fig.width = 5}
+### Africa CDC dark theme
+
+```{r mtcars-acdc-dark-bar, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
 ## barplot using theme_acdc_dark
 ggplot(
   data = mtcars,
@@ -112,10 +114,10 @@ ggplot(
   theme_acdc_dark()
 ```
 
-```{r mtcars-acdc-dark-scatter, echo = FALSE, fig.align = "center", fig.height = 4, fig.width = 5}
+```{r mtcars-acdc-dark-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
 ## scatterplot using theme_acdc_dark
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
-  geom_point(size = 5) +
+  geom_point(size = 3) +
   scale_colour_manual(
     name = "Cylinders", 
     values = acdc_palettes$acdc_secondary

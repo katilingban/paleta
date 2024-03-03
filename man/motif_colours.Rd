@@ -5,16 +5,15 @@
 \alias{motif_colours}
 \title{Colours based on visual identity guidelines of various organisations}
 \format{
-A data frame with 5 fields
-
-| **Variable** | **Description** |
-| :--- | :--- |
-| *name* | Organisation colour name |
-| *code* | Organisation colour code |
-| *rgb* | Three integers for the red, green, blue components of the RGB colour model |
-| *cmyk* | Four integers for the cyan, magenta, yellow, and black components of the CMYK colour model |
-| *hex* | Hexadecimal codes for corresponding colour |
-| *pantone* | Pantone colour name |
+A data frame with 5 fields\tabular{ll}{
+   \strong{Variable} \tab \strong{Description} \cr
+   \emph{name} \tab Organisation colour name \cr
+   \emph{code} \tab Organisation colour code \cr
+   \emph{rgb} \tab Three integers for the red, green, blue components of the RGB colour model \cr
+   \emph{cmyk} \tab Four integers for the cyan, magenta, yellow, and black components of the CMYK colour model \cr
+   \emph{hex} \tab Hexadecimal codes for corresponding colour \cr
+   \emph{pantone} \tab Pantone colour name \cr
+}
 }
 \usage{
 motif_colours

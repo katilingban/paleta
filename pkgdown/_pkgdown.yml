@@ -4,8 +4,8 @@ url: https://katilingban.io/motif/
 
 template:
   bootstrap: 5
-  bootswatch: cerulean
-  #theme: haddock
+  bootswatch: sandstone
+  theme: haddock
   ganalytics: #
 
 home:
@@ -14,7 +14,7 @@ home:
     href: https://katilingban.io
 
 navbar:
-  bg: info
+  bg: primary
   type: light
   structure:
     left:  [home, intro, reference, articles, news]
@@ -24,8 +24,6 @@ navbar:
     articles:
       text: Articles
       menu:
-      - text: "Introduction"
-        href: articles/introduction.html
       - text: "Africa CDC"
         href: articles/africa-cdc.html
     mastodon:
@@ -34,17 +32,20 @@ navbar:
     linkedin:
       icon: "fab fa-linkedin fa-lg"
       href: https://www.linkedin.com/company/katilingban
+    github:
+      icon: "fab fa-github fa-lg"
+      href: https://github.com/katilingban
 
 reference:
   - title: Description
     contents:
     - motif
 
-  - title: motif
+  - title: Motif
     contents:
-    - motif_colours
     - motif_fonts
-
+    - set_motif_font
+    - theme_motif
 
   - title: Africa CDC
     contents:
@@ -67,3 +68,6 @@ reference:
     - get_colour
     - print.palette
 
+  - title: Datasets
+    contents:
+    - motif_colours
