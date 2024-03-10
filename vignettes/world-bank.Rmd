@@ -164,7 +164,7 @@ ggplot(
   ) +
   labs(
     title = "World Bank Theme",
-    subtitle = "Using the World Bank neutral palette (tinted to 40%)",
+    subtitle = "World Bank neutral palette (tinted to 40%)",
     x = "Engine Shape", y = "Counts"
   ) +
   theme_wb()
@@ -179,8 +179,8 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
     values = wb_palettes$wb_brights |> tint_colours(p = 0.4) |> unlist()
   ) +
   labs(
-    title = "Light ACDC Theme",
-    subtitle = "Using the World Bank neutral palette (tinted to 40%)",
+    title = "World Bank Theme",
+    subtitle = "World Bank neutral palette (tinted to 40%)",
   ) +
   theme_wb()
 ```
