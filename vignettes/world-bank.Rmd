@@ -72,3 +72,115 @@ structure(wb_palettes$wb_bright_oranges, class = "palette", name = "World Bank B
 ```{r wb-bright-yellows, echo = FALSE, fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_bright_yellows, class = "palette", name = "World Bank Bright Yellows Palette")
 ```
+
+### Tinted bright red palette
+
+```{r wb-bright-reds, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_bright_reds, class = "palette", name = "World Bank Bright Reds Palette")
+```
+
+### Tinted light orange palette
+
+```{r wb-light-oranges, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_light_oranges, class = "palette", name = "World Bank Light Oranges Palette")
+```
+
+### Tinted bright aqua palette
+
+```{r wb-bright-aquas, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_bright_aquas, class = "palette", name = "World Bank Bright Aquas Palette")
+```
+
+### Tinted bright green palette
+
+```{r wb-bright-greens, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_bright_greens, class = "palette", name = "World Bank Bright Greens Palette")
+```
+
+### Tinted bright purple palette
+
+```{r wb-bright-purples, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_bright_purples, class = "palette", name = "World Bank Bright Purples Palette")
+```
+
+### Tinted light aqua palette
+
+```{r wb-light-aquas, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_light_aquas, class = "palette", name = "World Bank Light Aquas Palette")
+```
+
+### Tinted dark red palette
+
+```{r wb-dark-reds, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_dark_reds, class = "palette", name = "World Bank Dark Reds Palette")
+```
+
+### Tinted dark orange palette
+
+```{r wb-dark-oranges, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_dark_oranges, class = "palette", name = "World Bank Dark Oranges Palette")
+```
+
+### Tinted brown palette
+
+```{r wb-browns, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_browns, class = "palette", name = "World Bank Browns Palette")
+```
+
+### Tinted dark purple palette
+
+```{r wb-dark-purples, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_dark_purples, class = "palette", name = "World Bank Dark Purples Palette")
+```
+
+### Tinted dark aqua palette
+
+```{r wb-dark-aquas, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_dark_aquas, class = "palette", name = "World Bank Dark Aquas Palette")
+```
+
+### Tinted dark green palette
+
+```{r wb-dark-greens, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_dark_greens, class = "palette", name = "World Bank Dark Greens Palette")
+```
+
+## World Bank `ggplot2` theme
+
+A World Bank `ggplot2` theme function called `theme_wb()` is included in the `paleta` package. Following are examples of how it can be used.
+
+```{r wb-theme-bar, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+## barplot using theme_wb()
+ggplot(
+  data = mtcars,
+  mapping = aes(
+  x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")),
+  fill = factor(cyl))
+) +
+  geom_bar() +
+  scale_fill_manual(
+    name = "Cylinders", 
+    values = wb_palettes$wb_brights |> tint_colours(p = 0.4) |> unlist()
+  ) +
+  labs(
+    title = "World Bank Theme",
+    subtitle = "Using the World Bank neutral palette (tinted to 40%)",
+    x = "Engine Shape", y = "Counts"
+  ) +
+  theme_wb()
+```
+
+```{r wb-theme-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+## scatterplot using theme_wb()
+ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
+  geom_point(size = 3) +
+  scale_colour_manual(
+    name = "Cylinders", 
+    values = wb_palettes$wb_brights |> tint_colours(p = 0.4) |> unlist()
+  ) +
+  labs(
+    title = "Light ACDC Theme",
+    subtitle = "Using the World Bank neutral palette (tinted to 40%)",
+  ) +
+  theme_wb()
+```
