@@ -75,6 +75,43 @@ wb_colours <- tibble::tibble(
 )
 
 
-paleta_colours <- rbind(acdc_colours, wb_colours)
+## UNICEF colours ----
+
+unicef_colours <- tibble::tibble(
+  organisation = "UNICEF",
+  name = c(
+    "UNICEF Blue", "UNICEF Green", "UNICEF Lime Green", "UNICEF Yellow",
+    "UNICEF Orange", "UNICEF Bright Red", "UNICEF Dark Red", "UNICEF Purple",
+    "UNICEF Warm Grey", "UNICEF Cool Grey", "UNICEF Black", "UNICEF Dark Blue"
+  ),
+  code = c(
+    "unicef_blue", "unicef_green", "unicef_lime_green", "unicef_yellow",
+    "unicef_orange", "unicef_bright_red", "unicef_dark_red", "unicef_purple",
+    "unicef_warm_grey", "unicef_cool_grey", "unicef_black", "unicef_dark_blue"
+  ),
+  rgb = c(
+    "0, 174, 239", "0, 131, 62", "128, 189, 65", "255, 194, 14", "242, 106, 33",
+    "226, 35, 26", "150, 26, 73", "107, 30, 116", "216, 209, 202",
+    "119, 119, 122", "45, 41, 38", "55, 78, 162"
+  ),
+  cmyk = c(
+    "100, 0, 0, 0", "97, 22, 100, 9", "55, 3, 100, 0", "0, 25, 100, 0",
+    "0, 72, 100, 0", "5, 100, 100, 0", "31, 100, 53, 20", "70, 100, 20, 7",
+    "14, 14, 17, 0", "55, 47, 44, 10", "63, 62, 59, 94", "90, 80, 0, 0"
+  ),
+  hex = c(
+    "#1CABE2", "#00833D", "#80BD41", "#FFC20E", "#F26A21", "#E2231A", "#961A49",
+    "#6A1E74", "#D8D1C9", "#777779", "#2D2926", "#374EA2"
+  ),
+  pantone = c(
+    "Process Cyan", "356", "376", "7548", "1505", "485", "221", "2613",
+    "Warm Grey 1", "Cool Grey 9", "Black", "7685"
+  )
+)
+
+
+
+
+paleta_colours <- rbind(acdc_colours, wb_colours, unicef_colours)
 
 usethis::use_data(paleta_colours, overwrite = TRUE, compress = "xz")
