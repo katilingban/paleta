@@ -40,7 +40,7 @@ wb_carrot       <- "#F78D28"
 
 #' @rdname wb_colours
 #' @export
-wb_turquoise    <- "#009CA7"
+wb_torquoise    <- "#009CA7"
 
 #' @rdname wb_colours
 #' @export
@@ -223,20 +223,20 @@ set_wb_font <- function(alt = paleta_fonts$paleta_noto) {
 #' @rdname theme_wb
 #' @export
 #'
-theme_wb_light <- function(base_family = set_wb_font(),
-                           plot_title_family = base_family,
-                           plot_title_colour = wb_blue,
-                           subtitle_family = base_family,
-                           subtitle_colour = wb_cyan,
-                           caption_colour = wb_blue,
-                           axis_title_colour = wb_blue,
-                           legend_title_colour = wb_blue,
-                           legend_text_colour = wb_blue,
-                           grid_col = wb_cyan,
-                           grid = TRUE,
-                           axis_col = wb_cyan,
-                           axis = FALSE,
-                           ticks = FALSE) {
+theme_wb <- function(base_family = set_wb_font(),
+                     plot_title_family = base_family,
+                     plot_title_colour = wb_blue,
+                     subtitle_family = base_family,
+                     subtitle_colour = wb_cyan,
+                     caption_colour = wb_blue,
+                     axis_title_colour = wb_blue,
+                     legend_title_colour = wb_blue,
+                     legend_text_colour = wb_blue,
+                     grid_col = wb_cyan,
+                     grid = TRUE,
+                     axis_col = wb_cyan,
+                     axis = FALSE,
+                     ticks = FALSE) {
   theme_paleta(
     base_family = base_family,
     plot_title_family = plot_title_family,

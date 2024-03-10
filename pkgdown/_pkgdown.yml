@@ -26,6 +26,8 @@ navbar:
       menu:
       - text: "Africa CDC"
         href: articles/africa-cdc.html
+      - text: "World Bank"
+      - href: articles/world-bank.html
     mastodon:
       icon: "fab fa-mastodon fa-lg"
       href: https://fosstodon.org/@katilingban
@@ -62,6 +64,27 @@ reference:
     - theme_acdc_light
     - theme_acdc_dark
 
+  - title: World Bank
+    contents:
+    - wb_palettes
+    - wb_fonts
+    - wb_blue
+    - wb_cyan
+    - wb_torrid
+    - wb_electric
+    - wb_rojo
+    - wb_carrot
+    - wb_torquoise
+    - wb_green
+    - wb_purple
+    - wb_teal
+    - wb_red
+    - wb_orange
+    - wb_brown
+    - wb_aubergine
+    - wb_beryl
+    - wb_emerald
+    - theme_wb
 
   - title: Utilities
     contents:

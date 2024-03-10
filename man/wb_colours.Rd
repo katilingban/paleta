@@ -10,7 +10,7 @@
 \alias{wb_electric}
 \alias{wb_rojo}
 \alias{wb_carrot}
-\alias{wb_turquoise}
+\alias{wb_torquoise}
 \alias{wb_green}
 \alias{wb_purple}
 \alias{wb_teal}
@@ -75,7 +75,7 @@ wb_rojo
 
 wb_carrot
 
-wb_turquoise
+wb_torquoise
 
 wb_green
 

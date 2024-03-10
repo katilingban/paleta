@@ -31,7 +31,10 @@ Currently, `paleta` has colours, palettes, and `ggplot2` themes based on
 the following organisations’ branding/visual identity guidelines:
 
 - [Africa CDC](https://africacdc.org/) [visual identity
-  guidelines](https://africacdc.org/download/visual-identity-africa-cdc-branding-guide/).
+  guidelines](https://africacdc.org/download/visual-identity-africa-cdc-branding-guide/);
+
+- [World Bank](https://www.worldbank.org) [visual identity
+  guidelines](https://thedocs.worldbank.org/en/doc/723361567518322252-0060022019/original/WBGBrandingandVisualIdentityGuidelinesFebruary2016.pdf).
 
 Additional colours, palettes, and themes will be provided over time.
 
@@ -55,6 +58,9 @@ install.packages(
 
 - [Using the Africa CDC colours, palettes, and
   themes](https://katilingban.io/paleta/articles/africa-cdc.html)
+
+- [Using the World Bank colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/world-bank.html)
 
 ## Community guidelines
 
