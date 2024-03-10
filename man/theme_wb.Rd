@@ -103,7 +103,7 @@ are available in the user's system, a freely downloadable alternative called
     x = "Engine Shape",
     y = "Counts"
    ) +
-   theme_wb_light()
+   theme_wb()
 }
 
 }

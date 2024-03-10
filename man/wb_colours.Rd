@@ -6,20 +6,20 @@
 \alias{wb_cyan}
 \alias{wb_black}
 \alias{wb_white}
-\alias{wb_torrid}
-\alias{wb_electric}
-\alias{wb_rojo}
-\alias{wb_carrot}
-\alias{wb_torquoise}
-\alias{wb_green}
-\alias{wb_purple}
-\alias{wb_teal}
-\alias{wb_red}
-\alias{wb_orange}
+\alias{wb_bright_orange}
+\alias{wb_bright_yellow}
+\alias{wb_bright_red}
+\alias{wb_light_orange}
+\alias{wb_bright_aqua}
+\alias{wb_bright_green}
+\alias{wb_bright_purple}
+\alias{wb_light_aqua}
+\alias{wb_dark_red}
+\alias{wb_dark_orange}
 \alias{wb_brown}
-\alias{wb_aubergine}
-\alias{wb_beryl}
-\alias{wb_emerald}
+\alias{wb_dark_purple}
+\alias{wb_dark_aqua}
+\alias{wb_dark_green}
 \title{World Bank colours}
 \format{
 An object of class \code{character} of length 1.
@@ -67,33 +67,33 @@ wb_black
 
 wb_white
 
-wb_torrid
+wb_bright_orange
 
-wb_electric
+wb_bright_yellow
 
-wb_rojo
+wb_bright_red
 
-wb_carrot
+wb_light_orange
 
-wb_torquoise
+wb_bright_aqua
 
-wb_green
+wb_bright_green
 
-wb_purple
+wb_bright_purple
 
-wb_teal
+wb_light_aqua
 
-wb_red
+wb_dark_red
 
-wb_orange
+wb_dark_orange
 
 wb_brown
 
-wb_aubergine
+wb_dark_purple
 
-wb_beryl
+wb_dark_aqua
 
-wb_emerald
+wb_dark_green
 }
 \description{
 World Bank colours

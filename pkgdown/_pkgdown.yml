@@ -70,20 +70,20 @@ reference:
     - wb_fonts
     - wb_blue
     - wb_cyan
-    - wb_torrid
-    - wb_electric
-    - wb_rojo
-    - wb_carrot
-    - wb_torquoise
-    - wb_green
-    - wb_purple
-    - wb_teal
-    - wb_red
-    - wb_orange
+    - wb_bright_orange
+    - wb_bright_yellow
+    - wb_bright_red
+    - wb_light_orange
+    - wb_bright_aqua
+    - wb_bright_green
+    - wb_bright_purple
+    - wb_light_aqua
+    - wb_dark_red
+    - wb_dark_orange
     - wb_brown
-    - wb_aubergine
-    - wb_beryl
-    - wb_emerald
+    - wb_dark_purple
+    - wb_dark_aqua
+    - wb_dark_green
     - theme_wb
 
   - title: Utilities

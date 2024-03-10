@@ -14,6 +14,7 @@ United Nations units.
 Useful links:
 \itemize{
   \item \url{https://github.com/katilingban/paleta,http://katilingban.io/paleta/}
+  \item Report bugs at \url{https://github.com/katilingban/paleta/issues}
 }
 
 }

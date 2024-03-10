@@ -45,3 +45,30 @@ These are complemented by a set of fourteen secondary colours.
 structure(wb_palettes$wb_secondary, class = "palette", name = "World Bank Secondary Colours")
 ```
 
+## World Bank Palettes
+
+In addition to the primary and secondary colours, the colours can be grouped into a bright palette and a neutral palette along with tinted palettes for each World Bank colour.
+
+### Bright palette
+
+```{r wb-bright, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_brights, class = "palette", name = "World Bank Bright Palette")
+```
+
+### Neutral palette
+
+```{r wb-neutral, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_neutrals, class = "palette", name = "World Bank Neutral Palette")
+```
+
+### Tinted bright orange palette
+
+```{r wb-bright-oranges, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_bright_oranges, class = "palette", name = "World Bank Bright Oranges Palette")
+```
+
+### Tinted bright yellow palette
+
+```{r wb-bright-yellows, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(wb_palettes$wb_bright_yellows, class = "palette", name = "World Bank Bright Yellows Palette")
+```

@@ -36,16 +36,18 @@ acdc_colours <- tibble::tibble(
 wb_colours <- tibble::tibble(
   organisation = "World Bank",
   name = c(
-    "WB Sapphire Blue", "WB Cyan", "WB Black", "WB White", "WB Torrid Orange",
-    "WB Electric", "WB Rojo", "WB Carrot", "WB Turquoise", "WB Green",
-    "WB Purple", "WB Teal", "WB Red", "WB Orange", "WB Brown", "WB Aubergine",
-    "WB Beryl", "WB Emerald"
+    "WB Sapphire Blue", "WB Cyan", "WB Black", "WB White", "WB Bright Orange",
+    "WB Bright Yellow", "WB Bright Red", "WB Light Orange", "WB Bright Aqua",
+    "WB Bright Green", "WB Bright Purple", "WB Light Aqua", "WB Dark Red",
+    "WB Dark Orange", "WB Brown", "WB Dark Purple", "WB Dark Aqua",
+    "WB Dark Green"
   ),
   code = c(
-    "wb_blue", "wb_cyan", "wb_black", "wb_white", "wb_torrid", "wb_electric",
-    "wb_rojo", "wb_carrot", "wb_turquoise", "wb_green", "wb_purple",
-    "wb_teal", "wb_red", "wb_orange", "wb_brown", "wb_aubergine", "wb_beryl",
-    "wb_emerald"
+    "wb_blue", "wb_cyan", "wb_black", "wb_white", "wb_bright_orange",
+    "wb_bright_yellow", "wb_bright_red", "wb_light_orange", "wb_bright_aqua",
+    "wb_brith_green", "wb_bright_purple", "wb_light_aqua", "wb_dark_red",
+    "wb_dark_orange", "wb_brown", "wb_dark_purple", "wb_dark_aqua",
+    "wb_dark_green"
   ),
   rgb = c(
     "0 35 69", "0 173 228", "0, 0, 0", "225, 225, 225", "240, 80, 35",

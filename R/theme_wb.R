@@ -8,75 +8,75 @@
 #' @rdname wb_colours
 #' @export
 #'
-wb_blue         <- "#002244"
+wb_blue          <- "#002244"
 
 #' @rdname wb_colours
 #' @export
-wb_cyan         <- "#009FDA"
+wb_cyan          <- "#009FDA"
 
 #' @rdname wb_colours
 #' @export
-wb_black        <- "#000000"
+wb_black         <- "#000000"
 
 #' @rdname wb_colours
 #' @export
-wb_white        <- "#FFFFFF"
+wb_white         <- "#FFFFFF"
 
 #' @rdname wb_colours
 #' @export
-wb_torrid       <- "#F05023"
+wb_bright_orange <- "#F05023"
 
 #' @rdname wb_colours
 #' @export
-wb_electric     <- "#FDB714"
+wb_bright_yellow <- "#FDB714"
 
 #' @rdname wb_colours
 #' @export
-wb_rojo         <- "#EB1C2D"
+wb_bright_red    <- "#EB1C2D"
 
 #' @rdname wb_colours
 #' @export
-wb_carrot       <- "#F78D28"
+wb_light_orange  <- "#F78D28"
 
 #' @rdname wb_colours
 #' @export
-wb_torquoise    <- "#009CA7"
+wb_bright_aqua   <- "#009CA7"
 
 #' @rdname wb_colours
 #' @export
-wb_green        <- "#00AB51"
+wb_bright_green  <- "#00AB51"
 
 #' @rdname wb_colours
 #' @export
-wb_purple       <- "#872B90"
+wb_bright_purple <- "#872B90"
 
 #' @rdname wb_colours
 #' @export
-wb_teal         <- "#00A996"
+wb_light_aqua    <- "#00A996"
 
 #' @rdname wb_colours
 #' @export
-wb_red          <- "#98252B"
+wb_dark_red      <- "#98252B"
 
 #' @rdname wb_colours
 #' @export
-wb_orange       <- "#E16A2D"
+wb_dark_orange   <- "#E16A2D"
 
 #' @rdname wb_colours
 #' @export
-wb_brown        <- "#B88C1D"
+wb_brown         <- "#B88C1D"
 
 #' @rdname wb_colours
 #' @export
-wb_aubergine    <- "#614776"
+wb_dark_purple   <- "#614776"
 
 #' @rdname wb_colours
 #' @export
-wb_beryl        <- "#006068"
+wb_dark_aqua     <- "#006068"
 
 #' @rdname wb_colours
 #' @export
-wb_emerald      <- "#006450"
+wb_dark_green    <- "#006450"
 
 
 #'
@@ -93,7 +93,28 @@ wb_palettes <- list(
   wb_secondary   = c(
     "#F05023", "#FDB714", "#EB1C2D", "#F78D28", "#009CA7", "#00AB51", "#872B90",
     "#00A996", "#98252B", "#E16A2D", "#B88C1D", "#614776", "#006068", "#006450"
-  )
+  ),
+  wb_brights = c(
+    "#F05023", "#FDB714", "#EB1C2D", "#F78D28", "#009CA7", "#00AB51", "#872B90",
+    "#00A996"
+  ),
+  wb_neutrals = c(
+    "#98252B", "#E16A2D", "#B88C1D", "#614776", "#006068", "#006450"
+  ),
+  wb_bright_oranges = c("#F05023", "#F3734F", "#F6967B", "#F9B9A7", "#FCDCD3"),
+  wb_bright_yellows = c("#FDB714", "#FDC543", "#FDD372", "#FEE2A1", "#FEF0D0"),
+  wb_bright_reds = c("#EB1C2D", "#EF4957", "#F37681", "#F7A4AB", "#FBD1D5"),
+  wb_light_oranges = c("#F78D28", "#F8A353", "#FABA7E", "#FBD1A9", "#FDE8D4"),
+  wb_bright_aquas = c("#009CA7", "#33AFB8", "#66C3CA", "#99D7DB", "#CCEBED"),
+  wb_bright_greens = c("#00AB51", "#33BB73", "#66CC96", "#99DDB9", "#CCEEDC"),
+  wb_bright_purples = c("#872B90", "#9F55A6", "#B77FBC", "#CFAAD2", "#E7D4E8"),
+  wb_light_aquas = c("#00A996", "#33BAAB", "#66CBC0", "#99DCD5", "#CCEDEA"),
+  wb_dark_reds = c("#98252B", "#AC5055", "#C17C7F", "#D5A7AA", "#EAD3D4"),
+  wb_dark_oranges = c("#E16A2D","#E78757", "#EDA581", "#F3C3AB", "#F9E1D5"),
+  wb_browns = c("#B88C1D", "#C6A34A", "#D4BA77", "#E2D1A4", "#F0E8D1"),
+  wb_dark_purples = c("#614776", "#806B91", "#A090AC", "#BFB5C8", "#DFDAE3"),
+  wb_dark_aquas = c("#006068", "#337F86", "#669FA4", "#99BFC2", "#CCDFE0"),
+  wb_dark_greens = c("#006450", "#338373", "#66A296", "#99C1B9", "#CCE0DC")
 )
 
 
@@ -217,7 +238,7 @@ set_wb_font <- function(alt = paleta_fonts$paleta_noto) {
 #'     x = "Engine Shape",
 #'     y = "Counts"
 #'    ) +
-#'    theme_wb_light()
+#'    theme_wb()
 #' }
 #'
 #' @rdname theme_wb

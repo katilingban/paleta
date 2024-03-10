@@ -5,7 +5,7 @@
 \alias{wb_palettes}
 \title{Africa CDC palettes}
 \format{
-An object of class \code{list} of length 2.
+An object of class \code{list} of length 18.
 }
 \usage{
 wb_palettes
