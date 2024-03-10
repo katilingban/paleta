@@ -29,6 +29,8 @@ Language: en-GB
 LazyData: true
 RoxygenNote: 7.3.1
 Roxygen: list(markdown = TRUE)
-VignetteBuilder: knitr
 URL: https://github.com/katilingban/paleta,http://katilingban.io/paleta/
+BugReports: https://github.com/katilingban/paleta/issues
+VignetteBuilder: knitr
+
 

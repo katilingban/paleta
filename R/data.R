@@ -1,7 +1,7 @@
 #'
 #' Colours based on visual identity guidelines of various organisations
 #'
-#' @format A data frame with 5 fields
+#' @format A tibble with 5 fields
 #'
 #' | **Variable** | **Description** |
 #' | :--- | :--- |
