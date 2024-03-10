@@ -4,7 +4,8 @@ pkgdown_sha: ~
 articles:
   africa-cdc: africa-cdc.html
   paleta: paleta.html
-last_built: 2024-03-04T00:26Z
+  world-bank: world-bank.html
+last_built: 2024-03-10T21:44Z
 urls:
   reference: https://katilingban.io/paleta/reference
   article: https://katilingban.io/paleta/articles

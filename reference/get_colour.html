@@ -28,6 +28,8 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/africa-cdc.html">Africa CDC</a>
+    <h6 class="dropdown-header" data-toc-skip>World Bank</h6>
+    <a class="dropdown-item" href="../articles/world-bank.html"></a>
   </div>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
@@ -110,11 +112,18 @@ If <code>named</code> is TRUE, returns a named character value or vector.</p>
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">get_colours</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#348F41" "#B4A269" "#000000" "#6B4C24" "#E08F2A" "#C45B39" "#782C2D"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [8] "#4B5430"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "#348F41" "#B4A269" "#000000" "#6B4C24" "#E08F2A" "#C45B39" "#782C2D"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [8] "#4B5430" "#002244" "#009FDA" "#000000" "#FFFFFF" "#F05023" "#FDB714"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [15] "#EB1C2D" "#F78D28" "#009CA7" "#00AB51" "#872B90" "#00A996" "#98252B"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [22] "#E16A2D" "#B88C1D" "#614776" "#006068" "#006450"</span>
 <span class="r-in"><span><span class="fu">get_colours</span><span class="op">(</span>model <span class="op">=</span> <span class="st">"rgb"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "52, 143, 65"   "180, 162, 105" "0, 0, 0"       "107, 76, 36"  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [5] "224, 143, 42"  "196, 91, 57"   "120, 44, 45"   "75, 84, 48"   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "52, 143, 65"   "180, 162, 105" "0, 0, 0"       "107, 76, 36"  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [5] "224, 143, 42"  "196, 91, 57"   "120, 44, 45"   "75, 84, 48"   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [9] "0 35 69"       "0 173 228"     "0, 0, 0"       "225, 225, 225"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [13] "240, 80, 35"   "253, 183, 20"  "235, 28, 45"   "247, 141, 40" </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [17] "0, 156, 167"   "0, 171, 81"    "135, 43, 144"  "0, 169, 150"  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [21] "152, 37, 43"   "225, 106, 45"  "184, 140, 29"  "97, 71, 118"  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [25] "0, 96, 104"    "0, 100, 80"   </span>
 <span class="r-in"><span><span class="fu">get_colours</span><span class="op">(</span>pattern <span class="op">=</span> <span class="st">"orange"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> character(0)</span>
 <span class="r-in"><span><span class="fu">get_colours</span><span class="op">(</span>pattern <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"orange"</span>, <span class="st">"brown"</span><span class="op">)</span>, named <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>

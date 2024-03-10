@@ -28,6 +28,8 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/africa-cdc.html">Africa CDC</a>
+    <h6 class="dropdown-header" data-toc-skip>World Bank</h6>
+    <a class="dropdown-item" href="../articles/world-bank.html"></a>
   </div>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
@@ -71,6 +73,8 @@
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tint_colour</span><span class="op">(</span><span class="va">hex</span>, <span class="va">p</span><span class="op">)</span></span>
 <span></span>
+<span><span class="fu">tint_colours_</span><span class="op">(</span><span class="va">hex</span>, <span class="va">p</span><span class="op">)</span></span>
+<span></span>
 <span><span class="fu">tint_colours</span><span class="op">(</span><span class="va">hex</span>, <span class="va">p</span><span class="op">)</span></span></code></pre></div>
     </div>
 
@@ -82,7 +86,8 @@ of colour/s to tint.</p></dd>
 
 
 <dt>p</dt>
-<dd><p>Range from 0 to 1 for proportion to tint the colour/s with.</p></dd>
+<dd><p>A numeric value or vector of numeric values for proportion/s
+(range from 0 to 1) to tint the colour/s with.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -97,8 +102,22 @@ tinted to the desired proportion.</p>
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tint_colour</span><span class="op">(</span><span class="va">acdc_green</span>, p <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#5CA567"</span>
-<span class="r-in"><span><span class="fu">tint_colours</span><span class="op">(</span><span class="va">acdc_palettes</span><span class="op">$</span><span class="va">acdc_palettes</span><span class="op">$</span><span class="va">acdc_secondary</span>, p <span class="op">=</span> <span class="fl">0.4</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> NULL</span>
+<span class="r-in"><span><span class="fu">tint_colours</span><span class="op">(</span><span class="va">acdc_palettes</span><span class="op">$</span><span class="va">acdc_secondary</span>, p <span class="op">=</span> <span class="fl">0.4</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[1]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#A6937B"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[2]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#ECBB7F"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[3]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#DB9C88"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[4]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#AE8081"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[5]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#939882"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>

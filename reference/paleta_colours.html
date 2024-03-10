@@ -28,6 +28,8 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/africa-cdc.html">Africa CDC</a>
+    <h6 class="dropdown-header" data-toc-skip>World Bank</h6>
+    <a class="dropdown-item" href="../articles/world-bank.html"></a>
   </div>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
@@ -74,22 +76,25 @@
 
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
-    <p>A data frame with 5 fields</p><table class="table table"><tr><td><strong>Variable</strong></td><td><strong>Description</strong></td></tr><tr><td><em>name</em></td><td>Organisation colour name</td></tr><tr><td><em>code</em></td><td>Organisation colour code</td></tr><tr><td><em>rgb</em></td><td>Three integers for the red, green, blue components of the RGB colour model</td></tr><tr><td><em>cmyk</em></td><td>Four integers for the cyan, magenta, yellow, and black components of the CMYK colour model</td></tr><tr><td><em>hex</em></td><td>Hexadecimal codes for corresponding colour</td></tr><tr><td><em>pantone</em></td><td>Pantone colour name</td></tr></table></div>
+    <p>A tibble with 5 fields</p><table class="table table"><tr><td><strong>Variable</strong></td><td><strong>Description</strong></td></tr><tr><td><em>name</em></td><td>Organisation colour name</td></tr><tr><td><em>code</em></td><td>Organisation colour code</td></tr><tr><td><em>rgb</em></td><td>Three integers for the red, green, blue components of the RGB colour model</td></tr><tr><td><em>cmyk</em></td><td>Four integers for the cyan, magenta, yellow, and black components of the CMYK colour model</td></tr><tr><td><em>hex</em></td><td>Hexadecimal codes for corresponding colour</td></tr><tr><td><em>pantone</em></td><td>Pantone colour name</td></tr></table></div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">paleta_colours</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 8 × 7</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   organisation name            code            rgb           cmyk  hex   pantone</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> Africa CDC   ACDC Green      acdc_green      52, 143, 65   81, … #348… 7740C  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> Africa CDC   ACDC Gold       acdc_gold       180, 162, 105 31, … #B4A… 4515C  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> Africa CDC   ACDC Black      acdc_black      0, 0, 0       0, 0… #000… Black C</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> Africa CDC   ACDC Brown      acdc_brown      107, 76, 36   43, … #6B4… 1405C  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> Africa CDC   ACDC Yellow     acdc_yellow     224, 143, 42  11, … #E08… 129C   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> Africa CDC   ACDC Orange     acdc_orange     196, 91, 57   18, … #C45… 158C   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> Africa CDC   ACDC Red        acdc_red        120, 44, 45   33, … #782… 1807C  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">8</span> Africa CDC   ACDC Dark Green acdc_dark_green 75, 84, 48    69, … #4B5… 364C   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 26 × 7</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    organisation name             code            rgb         cmyk  hex   pantone</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Africa CDC   ACDC Green       acdc_green      52, 143, 65 81, … #348… 7740C  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Africa CDC   ACDC Gold        acdc_gold       180, 162, … 31, … #B4A… 4515C  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Africa CDC   ACDC Black       acdc_black      0, 0, 0     0, 0… #000… Black C</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Africa CDC   ACDC Brown       acdc_brown      107, 76, 36 43, … #6B4… 1405C  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> Africa CDC   ACDC Yellow      acdc_yellow     224, 143, … 11, … #E08… 129C   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Africa CDC   ACDC Orange      acdc_orange     196, 91, 57 18, … #C45… 158C   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Africa CDC   ACDC Red         acdc_red        120, 44, 45 33, … #782… 1807C  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Africa CDC   ACDC Dark Green  acdc_dark_green 75, 84, 48  69, … #4B5… 364C   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> World Bank   WB Sapphire Blue wb_blue         0 35 69     96, … #002… 5003C  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> World Bank   WB Cyan          wb_cyan         0 173 228   100,… #009… 5015C  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 16 more rows</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
