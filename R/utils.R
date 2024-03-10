@@ -111,14 +111,15 @@ get_colours <- function(pattern = NULL,
 #'
 #' @param hex A character value or vector of character of values for hex code
 #'   of colour/s to tint.
-#' @param p Range from 0 to 1 for proportion to tint the colour/s with.
+#' @param p A numeric value or vector of numeric values for proportion/s
+#'   (range from 0 to 1) to tint the colour/s with.
 #'
 #' @returns A character value or vector of character values of hex code/s
 #'   tinted to the desired proportion.
 #'
 #' @examples
 #' tint_colour(acdc_green, p = 0.2)
-#' tint_colours(acdc_palettes$acdc_palettes$acdc_secondary, p = 0.4)
+#' tint_colours(acdc_palettes$acdc_secondary, p = 0.4)
 #'
 #' @rdname tint_colour
 #' @export
@@ -132,14 +133,39 @@ tint_colour <- function(hex, p) {
     (\(x) grDevices::rgb(x[1], x[2], x[3], maxColorValue = 255))()
 }
 
+
+#'
+#' @rdname tint_colour
+#' @export
+#'
+tint_colours_ <- function(hex, p) {
+  pal <- Map(
+    f = tint_colour,
+    hex = rep(list(hex), length(p)),
+    p = as.list(p)
+  )
+
+  #names(pal) <- paste0(p * 100, "%")
+
+  unlist(pal)
+}
+
 #'
 #' @rdname tint_colour
 #' @export
 #'
 tint_colours <- function(hex, p) {
-  lapply(X = hex, FUN = tint_colour, p = p) |>
-    unlist()
+  pal <- Map(
+    f = tint_colours_,
+    hex = as.list(hex),
+    p = rep(list(p), length(hex))
+  )
+
+  #names(pal) <- hex
+
+  pal
 }
+
 
 
 #'

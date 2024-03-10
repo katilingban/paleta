@@ -31,6 +31,48 @@ acdc_colours <- tibble::tibble(
 )
 
 
-paleta_colours <- rbind(acdc_colours)
+## World Bank Colours ----
+
+wb_colours <- tibble::tibble(
+  organisation = "World Bank",
+  name = c(
+    "WB Sapphire Blue", "WB Cyan", "WB Black", "WB White", "WB Torrid Orange",
+    "WB Electric", "WB Rojo", "WB Carrot", "WB Turquoise", "WB Green",
+    "WB Purple", "WB Teal", "WB Red", "WB Orange", "WB Brown", "WB Aubergine",
+    "WB Beryl", "WB Emerald"
+  ),
+  code = c(
+    "wb_blue", "wb_cyan", "wb_black", "wb_white", "wb_torrid", "wb_electric",
+    "wb_rojo", "wb_carrot", "wb_turquoise", "wb_green", "wb_purple",
+    "wb_teal", "wb_red", "wb_orange", "wb_brown", "wb_aubergine", "wb_beryl",
+    "wb_emerald"
+  ),
+  rgb = c(
+    "0 35 69", "0 173 228", "0, 0, 0", "225, 225, 225", "240, 80, 35",
+    "253, 183, 20", "235, 28, 45", "247, 141, 40", "0, 156, 167", "0, 171, 81",
+    "135, 43, 144", "0, 169, 150", "152, 37, 43", "225, 106, 45", "184, 140, 29",
+    "97, 71, 118", "0, 96, 104", "0, 100, 80"
+  ),
+  cmyk = c(
+    "96, 39, 0, 73", "100, 0, 0, 0", "0, 0, 0, 100", "0, 0, 0, 0",
+    "0, 85, 100, 0", "0, 31, 100, 0", "91, 100, 92, 1", "0, 54, 95, 0",
+    "100, 11, 38, 1", "91, 0, 97, 0", "56, 99, 0, 0", "100, 0, 54, 0",
+    "26, 96, 86, 24", "8, 71, 97, 1", "27, 43, 100, 5", "71, 80, 28, 12",
+    "100, 44, 52, 22", "99, 36, 75, 27"
+  ),
+  hex = c(
+    "#002244", "#009FDA", "#000000", "#FFFFFF", "#F05023", "#FDB714",
+    "#EB1C2D", "#F78D28", "#009CA7", "#00AB51", "#872B90", "#00A996",
+    "#98252B", "#E16A2D", "#B88C1D", "#614776", "#006068", "#006450"
+  ),
+  pantone = c(
+    "5003C", "5015C", "Black C", "9010C", "1655C", "7549C", "185C", "1495C",
+    "320C", "7481C", "2602C", "3275C", "7622C", "7578C", "7556C", "7447C",
+    "7715C", "336C"
+  )
+)
+
+
+paleta_colours <- rbind(acdc_colours, wb_colours)
 
 usethis::use_data(paleta_colours, overwrite = TRUE, compress = "xz")

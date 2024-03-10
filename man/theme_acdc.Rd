@@ -32,7 +32,7 @@ theme_acdc_dark(
   axis_title_colour = acdc_black,
   legend_title_colour = acdc_black,
   legend_text_colour = acdc_black,
-  plot_background_fill = tint_colours(acdc_gold, 0.2),
+  plot_background_fill = tint_colour(acdc_gold, 0.2),
   grid_col = acdc_green,
   grid = TRUE,
   axis_col = acdc_green,

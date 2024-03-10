@@ -2,10 +2,13 @@
 % Please edit documentation in R/utils.R
 \name{tint_colour}
 \alias{tint_colour}
+\alias{tint_colours_}
 \alias{tint_colours}
 \title{Get tint of colours}
 \usage{
 tint_colour(hex, p)
+
+tint_colours_(hex, p)
 
 tint_colours(hex, p)
 }
@@ -13,7 +16,8 @@ tint_colours(hex, p)
 \item{hex}{A character value or vector of character of values for hex code
 of colour/s to tint.}
 
-\item{p}{Range from 0 to 1 for proportion to tint the colour/s with.}
+\item{p}{A numeric value or vector of numeric values for proportion/s
+(range from 0 to 1) to tint the colour/s with.}
 }
 \value{
 A character value or vector of character values of hex code/s
@@ -24,6 +28,6 @@ Get tint of colours
 }
 \examples{
 tint_colour(acdc_green, p = 0.2)
-tint_colours(acdc_palettes$acdc_palettes$acdc_secondary, p = 0.4)
+tint_colours(acdc_palettes$acdc_secondary, p = 0.4)
 
 }

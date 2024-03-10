@@ -5,7 +5,7 @@
 \alias{paleta_colours}
 \title{Colours based on visual identity guidelines of various organisations}
 \format{
-A data frame with 5 fields\tabular{ll}{
+A tibble with 5 fields\tabular{ll}{
    \strong{Variable} \tab \strong{Description} \cr
    \emph{name} \tab Organisation colour name \cr
    \emph{code} \tab Organisation colour code \cr
