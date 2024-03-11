@@ -35,7 +35,7 @@ Complementing **UNICEF Blue** is a set of 11 secondary colours.
 structure(unicef_palettes$unicef_secondary, class = "palette", name = "UNICEF Secondary")
 ```
 
-The secondary colours can be further subdivided into a set of 7 bright colours and a set of 4 neutral colours.
+The secondary colours can be further subdivided into a set of 5 bright colours and a set of 6 neutral colours.
 
 ```{r unicef-brights, echo = FALSE, fig.align = "center", fig.height = 1}
 structure(unicef_palettes$unicef_brights, class = "palette", name = "UNICEF Brights")
@@ -60,7 +60,7 @@ ggplot(
   geom_bar() +
   scale_fill_manual(
     name = "Cylinders", 
-    values = unicef_palettes$unicef_brights #|> #tint_colours(p = 0.4) |> unlist()
+    values = unicef_palettes$unicef_brights
   ) +
   labs(
     title = "UNICEF Theme",
@@ -80,7 +80,7 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   ) +
   labs(
     title = "UNICEF Theme",
-    subtitle = "UNICEF bright palette",
+    subtitle = "UNICEF brights palette",
   ) +
   theme_unicef()
 ```

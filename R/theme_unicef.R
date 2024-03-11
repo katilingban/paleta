@@ -1,4 +1,4 @@
-#'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        #'
 #' UNICEF colours
 #'
 #' @examples
@@ -166,7 +166,7 @@ set_unicef_font <- function(alt = paleta_fonts$paleta_noto) {
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
 #' @param plot_title_colour Colour of the plot title text. Default
-#'   is `unicef_blue`.
+#'   is `unicef_black`.
 #' @param subtitle_family Font family to use for the plot subtitle. Default is
 #'   `base_family`.
 #' @param subtitle_colour Colour of the subtitle text. Default is
@@ -214,13 +214,13 @@ set_unicef_font <- function(alt = paleta_fonts$paleta_noto) {
 #'
 theme_unicef <- function(base_family = set_unicef_font(),
                          plot_title_family = base_family,
-                         plot_title_colour = unicef_blue,
+                         plot_title_colour = unicef_black,
                          subtitle_family = base_family,
-                         subtitle_colour = unicef_dark_blue,
-                         caption_colour = unicef_dark_blue,
-                         axis_title_colour = unicef_dark_blue,
-                         legend_title_colour = unicef_dark_blue,
-                         legend_text_colour = unicef_dark_blue,
+                         subtitle_colour = unicef_cool_grey,
+                         caption_colour = unicef_cool_grey,
+                         axis_title_colour = unicef_cool_grey,
+                         legend_title_colour = unicef_cool_grey,
+                         legend_text_colour = unicef_cool_grey,
                          grid_col = unicef_warm_grey,
                          grid = TRUE,
                          axis_col = unicef_warm_grey,
