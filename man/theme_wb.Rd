@@ -68,7 +68,7 @@ World Bank visual identity guidelines.
 }
 \section{Colours}{
 
-The Africa CDC theme is based on the colours from the \code{wb_palettes}. The
+The World Bank theme is based on the colours from the \code{wb_palettes}. The
 primary palette consists of four colours: \code{wb_palettes$wb_primary}. The
 secondary palette consists of fourteen colours: \code{wb_palettes$wb_secondary}.
 }
