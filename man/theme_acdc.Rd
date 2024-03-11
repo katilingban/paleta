@@ -25,6 +25,7 @@ theme_acdc_light(
 
 theme_acdc_dark(
   base_family = set_acdc_font(),
+  base_size = 11.5,
   plot_title_family = base_family,
   plot_title_colour = acdc_green,
   subtitle_family = base_family,
