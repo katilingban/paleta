@@ -2,18 +2,23 @@
 % Please edit documentation in R/utils.R
 \name{shade_colour}
 \alias{shade_colour}
+\alias{shade_colours_}
 \alias{shade_colours}
 \title{Get shade of colours}
 \usage{
 shade_colour(hex, p)
 
-shade_colours(hex, p)
+shade_colours_(hex, p, label = FALSE)
+
+shade_colours(hex, p, label = FALSE)
 }
 \arguments{
 \item{hex}{A character value or vector of character of values for hex code
 of colour/s to shade.}
 
 \item{p}{Range from 0 to 1 for proportion to shade the colour/s with.}
+
+\item{label}{Logical. Should the output/s be labelled? Default is FALSE.}
 }
 \value{
 A character value or vector of character values of hex code/s
