@@ -3,7 +3,7 @@
 \docType{data}
 \name{wb_palettes}
 \alias{wb_palettes}
-\title{Africa CDC palettes}
+\title{World Bank palettes}
 \format{
 An object of class \code{list} of length 18.
 }
@@ -11,7 +11,7 @@ An object of class \code{list} of length 18.
 wb_palettes
 }
 \description{
-Africa CDC palettes
+World Bank palettes
 }
 \examples{
 wb_palettes

@@ -1,0 +1,87 @@
+---
+title: "UNICEF Colours, Palettes, and Themes"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{UNICEF Colours, Palettes, and Themes}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, echo = FALSE}
+library(paleta)
+library(ggplot2)
+```
+
+UNICEF, which stands for the United Nations International Children's Emergency Fund, is a specialized agency of the United Nations dedicated to improving the lives and well-being of children worldwide. Established in 1946, UNICEF works in over 190 countries and territories to provide healthcare, nutrition, clean water, education, protection from violence and exploitation, and emergency assistance to children and their families. It operates on the principle that every child deserves a fair chance in life, regardless of their background or circumstances, and strives to uphold children's rights as outlined in the Convention on the Rights of the Child.
+
+## UNICEF colours
+
+UNICEF main colour is the iconic **UNICEF Blue**.
+
+```{r unicef-blue, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(unicef_blue, class = "palette", name = "UNICEF Blue")
+```
+
+Complementing **UNICEF Blue** is a set of 11 secondary colours.
+
+```{r unicef-secondary, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(unicef_palettes$unicef_secondary, class = "palette", name = "UNICEF Secondary")
+```
+
+The secondary colours can be further subdivided into a set of 7 bright colours and a set of 4 neutral colours.
+
+```{r unicef-brights, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(unicef_palettes$unicef_brights, class = "palette", name = "UNICEF Brights")
+```
+
+```{r unicef-neutrals, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(unicef_palettes$unicef_neutrals, class = "palette", name = "UNICEF Neutrals")
+```
+
+## UNICEF `ggplot2` theme
+
+A UNICEF `ggplot2` theme function called `theme_unicef()` is included in the `paleta` package. Following are examples of how it can be used.
+
+```{r unicef-theme-bar, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+## barplot using theme_unicef()
+ggplot(
+  data = mtcars,
+  mapping = aes(
+  x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")),
+  fill = factor(cyl))
+) +
+  geom_bar() +
+  scale_fill_manual(
+    name = "Cylinders", 
+    values = unicef_palettes$unicef_brights #|> #tint_colours(p = 0.4) |> unlist()
+  ) +
+  labs(
+    title = "UNICEF Theme",
+    subtitle = "UNICEF brights palette",
+    x = "Engine Shape", y = "Counts"
+  ) +
+  theme_unicef()
+```
+
+```{r unicef-theme-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+## scatterplot using theme_unicef()
+ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
+  geom_point(size = 3) +
+  scale_colour_manual(
+    name = "Cylinders", 
+    values = unicef_palettes$unicef_brights
+  ) +
+  labs(
+    title = "UNICEF Theme",
+    subtitle = "UNICEF bright palette",
+  ) +
+  theme_unicef()
+```
+

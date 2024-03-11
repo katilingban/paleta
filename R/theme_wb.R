@@ -80,7 +80,7 @@ wb_dark_green    <- "#006450"
 
 
 #'
-#' Africa CDC palettes
+#' World Bank palettes
 #'
 #' @examples
 #' wb_palettes
@@ -135,8 +135,8 @@ wb_fonts <- list(
 #'
 #' Set World Bank font to use based on what is available from the system
 #'
-#' The function will search the system for availability of any of the Africa
-#' CDC fonts in heirarchical order starting with *Andes*, and then *Arial*. If
+#' The function will search the system for availability of any of the World Bank
+#' fonts in heirarchical order starting with *Andes*, and then *Arial*. If
 #' none of these are found in the system, the function will return *Noto Sans*
 #' by default or the user can set which font to use as alternative by specifying
 #' `alt`.
@@ -180,7 +180,7 @@ set_wb_font <- function(alt = paleta_fonts$paleta_noto) {
 #' World Bank visual identity guidelines.
 #'
 #' @section Colours:
-#' The Africa CDC theme is based on the colours from the `wb_palettes`. The
+#' The World Bank theme is based on the colours from the `wb_palettes`. The
 #' primary palette consists of four colours: `wb_palettes$wb_primary`. The
 #' secondary palette consists of fourteen colours: `wb_palettes$wb_secondary`.
 #'

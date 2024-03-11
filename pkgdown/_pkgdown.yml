@@ -28,6 +28,8 @@ navbar:
         href: articles/africa-cdc.html
       - text: "World Bank"
         href: articles/world-bank.html
+      - text: "UNICEF"
+        href: articles/unicef.html
     mastodon:
       icon: "fab fa-mastodon fa-lg"
       href: https://fosstodon.org/@katilingban
@@ -85,6 +87,24 @@ reference:
     - wb_dark_aqua
     - wb_dark_green
     - theme_wb
+
+  - title: UNICEF
+    contents:
+    - unicef_palettes
+    - unicef_fonts
+    - unicef_blue
+    - unicef_green
+    - unicef_lime_green
+    - unicef_yellow
+    - unicef_orange
+    - unicef_bright_red
+    - unicef_dark_red
+    - unicef_purple
+    - unicef_warm_grey
+    - unicef_cool_grey
+    - unicef_black
+    - unicef_dark_blue
+    - theme_unicef
 
   - title: Utilities
     contents:

@@ -36,6 +36,10 @@ the following organisations’ branding/visual identity guidelines:
 - [World Bank](https://www.worldbank.org) [visual identity
   guidelines](https://thedocs.worldbank.org/en/doc/723361567518322252-0060022019/original/WBGBrandingandVisualIdentityGuidelinesFebruary2016.pdf).
 
+- [United Nations Children’s Fund](https://www.unicef.org/) [Brand Book
+  and Brand
+  Manual](https://www.unicef.org/jordan/media/7166/file/ANNEX_G_-_Brand_book_V3.1.pdf).
+
 Additional colours, palettes, and themes will be provided over time.
 
 ## Installation
@@ -61,6 +65,9 @@ install.packages(
 
 - [Using the World Bank colours, palettes, and
   themes](https://katilingban.io/paleta/articles/world-bank.html)
+
+- [Using the UNICEF colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/unicef.html)
 
 ## Community guidelines
 
