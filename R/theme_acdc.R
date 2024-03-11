@@ -225,6 +225,7 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
                              ticks = FALSE) {
   theme_paleta(
     base_family = base_family,
+    base_size = base_size,
     plot_title_family = plot_title_family,
     plot_title_colour = plot_title_colour,
     subtitle_family = subtitle_family,
@@ -247,6 +248,7 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
 #' @export
 #'
 theme_acdc_dark <- function(base_family = set_acdc_font(),
+                            base_size = 11.5,
                             plot_title_family = base_family,
                             plot_title_colour = acdc_green,
                             subtitle_family = base_family,

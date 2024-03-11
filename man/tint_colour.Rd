@@ -8,9 +8,9 @@
 \usage{
 tint_colour(hex, p)
 
-tint_colours_(hex, p)
+tint_colours_(hex, p, label = FALSE)
 
-tint_colours(hex, p)
+tint_colours(hex, p, label = FALSE)
 }
 \arguments{
 \item{hex}{A character value or vector of character of values for hex code
@@ -18,6 +18,8 @@ of colour/s to tint.}
 
 \item{p}{A numeric value or vector of numeric values for proportion/s
 (range from 0 to 1) to tint the colour/s with.}
+
+\item{label}{Logical. Should the output/s be labelled? Default is FALSE.}
 }
 \value{
 A character value or vector of character values of hex code/s

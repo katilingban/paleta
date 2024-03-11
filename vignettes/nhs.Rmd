@@ -1,0 +1,32 @@
+---
+title: "NHS Colours, Palettes, and Themes"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{NHS Colours, Palettes, and Themes}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(paleta)
+```
+
+The NHS (National Health Service) is the publicly funded healthcare system in the United Kingdom. Established in 1948, it provides comprehensive healthcare services that are largely free at the point of use for residents of the UK. The NHS is funded primarily through taxation and is based on the principle of equity, aiming to provide healthcare services based on need rather than the ability to pay.
+
+The NHS covers a wide range of healthcare services, including general practitioner (GP) services, hospital care, mental health services, dental care, and public health initiatives. It operates through a network of hospitals, clinics, GP surgeries, and other healthcare facilities across England, Scotland, Wales, and Northern Ireland.
+
+## NHS colours
+
+The core NHS colours are blue and white:
+
+```{r nhs-blue, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(nhs_blue, class = "palette", name = "NHS Blue")
+```
+
