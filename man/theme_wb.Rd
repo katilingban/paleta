@@ -6,6 +6,7 @@
 \usage{
 theme_wb(
   base_family = set_wb_font(),
+  base_size = 11.5,
   plot_title_family = base_family,
   plot_title_colour = wb_blue,
   subtitle_family = base_family,
@@ -26,6 +27,8 @@ theme_wb(
 by what World Bank font is available in the system via \code{set_wb_font()}.
 If none of the World Bank fonts are available, the default becomes
 \emph{Noto Sans}.}
+
+\item{base_size}{Base font size. Default is 11.5.}
 
 \item{plot_title_family}{Font family to use for the plot title. Default is
 \code{base_family}.}

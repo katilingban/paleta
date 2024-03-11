@@ -197,6 +197,7 @@ set_wb_font <- function(alt = paleta_fonts$paleta_noto) {
 #'   by what World Bank font is available in the system via `set_wb_font()`.
 #'   If none of the World Bank fonts are available, the default becomes
 #'   *Noto Sans*.
+#' @param base_size Base font size. Default is 11.5.
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
 #' @param plot_title_colour Colour of the plot title text. Default
@@ -245,6 +246,7 @@ set_wb_font <- function(alt = paleta_fonts$paleta_noto) {
 #' @export
 #'
 theme_wb <- function(base_family = set_wb_font(),
+                     base_size = 11.5,
                      plot_title_family = base_family,
                      plot_title_colour = wb_blue,
                      subtitle_family = base_family,
