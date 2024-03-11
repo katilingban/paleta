@@ -166,7 +166,7 @@ set_unicef_font <- function(alt = paleta_fonts$paleta_noto) {
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
 #' @param plot_title_colour Colour of the plot title text. Default
-#'   is `unicef_blue`.
+#'   is `unicef_black`.
 #' @param subtitle_family Font family to use for the plot subtitle. Default is
 #'   `base_family`.
 #' @param subtitle_colour Colour of the subtitle text. Default is
