@@ -13,6 +13,9 @@
     <loc>https://katilingban.io/paleta/articles/index.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/paleta/articles/nhs.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/paleta/articles/paleta.html</loc>
   </url>
   <url>
@@ -43,6 +46,15 @@
     <loc>https://katilingban.io/paleta/reference/index.html</loc>
   </url>
   <url>
+    <loc>https://katilingban.io/paleta/reference/nhs_colours.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/paleta/reference/nhs_font.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/paleta/reference/nhs_palette.html</loc>
+  </url>
+  <url>
     <loc>https://katilingban.io/paleta/reference/paleta.html</loc>
   </url>
   <url>
@@ -62,6 +74,9 @@
   </url>
   <url>
     <loc>https://katilingban.io/paleta/reference/theme_acdc.html</loc>
+  </url>
+  <url>
+    <loc>https://katilingban.io/paleta/reference/theme_nhs.html</loc>
   </url>
   <url>
     <loc>https://katilingban.io/paleta/reference/theme_paleta.html</loc>

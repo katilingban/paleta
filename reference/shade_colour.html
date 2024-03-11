@@ -73,7 +73,9 @@
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">shade_colour</span><span class="op">(</span><span class="va">hex</span>, <span class="va">p</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">shade_colours</span><span class="op">(</span><span class="va">hex</span>, <span class="va">p</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">shade_colours_</span><span class="op">(</span><span class="va">hex</span>, <span class="va">p</span>, label <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">shade_colours</span><span class="op">(</span><span class="va">hex</span>, <span class="va">p</span>, label <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -85,6 +87,10 @@ of colour/s to shade.</p></dd>
 
 <dt>p</dt>
 <dd><p>Range from 0 to 1 for proportion to shade the colour/s with.</p></dd>
+
+
+<dt>label</dt>
+<dd><p>Logical. Should the output/s be labelled? Default is FALSE.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -100,7 +106,21 @@ shaded to the desired proportion.</p>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">shade_colour</span><span class="op">(</span><span class="va">acdc_green</span>, p <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#2A7234"</span>
 <span class="r-in"><span><span class="fu">shade_colours</span><span class="op">(</span><span class="va">acdc_palettes</span><span class="op">$</span><span class="va">acdc_secondary</span>, p <span class="op">=</span> <span class="fl">0.4</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#402E16" "#865619" "#763722" "#481A1B" "#2D321D"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[1]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#402E16"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[2]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#865619"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[3]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#763722"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[4]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#481A1B"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[5]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#2D321D"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
