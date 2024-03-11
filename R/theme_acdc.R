@@ -158,6 +158,7 @@ set_acdc_font <- function(alt = paleta_fonts$paleta_noto) {
 #'   by what Africa CDC font is available in the system via `set_acdc_font()`.
 #'   If none of the Africa CDC fonts are available, the default becomes Noto
 #'   Sans.
+#' @param base_size Base font size. Default is 11.5.
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
 #' @param plot_title_colour Colour of the plot title text. Default
@@ -208,6 +209,7 @@ set_acdc_font <- function(alt = paleta_fonts$paleta_noto) {
 #' @export
 #'
 theme_acdc_light <- function(base_family = set_acdc_font(),
+                             base_size = 11.5,
                              plot_title_family = base_family,
                              plot_title_colour = acdc_green,
                              subtitle_family = base_family,

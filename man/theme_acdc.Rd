@@ -7,6 +7,7 @@
 \usage{
 theme_acdc_light(
   base_family = set_acdc_font(),
+  base_size = 11.5,
   plot_title_family = base_family,
   plot_title_colour = acdc_green,
   subtitle_family = base_family,
@@ -45,6 +46,8 @@ theme_acdc_dark(
 by what Africa CDC font is available in the system via \code{set_acdc_font()}.
 If none of the Africa CDC fonts are available, the default becomes Noto
 Sans.}
+
+\item{base_size}{Base font size. Default is 11.5.}
 
 \item{plot_title_family}{Font family to use for the plot title. Default is
 \code{base_family}.}
