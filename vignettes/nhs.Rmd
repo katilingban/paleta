@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(paleta)
+library(ggplot2)
 ```
 
 The NHS (National Health Service) is the publicly funded healthcare system in the United Kingdom. Established in 1948, it provides comprehensive healthcare services that are largely free at the point of use for residents of the UK. The NHS is funded primarily through taxation and is based on the principle of equity, aiming to provide healthcare services based on need rather than the ability to pay.
@@ -24,9 +25,84 @@ The NHS covers a wide range of healthcare services, including general practition
 
 ## NHS colours
 
+### Core colours
+
 The core NHS colours are blue and white:
 
 ```{r nhs-blue, echo = FALSE, fig.align = "center", fig.height = 1}
-structure(nhs_blue, class = "palette", name = "NHS Blue")
+structure(nhs_palettes$nhs_primary, class = "palette", name = "NHS Core Colours")
 ```
 
+This is supplemented by four additional groups of colours. All colours in the palette meet at least an AA accessibility rating, with many achieving the highest AAA rating when used with appropriate contrasts on suitable backgrounds.
+
+### Level 1: Blue tones
+
+Level 1 of the NHS colour palette consists of various shades of blue, emphasizing the association with blue and white. It provides lighter and darker alternatives to the main NHS Blue colour, offering tonal variety while maintaining the core brand identity.
+
+```{r nhs-blue-tones, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(nhs_palettes$nhs_blue_tones, class = "palette", name = "NHS Blues")
+```
+
+### Level 2: Neutrals
+
+These additional colours complement the primary blues in the palette. Black and dark grey are suitable for text depending on the context. Lighter greys can serve as backgrounds, especially online. White serves as the primary neutral base. Proper use of these colours enhances the overall blue and white aesthetic.
+
+```{r nhs-neutrals, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(nhs_palettes$nhs_neutrals, class = "palette", name = "NHS Neutrals")
+```
+
+### Level 3: Support Greens
+
+Green, being closely related to blue in the colour spectrum, complements the blue and white palette. When used moderately and in a supporting role, it maintains the association with blue and white without compromising it. However, if green becomes too dominant, it may hinder people's ability to instantly recognize the NHS as the source of information.
+
+```{r nhs-support-green, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(nhs_palettes$nhs_support_greens, class = "palette", name = "NHS Support Greens")
+```
+
+### Level 4: Highlights
+
+Highlights are effective for emphasizing details, adding warmth to the blue theme, and offering accent colours for NHS entities to distinguish themselves. However, excessive use can drastically alter the overall appearance and disassociate the communication from the NHS brand. Therefore, it's advised to use highlights sparingly and avoid large blocks of these colours.
+
+```{r nhs-highlights, echo = FALSE, fig.align = "center", fig.height = 1}
+structure(nhs_palettes$nhs_highlights, class = "palette", name = "NHS Highlights")
+```
+
+## NHS `ggplot2` theme
+
+An NHS `ggplot2` theme function called `theme_nhs()` is included in the `paleta` package. Following are examples of how it can be used.
+
+```{r nhs-theme-bar, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+## barplot using theme_nhs()
+ggplot(
+  data = mtcars,
+  mapping = aes(
+  x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")),
+  fill = factor(cyl))
+) +
+  geom_bar() +
+  scale_fill_manual(
+    name = "Cylinders", 
+    values = nhs_palettes$nhs_blues
+  ) +
+  labs(
+    title = "NHS Theme",
+    subtitle = "NHS blue tints palette",
+    x = "Engine Shape", y = "Counts"
+  ) +
+  theme_nhs(base_size = 10)
+```
+
+```{r nhs-theme-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+## scatterplot using theme_nhs()
+ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
+  geom_point(size = 3) +
+  scale_colour_manual(
+    name = "Cylinders", 
+    values = nhs_palettes$nhs_support_greens
+  ) +
+  labs(
+    title = "NHS Theme",
+    subtitle = "NHS support greens palette",
+  ) +
+  theme_nhs(base_size = 10)
+```

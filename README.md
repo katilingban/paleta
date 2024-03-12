@@ -40,6 +40,9 @@ the following organisations’ branding/visual identity guidelines:
   and Brand
   Manual](https://www.unicef.org/jordan/media/7166/file/ANNEX_G_-_Brand_book_V3.1.pdf).
 
+- [NHS](https://www.nhs.uk/) [identity
+  guidelines](https://www.england.nhs.uk/nhsidentity/identity-guidelines/)
+
 Additional colours, palettes, and themes will be provided over time.
 
 ## Installation
@@ -68,6 +71,9 @@ install.packages(
 
 - [Using the UNICEF colours, palettes, and
   themes](https://katilingban.io/paleta/articles/unicef.html)
+
+- [Using the NHS colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/nhs.html)
 
 ## Community guidelines
 
