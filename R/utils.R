@@ -40,6 +40,7 @@ print.palette <- function(x, ...) {
 #' get_colours(model = "rgb")
 #' get_colours(pattern = "orange")
 #' get_colours(pattern = c("orange", "brown"), named = TRUE)
+#' get_colours(pattern = c("orange", "GREEN", "Blue"))
 #'
 #' @rdname get_colour
 #' @export
@@ -55,9 +56,15 @@ get_colour <- function(pattern = NULL,
 
   ## Determine if there is something specific to search for ----
   if (!is.null(pattern)) {
-    ## Get colours vector ----
-    paleta_cols <- df[c("name", model)][stringr::str_detect(df$name, pattern = pattern), ]
+    ## Get list for searchable fields ----
+    search_fields <- list(df[["organisation"]], df[["name"]], df[["code"]])
 
+    ## Get colours vector ----
+    paleta_cols <- lapply(search_fields, stringr::str_detect, pattern = pattern) |>
+      (\(x) do.call(cbind, x))() |>
+      rowSums() |>
+      (\(x) ifelse(x == 0, FALSE, TRUE))() |>
+      (\(x) df[x, c("name", model)])()
 
     if (named) {
       paleta_cols <- paleta_cols |>
@@ -95,6 +102,13 @@ get_colours <- function(pattern = NULL,
   if (is.null(pattern)) {
     paleta_cols <- get_colour(pattern = pattern, model = model, named = named)
   } else {
+    ## Get permutations of pattern ----
+    pattern <- pattern |>
+      c(tolower(pattern)) |>
+      c(toupper(pattern)) |>
+      c(stringr::str_to_title(pattern)) |>
+      unique()
+
     paleta_cols <- lapply(
       X = pattern, FUN = get_colour, model = model, named = named
     ) |>
