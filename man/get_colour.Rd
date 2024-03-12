@@ -39,5 +39,6 @@ get_colours()
 get_colours(model = "rgb")
 get_colours(pattern = "orange")
 get_colours(pattern = c("orange", "brown"), named = TRUE)
+get_colours(pattern = c("orange", "GREEN", "Blue"))
 
 }
