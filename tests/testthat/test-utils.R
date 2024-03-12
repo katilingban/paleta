@@ -1,6 +1,16 @@
 # Tests for utility functions --------------------------------------------------
 
+## Test print function ----
+testthat::expect_silent(print(structure(acdc_palettes$acdc_primary, class = "palette")))
+
 ## Test get colours function ----
+testthat::expect_equal(get_colours() |> length(), nrow(paleta_colours))
+testthat::expect_equal(get_colour() |> length(), nrow(paleta_colours))
+testthat::expect_type(get_colour(pattern = "Blue", named = TRUE), "character")
+testthat::expect_gt(
+  get_colour(pattern = "Blue", named = TRUE) |> names() |> length(),
+  0
+)
 testthat::expect_type(get_colours(pattern = "Blue"), "character")
 testthat::expect_type(get_colours(pattern = "Blue", named = TRUE), "character")
 
