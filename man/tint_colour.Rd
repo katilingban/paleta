@@ -8,7 +8,7 @@
 \usage{
 tint_colour(hex, p)
 
-tint_colours_(hex, p, label = FALSE)
+tint_colours_(hex, p)
 
 tint_colours(hex, p, label = FALSE)
 }
