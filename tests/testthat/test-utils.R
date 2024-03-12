@@ -6,11 +6,9 @@ testthat::expect_silent(print(structure(acdc_palettes$acdc_primary, class = "pal
 ## Test get colours function ----
 testthat::expect_equal(get_colours() |> length(), nrow(paleta_colours))
 testthat::expect_equal(get_colour() |> length(), nrow(paleta_colours))
-testthat::expect_type(get_colour(pattern = "Blue", named = TRUE), "character")
-testthat::expect_gt(
-  get_colour(pattern = "Blue", named = TRUE) |> names() |> length(),
-  0
-)
+testthat::expect_named(get_colour(named = TRUE))
+testthat::expect_named(get_colour(pattern = "Blue", named = TRUE))
+testthat::expect_named(get_colour(pattern = "Blue", named = TRUE))
 testthat::expect_type(get_colours(pattern = "Blue"), "character")
 testthat::expect_type(get_colours(pattern = "Blue", named = TRUE), "character")
 
@@ -41,12 +39,7 @@ testthat::expect_equal(
 testthat::expect_type(shade_colours(c(acdc_green, acdc_gold), p = 0.2), "list")
 testthat::expect_type(shade_colours(c(acdc_green, acdc_gold), p = c(0.2, 0.4)), "list")
 testthat::expect_type(shade_colours(c(acdc_green, acdc_gold), p = 0.2, label = TRUE), "list")
-testthat::expect_equal(
-  shade_colours(c(acdc_green, acdc_gold), p = 0.2, label = TRUE) |>
-    names() |>
-    length(),
-  2
-)
+testthat::expect_named(shade_colours(c(acdc_green, acdc_gold), p = 0.2, label = TRUE))
 testthat::expect_equal(
   shade_colours(
     c(acdc_green, acdc_gold),

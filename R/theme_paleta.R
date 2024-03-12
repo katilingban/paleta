@@ -263,7 +263,7 @@ theme_paleta <- function(base_family = set_paleta_font(),
         design <- design +
           ggplot2::theme(
             axis.line.y = ggplot2::element_line(
-              colour = axis_col, linedwidth = 0.15
+              colour = axis_col, linewidth = 0.15
             )
           )
       }
