@@ -74,7 +74,7 @@ set_paleta_font <- function() {
 #'   `base_family`.
 #' @param plot_title_face Font face ("plain", "italic", "bold", "bold.italic")
 #'   for plot title. Default is "bold".
-#' @param plot_title_size Plot title text size in pts. Default is 18.
+#' @param plot_title_size Plot title text size in pts. Default is 16.
 #' @param plot_title_margin Margin at the bottom of the plot title. Default
 #'   set at 10.
 #' @param plot_title_colour Colour of the plot title text. Default
@@ -133,7 +133,7 @@ set_paleta_font <- function() {
 theme_paleta <- function(base_family = set_paleta_font(),
                          base_size = 11.5,
                          plot_title_family = base_family,
-                         plot_title_size = 18,
+                         plot_title_size = 16,
                          plot_title_face = "bold",
                          plot_title_colour = NULL,
                          plot_title_margin = 10,

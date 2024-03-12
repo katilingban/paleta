@@ -4,7 +4,7 @@
 \name{wb_fonts}
 \alias{wb_fonts}
 \alias{set_wb_font}
-\title{Africa CDC fonts}
+\title{World Bank fonts}
 \format{
 An object of class \code{list} of length 2.
 }

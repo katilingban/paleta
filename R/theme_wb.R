@@ -103,23 +103,23 @@ wb_palettes <- list(
   ),
   wb_bright_oranges = c("#F05023", "#F3734F", "#F6967B", "#F9B9A7", "#FCDCD3"),
   wb_bright_yellows = c("#FDB714", "#FDC543", "#FDD372", "#FEE2A1", "#FEF0D0"),
-  wb_bright_reds = c("#EB1C2D", "#EF4957", "#F37681", "#F7A4AB", "#FBD1D5"),
-  wb_light_oranges = c("#F78D28", "#F8A353", "#FABA7E", "#FBD1A9", "#FDE8D4"),
-  wb_bright_aquas = c("#009CA7", "#33AFB8", "#66C3CA", "#99D7DB", "#CCEBED"),
-  wb_bright_greens = c("#00AB51", "#33BB73", "#66CC96", "#99DDB9", "#CCEEDC"),
+  wb_bright_reds =    c("#EB1C2D", "#EF4957", "#F37681", "#F7A4AB", "#FBD1D5"),
+  wb_light_oranges =  c("#F78D28", "#F8A353", "#FABA7E", "#FBD1A9", "#FDE8D4"),
+  wb_bright_aquas =   c("#009CA7", "#33AFB8", "#66C3CA", "#99D7DB", "#CCEBED"),
+  wb_bright_greens =  c("#00AB51", "#33BB73", "#66CC96", "#99DDB9", "#CCEEDC"),
   wb_bright_purples = c("#872B90", "#9F55A6", "#B77FBC", "#CFAAD2", "#E7D4E8"),
-  wb_light_aquas = c("#00A996", "#33BAAB", "#66CBC0", "#99DCD5", "#CCEDEA"),
-  wb_dark_reds = c("#98252B", "#AC5055", "#C17C7F", "#D5A7AA", "#EAD3D4"),
-  wb_dark_oranges = c("#E16A2D","#E78757", "#EDA581", "#F3C3AB", "#F9E1D5"),
-  wb_browns = c("#B88C1D", "#C6A34A", "#D4BA77", "#E2D1A4", "#F0E8D1"),
-  wb_dark_purples = c("#614776", "#806B91", "#A090AC", "#BFB5C8", "#DFDAE3"),
-  wb_dark_aquas = c("#006068", "#337F86", "#669FA4", "#99BFC2", "#CCDFE0"),
-  wb_dark_greens = c("#006450", "#338373", "#66A296", "#99C1B9", "#CCE0DC")
+  wb_light_aquas =    c("#00A996", "#33BAAB", "#66CBC0", "#99DCD5", "#CCEDEA"),
+  wb_dark_reds =      c("#98252B", "#AC5055", "#C17C7F", "#D5A7AA", "#EAD3D4"),
+  wb_dark_oranges =   c("#E16A2D", "#E78757", "#EDA581", "#F3C3AB", "#F9E1D5"),
+  wb_browns =         c("#B88C1D", "#C6A34A", "#D4BA77", "#E2D1A4", "#F0E8D1"),
+  wb_dark_purples =   c("#614776", "#806B91", "#A090AC", "#BFB5C8", "#DFDAE3"),
+  wb_dark_aquas =     c("#006068", "#337F86", "#669FA4", "#99BFC2", "#CCDFE0"),
+  wb_dark_greens =    c("#006450", "#338373", "#66A296", "#99C1B9", "#CCE0DC")
 )
 
 
 #'
-#' Africa CDC fonts
+#' World Bank fonts
 #'
 #' @examples
 #' wb_fonts
