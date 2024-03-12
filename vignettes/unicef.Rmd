@@ -67,7 +67,7 @@ ggplot(
     subtitle = "UNICEF brights palette",
     x = "Engine Shape", y = "Counts"
   ) +
-  theme_unicef(base_size = 10)
+  theme_unicef()
 ```
 
 ```{r unicef-theme-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
@@ -82,6 +82,6 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
     title = "UNICEF Theme",
     subtitle = "UNICEF brights palette",
   ) +
-  theme_unicef(base_size = 10)
+  theme_unicef()
 ```
 
