@@ -163,7 +163,7 @@ set_unicef_font <- function(alt = paleta_fonts$paleta_noto) {
 #'   by what UNICEF font is available in the system via `set_unicef_font()`.
 #'   If none of the UNICEF fonts are available, the default becomes
 #'   *Noto Sans*.
-#' @param base_size Base font size. Default is 11.5.
+#' @param base_size Base font size. Default is 10.
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
 #' @param plot_title_colour Colour of the plot title text. Default
@@ -214,7 +214,7 @@ set_unicef_font <- function(alt = paleta_fonts$paleta_noto) {
 #' @export
 #'
 theme_unicef <- function(base_family = set_unicef_font(),
-                         base_size = 11.5,
+                         base_size = 5,
                          plot_title_family = base_family,
                          plot_title_colour = unicef_black,
                          subtitle_family = base_family,

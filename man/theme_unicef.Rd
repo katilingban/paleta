@@ -6,7 +6,7 @@
 \usage{
 theme_unicef(
   base_family = set_unicef_font(),
-  base_size = 11.5,
+  base_size = 10,
   plot_title_family = base_family,
   plot_title_colour = unicef_black,
   subtitle_family = base_family,
@@ -28,7 +28,7 @@ by what UNICEF font is available in the system via \code{set_unicef_font()}.
 If none of the UNICEF fonts are available, the default becomes
 \emph{Noto Sans}.}
 
-\item{base_size}{Base font size. Default is 11.5.}
+\item{base_size}{Base font size. Default is 10.}
 
 \item{plot_title_family}{Font family to use for the plot title. Default is
 \code{base_family}.}
