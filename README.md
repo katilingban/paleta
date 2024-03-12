@@ -15,6 +15,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![Codecov test
 coverage](https://codecov.io/gh/katilingban/paleta/branch/main/graph/badge.svg)](https://app.codecov.io/gh/katilingban/paleta?branch=main)
 [![CodeFactor](https://www.codefactor.io/repository/github/katilingban/paleta/badge)](https://www.codefactor.io/repository/github/katilingban/paleta)
+[![DOI](https://zenodo.org/badge/765052888.svg)](https://zenodo.org/doi/10.5281/zenodo.10809366)
 <!-- badges: end -->
 
 A collection of palettes, themes, and theme components based on publicly
