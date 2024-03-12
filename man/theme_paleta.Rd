@@ -8,7 +8,7 @@ theme_paleta(
   base_family = set_paleta_font(),
   base_size = 11.5,
   plot_title_family = base_family,
-  plot_title_size = 18,
+  plot_title_size = 16,
   plot_title_face = "bold",
   plot_title_colour = NULL,
   plot_title_margin = 10,
@@ -53,7 +53,7 @@ by what Africa CDC font is available in the system via \code{set_paleta_font()}.
 \item{plot_title_family}{Font family to use for the plot title. Default is
 \code{base_family}.}
 
-\item{plot_title_size}{Plot title text size in pts. Default is 18.}
+\item{plot_title_size}{Plot title text size in pts. Default is 16.}
 
 \item{plot_title_face}{Font face ("plain", "italic", "bold", "bold.italic")
 for plot title. Default is "bold".}
