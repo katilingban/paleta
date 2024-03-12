@@ -8,7 +8,7 @@
 \usage{
 shade_colour(hex, p)
 
-shade_colours_(hex, p, label = FALSE)
+shade_colours_(hex, p)
 
 shade_colours(hex, p, label = FALSE)
 }

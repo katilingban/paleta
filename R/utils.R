@@ -153,16 +153,12 @@ tint_colour <- function(hex, p) {
 #' @rdname tint_colour
 #' @export
 #'
-tint_colours_ <- function(hex, p, label = FALSE) {
+tint_colours_ <- function(hex, p) {
   pal <- Map(
     f = tint_colour,
     hex = rep(list(hex), length(p)),
     p = as.list(p)
   )
-
-  if (label) {
-    names(pal) <- paste0(p * 100, "%")
-  }
 
   unlist(pal)
 }
@@ -219,16 +215,12 @@ shade_colour <- function(hex, p) {
 #' @rdname shade_colour
 #' @export
 #'
-shade_colours_ <- function(hex, p, label = FALSE) {
+shade_colours_ <- function(hex, p) {
   pal <- Map(
     f = shade_colour,
     hex = rep(list(hex), length(p)),
     p = as.list(p)
   )
-
-  if (label) {
-    names(pal) <- paste0(p * 100, "%")
-  }
 
   unlist(pal)
 }
