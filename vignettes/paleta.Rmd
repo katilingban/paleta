@@ -50,7 +50,11 @@ Currently, `paleta` has colours, palettes, and `ggplot2` themes based on the fol
 
 * [UNICEF](https://www.unicef.org/) [brand manual](https://www.unicef.org/jordan/media/7166/file/ANNEX_G_-_Brand_book_V3.1.pdf)
 
-* [World Health Organization](https://www.who.int/) [data design language](https://apps.who.int/gho/data/design-language/)
+* [World Bank](https://www.worldbank.org) [visual identity guidelines](https://thedocs.worldbank.org/en/doc/723361567518322252-0060022019/original/WBGBrandingandVisualIdentityGuidelinesFebruary2016.pdf).
 
-* [Scaling Up Nutrition](https://scalingupnutrition.org/) [style guide](https://scalingupnutrition.org/wp-content/uploads/2021/03/53764_SUN10ary_StyleGuide_Final_NOV2020.pdf)
+* [NHS](https://www.nhs.uk/) [identity guidelines](https://www.england.nhs.uk/nhsidentity/identity-guidelines/)
+
+<!-- * [World Health Organization](https://www.who.int/) [data design language](https://apps.who.int/gho/data/design-language/) -->
+
+<!-- * [Scaling Up Nutrition](https://scalingupnutrition.org/) [style guide](https://scalingupnutrition.org/wp-content/uploads/2021/03/53764_SUN10ary_StyleGuide_Final_NOV2020.pdf) -->
 
