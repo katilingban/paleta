@@ -195,17 +195,21 @@ theme_paleta <- function(base_family = set_paleta_font(),
   if (inherits(grid, "character") | grid == TRUE) {
     design <- design +
       ggplot2::theme(
-        panel.grid = ggplot2::element_line(colour = grid_col, size = 0.2)
+        panel.grid = ggplot2::element_line(colour = grid_col, linewidth = 0.2)
       )
 
     design <- design +
       ggplot2::theme(
-        panel.grid.major = ggplot2::element_line(colour = grid_col, size = 0.2)
+        panel.grid.major = ggplot2::element_line(
+          colour = grid_col, linewidth = 0.2
+        )
       )
 
     design <- design +
       ggplot2::theme(
-        panel.grid.minor = ggplot2::element_line(colour = grid_col, size = 0.05)
+        panel.grid.minor = ggplot2::element_line(
+          colour = grid_col, linewidth = 0.05
+        )
       )
 
     if (inherits(grid, "character")) {
@@ -234,7 +238,7 @@ theme_paleta <- function(base_family = set_paleta_font(),
   if (inherits(axis, "character") | axis == TRUE) {
     design <- design +
       ggplot2::theme(
-        axis.line = ggplot2::element_line(colour = axis_col, size = 0.15)
+        axis.line = ggplot2::element_line(colour = axis_col, linewidth = 0.15)
       )
 
     if (inherits(axis, "character")) {
@@ -246,7 +250,9 @@ theme_paleta <- function(base_family = set_paleta_font(),
       } else {
         design <- design +
           ggplot2::theme(
-            axis.line.x = ggplot2::element_line(colour = axis_col, size = 0.15)
+            axis.line.x = ggplot2::element_line(
+              colour = axis_col, linewidth = 0.15
+            )
           )
       }
 
@@ -256,18 +262,24 @@ theme_paleta <- function(base_family = set_paleta_font(),
       } else {
         design <- design +
           ggplot2::theme(
-            axis.line.y = ggplot2::element_line(colour = axis_col, size = 0.15)
+            axis.line.y = ggplot2::element_line(
+              colour = axis_col, linedwidth = 0.15
+            )
           )
       }
     } else {
       design <- design +
         ggplot2::theme(
-          axis.line.x = ggplot2::element_line(colour = axis_col, size = 0.15)
+          axis.line.x = ggplot2::element_line(
+            colour = axis_col, linewidth = 0.15
+          )
         )
 
       design <- design +
         ggplot2::theme(
-          axis.line.y = ggplot2::element_line(colour = axis_col, size = 0.15)
+          axis.line.y = ggplot2::element_line(
+            colour = axis_col, linewidth = 0.15
+          )
         )
     }
   } else {
