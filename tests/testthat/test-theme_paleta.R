@@ -38,11 +38,13 @@ testthat::expect_silent(p + theme_paleta(grid = "XxYy"))
 testthat::expect_silent(p + theme_paleta(grid = FALSE))
 
 ### Test axis ----
-testthat::expect_silent(p + theme_paleta(axis = FALSE))
+testthat::expect_silent(p + theme_paleta(axis = TRUE))
 testthat::expect_silent(p + theme_paleta(axis = "x"))
 testthat::expect_silent(p + theme_paleta(axis = "y"))
 testthat::expect_silent(p + theme_paleta(axis = "xy"))
 
+### Test ticks ----
+testthat::expect_silent(p + theme_paleta(ticks = TRUE))
 
 
 
