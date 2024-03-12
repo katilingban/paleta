@@ -128,7 +128,7 @@ set_paleta_font <- function() {
 #' @param axis Add x or y axes? `TRUE`, `FALSE`, "`xy`". Default is FALSE.
 #' @param ticks Logical. Should ticks be added? Default is FALSE.
 #'
-#' @return A [ggplot2] theme.
+#' @returns A [ggplot2] theme.
 #'
 theme_paleta <- function(base_family = set_paleta_font(),
                          base_size = 11.5,
