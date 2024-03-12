@@ -2,13 +2,13 @@
 
 library(ggplot2)
 
-## Test paleta_fonts class ----
+## Test acdc_fonts class ----
 testthat::expect_type(acdc_fonts, "list")
 
-## Test length of paleta fonts ----
+## Test length of acdc fonts ----
 testthat::expect_equal(length(acdc_fonts), 4)
 
-## Test output of set_paleta_font ----
+## Test output of set_acdc_font ----
 testthat::expect_type(set_acdc_font(), "character")
 testthat::expect_equal(length(set_acdc_font()), 1)
 
