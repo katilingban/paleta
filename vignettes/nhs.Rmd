@@ -89,7 +89,7 @@ ggplot(
     subtitle = "NHS blue tints palette",
     x = "Engine Shape", y = "Counts"
   ) +
-  theme_nhs(base_size = 10)
+  theme_nhs(grid = "Y")
 ```
 
 ```{r nhs-theme-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
@@ -104,5 +104,5 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
     title = "NHS Theme",
     subtitle = "NHS support greens palette",
   ) +
-  theme_nhs(base_size = 10)
+  theme_nhs(grid = "XY")
 ```

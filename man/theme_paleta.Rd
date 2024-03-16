@@ -152,12 +152,11 @@ Bob Rudis' \href{https://github.com/hrbrmstr/hrbrthemes}{hrbrthemes} package
 drawing heavily on its typography-centric focus.
 }
 \details{
-This function uses either of three fonts - \emph{Arial Narrow}, \emph{Noto Sans}, or
-\emph{Roboto} (in this specific order) - depending on what is available in the
-user's system. \emph{Arial Narrow} is generally installed by default or readily
-available on any modern system. If it is not available, then \emph{Noto Sans} or
-\emph{Roboto} - both Google fonts - are freely downloadable and easily installed
-on any system. If \emph{Arial Narrow} is not available in your system, download
-and install either/both \emph{Noto Sans} and/or \emph{Roboto} from
+This function uses either of three fonts - \emph{Roboto Condensed}, \emph{Noto Sans},
+or \emph{Roboto} (in this specific order) - depending on what is available in the
+user's system. \emph{Roboto Condensed}, \emph{Noto Sans}, and \emph{Roboto} - all Google
+fonts - are freely downloadable and easily installed on any system.
+If any of these fonts is not available in your system, download and install
+either/all \emph{Roboto Condensed}, \emph{Noto Sans} and/or \emph{Roboto} from
 \href{https://fonts.google.com/}{Google Fonts}.
 }
