@@ -11,8 +11,8 @@ A character value for font family to use as paleta font.
 }
 \description{
 The function will search the system for availability of any of the paleta
-fonts in heirarchical order starting with \emph{Arial Narrow}, then \emph{Noto Sans},
-and then \emph{Roboto}.
+fonts in heirarchical order starting with \emph{Roboto Condensed}, then
+\emph{Noto Sans}, and then \emph{Roboto}.
 }
 \examples{
 set_paleta_font()

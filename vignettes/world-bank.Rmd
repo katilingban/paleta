@@ -167,7 +167,7 @@ ggplot(
     subtitle = "World Bank neutral palette (tinted to 40%)",
     x = "Engine Shape", y = "Counts"
   ) +
-  theme_wb()
+  theme_wb(grid = "Y")
 ```
 
 ```{r wb-theme-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
@@ -182,5 +182,5 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
     title = "World Bank Theme",
     subtitle = "World Bank neutral palette (tinted to 40%)",
   ) +
-  theme_wb()
+  theme_wb(grid = "XY")
 ```

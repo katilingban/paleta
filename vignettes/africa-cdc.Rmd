@@ -127,7 +127,7 @@ ggplot(
     subtitle = "Using the Africa CDC secondary palette",
     x = "Engine Shape", y = "Counts"
   ) +
-  theme_acdc_light()
+  theme_acdc_light(grid = "Y")
 ```
 
 ```{r mtcars-acdc-light-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
@@ -142,7 +142,7 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
     title = "Light ACDC Theme",
     subtitle = "Using the Africa CDC secondary palette",
   ) +
-  theme_acdc_light()
+  theme_acdc_light(grid = "XY")
 ```
 
 
@@ -163,7 +163,7 @@ ggplot(
     subtitle = "Using the Africa CDC secondary palette",
     x = "Engine Shape", y = "Counts"
   ) +
-  theme_acdc_dark()
+  theme_acdc_dark(grid = "Y")
 ```
 
 ```{r mtcars-acdc-dark-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
@@ -178,5 +178,5 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
     title = "Dark ACDC Theme",
     subtitle = "Using the Africa CDC secondary palette"
   ) +
-  theme_acdc_dark()
+  theme_acdc_dark(grid = "XY")
 ```

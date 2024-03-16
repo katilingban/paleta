@@ -10,15 +10,15 @@
 paleta_fonts <- list(
   paleta_noto = "Noto Sans",
   paleta_roboto = "Roboto",
-  paleta_arial_narrow = "Arial Narrow"
+  paleta_roboto_condensed = "Roboto Condensed"
 )
 
 #'
 #' Set paleta font based on what is available in the system
 #'
 #' The function will search the system for availability of any of the paleta
-#' fonts in heirarchical order starting with *Arial Narrow*, then *Noto Sans*,
-#' and then *Roboto*.
+#' fonts in heirarchical order starting with *Roboto Condensed*, then
+#' *Noto Sans*, and then *Roboto*.
 #'
 #' @return A character value for font family to use as paleta font.
 #'
@@ -34,8 +34,8 @@ set_paleta_font <- function() {
   fonts <- systemfonts::system_fonts()
 
   ## Check which paleta font is available ----
-  if (any(fonts$family == paleta_fonts$paleta_arial_narrow)) {
-    paleta_font <- paleta_fonts$paleta_arial_narrow
+  if (any(fonts$family == paleta_fonts$paleta_roboto_condensed)) {
+    paleta_font <- paleta_fonts$paleta_roboto_condensed
   } else {
     if (any(fonts$family == paleta_fonts$paleta_noto)) {
       paleta_font <- paleta_fonts$paleta_noto
@@ -58,13 +58,12 @@ set_paleta_font <- function() {
 #' drawing heavily on its typography-centric focus.
 #'
 #' @details
-#' This function uses either of three fonts - *Arial Narrow*, *Noto Sans*, or
-#' *Roboto* (in this specific order) - depending on what is available in the
-#' user's system. *Arial Narrow* is generally installed by default or readily
-#' available on any modern system. If it is not available, then *Noto Sans* or
-#' *Roboto* - both Google fonts - are freely downloadable and easily installed
-#' on any system. If *Arial Narrow* is not available in your system, download
-#' and install either/both *Noto Sans* and/or *Roboto* from
+#' This function uses either of three fonts - *Roboto Condensed*, *Noto Sans*,
+#' or *Roboto* (in this specific order) - depending on what is available in the
+#' user's system. *Roboto Condensed*, *Noto Sans*, and *Roboto* - all Google
+#' fonts - are freely downloadable and easily installed on any system.
+#' If any of these fonts is not available in your system, download and install
+#' either/all *Roboto Condensed*, *Noto Sans* and/or *Roboto* from
 #' [Google Fonts](https://fonts.google.com/).
 #'
 #' @param base_family Base font family using Africa CDC fonts. Default is set
@@ -181,7 +180,9 @@ theme_paleta <- function(base_family = set_paleta_font(),
   } else {
     design <- design +
       ggplot2::theme(
-        plot.background = ggplot2::element_rect(fill = plot_background_fill)
+        plot.background = ggplot2::element_rect(
+          fill = plot_background_fill, colour = plot_background_fill
+        )
       )
   }
 
