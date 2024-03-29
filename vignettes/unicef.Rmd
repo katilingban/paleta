@@ -9,8 +9,11 @@ vignette: >
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  dev = "ragg_png"
 )
 ```
 
@@ -49,7 +52,7 @@ structure(unicef_palettes$unicef_neutrals, class = "palette", name = "UNICEF Neu
 
 A UNICEF `ggplot2` theme function called `theme_unicef()` is included in the `paleta` package. Following are examples of how it can be used.
 
-```{r unicef-theme-bar, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+```{r unicef-theme-bar, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## barplot using theme_unicef()
 ggplot(
   data = mtcars,
@@ -70,7 +73,7 @@ ggplot(
   theme_unicef(grid = "Y")
 ```
 
-```{r unicef-theme-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+```{r unicef-theme-scatter, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## scatterplot using theme_unicef()
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   geom_point(size = 3) +

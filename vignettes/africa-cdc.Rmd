@@ -9,8 +9,11 @@ vignette: >
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  dev = "ragg_png"
 )
 ```
 
@@ -112,7 +115,7 @@ structure(acdc_palettes$acdc_dark_greens, class = "palette", name = "Africa CDC 
 
 ### Africa CDC light theme
 
-```{r mtcars-acdc-light-bar, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+```{r mtcars-acdc-light-bar, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## barplot using theme_acdc_light
 ggplot(
   data = mtcars,
@@ -130,7 +133,7 @@ ggplot(
   theme_acdc_light(grid = "Y")
 ```
 
-```{r mtcars-acdc-light-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+```{r mtcars-acdc-light-scatter, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## scatterplot using theme_acdc_light
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   geom_point(size = 3) +
@@ -148,7 +151,7 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
 
 ### Africa CDC dark theme
 
-```{r mtcars-acdc-dark-bar, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+```{r mtcars-acdc-dark-bar, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## barplot using theme_acdc_dark
 ggplot(
   data = mtcars,
@@ -166,7 +169,7 @@ ggplot(
   theme_acdc_dark(grid = "Y")
 ```
 
-```{r mtcars-acdc-dark-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+```{r mtcars-acdc-dark-scatter, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## scatterplot using theme_acdc_dark
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   geom_point(size = 3) +
