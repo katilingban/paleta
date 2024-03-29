@@ -9,8 +9,11 @@ vignette: >
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  dev = "ragg_png"
 )
 ```
 
@@ -149,7 +152,7 @@ structure(wb_palettes$wb_dark_greens, class = "palette", name = "World Bank Dark
 
 A World Bank `ggplot2` theme function called `theme_wb()` is included in the `paleta` package. Following are examples of how it can be used.
 
-```{r wb-theme-bar, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+```{r wb-theme-bar, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## barplot using theme_wb()
 ggplot(
   data = mtcars,
@@ -170,7 +173,7 @@ ggplot(
   theme_wb(grid = "Y")
 ```
 
-```{r wb-theme-scatter, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+```{r wb-theme-scatter, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## scatterplot using theme_wb()
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   geom_point(size = 3) +
