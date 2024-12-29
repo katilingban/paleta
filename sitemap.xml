@@ -1,114 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://katilingban.io/paleta/404.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/articles/africa-cdc.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/articles/nhs.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/articles/paleta.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/articles/unicef.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/articles/world-bank.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/index.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/acdc_colours.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/acdc_font.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/acdc_palette.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/get_colour.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/nhs_colours.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/nhs_font.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/nhs_palette.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/paleta.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/paleta_colours.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/paleta_font.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/paleta_fonts.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/print.palette.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/shade_colour.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/theme_acdc.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/theme_nhs.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/theme_paleta.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/theme_unicef.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/theme_wb.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/tint_colour.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/unicef_colours.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/unicef_font.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/unicef_palette.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/wb_colours.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/wb_font.html</loc>
-  </url>
-  <url>
-    <loc>https://katilingban.io/paleta/reference/wb_palette.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://katilingban.io/paleta/404.html</loc></url>
+<url><loc>https://katilingban.io/paleta/LICENSE.html</loc></url>
+<url><loc>https://katilingban.io/paleta/articles/africa-cdc.html</loc></url>
+<url><loc>https://katilingban.io/paleta/articles/index.html</loc></url>
+<url><loc>https://katilingban.io/paleta/articles/nhs.html</loc></url>
+<url><loc>https://katilingban.io/paleta/articles/paleta.html</loc></url>
+<url><loc>https://katilingban.io/paleta/articles/unicef.html</loc></url>
+<url><loc>https://katilingban.io/paleta/articles/world-bank.html</loc></url>
+<url><loc>https://katilingban.io/paleta/authors.html</loc></url>
+<url><loc>https://katilingban.io/paleta/index.html</loc></url>
+<url><loc>https://katilingban.io/paleta/news/index.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/acdc_colours.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/acdc_font.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/acdc_palette.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/get_colour.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/index.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/nhs_colours.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/nhs_font.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/nhs_palette.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/paleta.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/paleta_colours.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/paleta_font.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/paleta_fonts.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/print.palette.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/shade_colour.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/theme_acdc.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/theme_nhs.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/theme_paleta.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/theme_unicef.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/theme_wb.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/tint_colour.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/unicef_colours.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/unicef_font.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/unicef_palette.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/wb_colours.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/wb_font.html</loc></url>
+<url><loc>https://katilingban.io/paleta/reference/wb_palette.html</loc></url>
 </urlset>
+
