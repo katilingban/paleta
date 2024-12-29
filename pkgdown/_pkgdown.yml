@@ -5,8 +5,8 @@ url: https://katilingban.io/paleta/
 template:
   bootstrap: 5
   bootswatch: sandstone
-  theme: haddock
-  ganalytics: #
+  theme: breeze-light
+  ganalytics: "G-D6R7DT84NL"
 
 home:
   links:
@@ -18,7 +18,7 @@ navbar:
   type: light
   structure:
     left:  [home, intro, reference, articles, news]
-    right: [mastodon, linkedin, github]
+    right: [search, mastodon, linkedin, github]
 
   components:
     articles:
@@ -34,9 +34,11 @@ navbar:
         href: articles/nhs.html
     mastodon:
       icon: "fab fa-mastodon fa-lg"
+      aria-label: Mastodon
       href: https://fosstodon.org/@katilingban
     linkedin:
       icon: "fab fa-linkedin fa-lg"
+      aria-label: LinkedIn
       href: https://www.linkedin.com/company/katilingban
 
 reference:
