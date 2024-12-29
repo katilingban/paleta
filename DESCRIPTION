@@ -1,13 +1,13 @@
 Package: paleta
 Type: Package
 Title: Collection of Palettes, Themes, and Theme Components
-Version: 0.0.0.9001
+Version: 0.1.0.9000
 Authors@R: person(
       given = "Ernest", 
       family = "Guevarra", 
       comment = c(ORCID = "0000-0002-4887-4415"), 
       email = "ernest@guevarra.io", 
-      role = c("aut", "cre")
+      role = c("aut", "cre", "cph")
     )
 Description: A collection of palettes, themes, and theme components based on 
     publicly available branding guidelines of various non-governmental 
