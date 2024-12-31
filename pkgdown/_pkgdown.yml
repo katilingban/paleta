@@ -57,13 +57,23 @@ reference:
     - acdc_palettes
     - acdc_fonts
     - acdc_green
-    - acdc_gold
-    - acdc_black
-    - acdc_brown
-    - acdc_yellow
-    - acdc_orange
     - acdc_red
-    - acdc_dark_green
+    - acdc_gold
+    - acdc_white
+    - acdc_grey
+    - acdc_corporate_green
+    - acdc_text
+    - acdc_blue
+    - acdc_plum
+    - acdc_blue_grey
+    - acdc_amber
+    - acdc_cyan
+    - acdc_deep_orange
+    - acdc_purple
+    - acdc_lime
+    - acdc_mauve
+    - acdc_pink
+    - acdc_teal
     - theme_acdc_light
     - theme_acdc_dark
 

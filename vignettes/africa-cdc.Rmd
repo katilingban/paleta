@@ -11,6 +11,7 @@ vignette: >
 knitr::opts_chunk$set(
   message = FALSE,
   warning = FALSE,
+  error = FALSE,
   collapse = TRUE,
   comment = "#>",
   dev = "ragg_png"
@@ -22,7 +23,7 @@ library(paleta)
 library(ggplot2)
 ```
 
-Africa Centres for Disease Control and Prevention (Africa CDC) is a specialised technical institution of the African Union established to support public health initiatives of Member States and strengthen the capacity of their public health institutions to detect, prevent, control and respond quickly and effectively to disease threats.
+[Africa Centres for Disease Control and Prevention (Africa CDC)](https://africacdc.org) is a specialised technical institution of the African Union established to support public health initiatives of Member States and strengthen the capacity of their public health institutions to detect, prevent, control and respond quickly and effectively to disease threats.
 
 
 ## Africa CDC vision and mission
@@ -47,75 +48,93 @@ Africa Centres for Disease Control and Prevention (Africa CDC) is a specialised 
 
 ## Africa CDC Colours
 
-The Africa CDC employs three corporate colours: Green, Gold and Black.
+The Africa CDC employs three primary colours: Green, Gold and Red.
 
-```{r acdc-primary, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r acdc-primary, echo = FALSE, fig.alt = "Africa CDC primary palette of 3 colours", fig.align = "center", fig.height = 1}
 structure(acdc_palettes$acdc_primary, class = "palette", name = "Africa CDC Primary Colours")
 ```
 
-These are complemented by a set of five secondary colours.
+These are complemented by a set of eleven secondary colours.
 
-```{r acdc-secondary, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r acdc-secondary, echo = FALSE, fig.alt = "Africa CDC secondary palette of 11 colours", fig.align = "center", fig.height = 1}
 structure(acdc_palettes$acdc_secondary, class = "palette", name = "Africa CDC Secondary Colours")
 ```
 
 ## Africa CDC Palettes
 
-In addition to the primary and secondary colours, a set of tinted palettes for each Africa CDC colour is available.
+In addition to the primary and secondary colours, a set of tinted palettes for each Africa CDC secondary colour is available.
 
-### Tinted green palette
+### Tinted blue palette
 
-```{r acdc-green-tint, echo = FALSE, fig.align = "center", fig.height = 1}
-structure(acdc_palettes$acdc_greens, class = "palette", name = "Africa CDC Greens")
+```{r acdc-blue-tint, echo = FALSE, fig.alt = "Africa CDC tinted blue palette", fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_blues, class = "palette", name = "Africa CDC Blues")
 ```
 
-### Tinted gold palette
+### Tinted plum palette
 
-```{r acdc-gold-tint, echo = FALSE, fig.align = "center", fig.height = 1}
-structure(acdc_palettes$acdc_golds, class = "palette", name = "Africa CDC Golds")
+```{r acdc-plum-tint, echo = FALSE, fig.alt = "Africa CDC tinted plum palette", fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_plums, class = "palette", name = "Africa CDC Plums")
 ```
 
-### Tinted black palette
+### Tinted blue grey palette
 
-```{r acdc-black-tint, echo = FALSE, fig.align = "center", fig.height = 1}
-structure(acdc_palettes$acdc_blacks, class = "palette", name = "Africa CDC Blacks")
+```{r acdc-bluegrey-tint, echo = FALSE, fig.alt = "Africa CDC tinted blue grey palette", fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_blue_greys, class = "palette", name = "Africa CDC Blue Greys")
 ```
 
-### Tinted brown palette
+### Tinted amber palette
 
-```{r acdc-brown-tint, echo = FALSE, fig.align = "center", fig.height = 1}
-structure(acdc_palettes$acdc_browns, class = "palette", name = "Africa CDC Browns")
+```{r acdc-amber-tint, echo = FALSE, fig.alt = "Africa CDC tinted amber palette", fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_ambers, class = "palette", name = "Africa CDC Ambers")
 ```
 
-### Tinted yellow palette
+### Tinted cyan palette
 
-```{r acdc-yellow-tint, echo = FALSE, fig.align = "center", fig.height = 1}
-structure(acdc_palettes$acdc_yellows, class = "palette", name = "Africa CDC Yellows")
+```{r acdc-cyan-tint, echo = FALSE, fig.alt = "Africa CDC tinted cyan palette", fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_cyans, class = "palette", name = "Africa CDC Cyans")
 ```
 
-### Tinted orange palette
+### Tinted deep orange palette
 
-```{r acdc-orange-tint, echo = FALSE, fig.align = "center", fig.height = 1}
-structure(acdc_palettes$acdc_oranges, class = "palette", name = "Africa CDC Oranges")
+```{r acdc-deeporange-tint, echo = FALSE, fig.alt = "Africa CDC tinted deep orange palette", fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_deep_oranges, class = "palette", name = "Africa CDC Deep Oranges")
 ```
 
-### Tinted red palette
+### Tinted purple palette
 
-```{r acdc-red-tint, echo = FALSE, fig.align = "center", fig.height = 1}
-structure(acdc_palettes$acdc_reds, class = "palette", name = "Africa CDC Reds")
+```{r acdc-purple-tint, echo = FALSE, fig.alt = "Africa CDC tinted purple palette", fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_purples, class = "palette", name = "Africa CDC Purples")
 ```
 
-### Tinted dark green palette
+### Tinted lime palette
 
-```{r acdc-dark-green-tint, echo = FALSE, fig.align = "center", fig.height = 1}
-structure(acdc_palettes$acdc_dark_greens, class = "palette", name = "Africa CDC Dark Greens")
+```{r acdc-lime-tint, echo = FALSE, fig.alt = "Africa CDC tinted lime palette", fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_limes, class = "palette", name = "Africa CDC Limes")
+```
+
+### Tinted mauve palette
+
+```{r acdc-mauve-tint, echo = FALSE, fig.alt = "Africa CDC tinted mauve palette", fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_mauves, class = "palette", name = "Africa CDC Mauves")
+```
+
+### Tinted pink palette
+
+```{r acdc-pink-tint, echo = FALSE, fig.alt = "Africa CDC tinted pink palette", fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_pinks, class = "palette", name = "Africa CDC Pinks")
+```
+
+### Tinted teal palette
+
+```{r acdc-teal-tint, echo = FALSE, fig.alt = "Africa CDC tinted teal palette", fig.align = "center", fig.height = 1}
+structure(acdc_palettes$acdc_teals, class = "palette", name = "Africa CDC Teals")
 ```
 
 ## Africa CDC `ggplot2` theme
 
 ### Africa CDC light theme
 
-```{r mtcars-acdc-light-bar, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+```{r mtcars-acdc-light-bar, echo = FALSE, fig.align = "center", fig.alt = "A bar plot showcasing the Africa CDC light theme", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## barplot using theme_acdc_light
 ggplot(
   data = mtcars,
@@ -133,7 +152,7 @@ ggplot(
   theme_acdc_light(grid = "Y")
 ```
 
-```{r mtcars-acdc-light-scatter, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+```{r mtcars-acdc-light-scatter, echo = FALSE, fig.align = "center", fig.alt = "A scatter plot showcasing the Africa CDC light theme", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## scatterplot using theme_acdc_light
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   geom_point(size = 3) +
@@ -151,7 +170,7 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
 
 ### Africa CDC dark theme
 
-```{r mtcars-acdc-dark-bar, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+```{r mtcars-acdc-dark-bar, echo = FALSE, fig.align = "center", fig.alt = "A bar plot showcasing the Africa CDC dark theme", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## barplot using theme_acdc_dark
 ggplot(
   data = mtcars,
@@ -169,7 +188,7 @@ ggplot(
   theme_acdc_dark(grid = "Y")
 ```
 
-```{r mtcars-acdc-dark-scatter, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+```{r mtcars-acdc-dark-scatter, echo = FALSE, fig.align = "center", fig.alt = "A scatter plot showcasing the Africa CDC dark theme", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## scatterplot using theme_acdc_dark
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   geom_point(size = 3) +

@@ -3,41 +3,81 @@
 #'
 #' @examples
 #' acdc_green
+#' acdc_red
 #' acdc_gold
-#' acdc_brown
 #'
 #' @rdname acdc_colours
 #' @export
 #'
-acdc_green      <- "#348F41"
+acdc_green          <- "#348F41"
 
 #' @rdname acdc_colours
 #' @export
-acdc_gold       <- "#B4A269"
+acdc_red            <- "#9F2241"
 
 #' @rdname acdc_colours
 #' @export
-acdc_black      <- "#000000"
+acdc_gold           <- "#B4A269"
 
 #' @rdname acdc_colours
 #' @export
-acdc_brown      <- "#6B4C24"
+acdc_white          <- "#FFFFFF"
 
 #' @rdname acdc_colours
 #' @export
-acdc_yellow     <- "#E08F2A"
+acdc_grey           <- "#58595B"
 
 #' @rdname acdc_colours
 #' @export
-acdc_orange     <- "#C45B39"
+acdc_corporate_green <- "#1A5632"
 
 #' @rdname acdc_colours
 #' @export
-acdc_red        <- "#782C2D"
+acdc_text            <- "#53575A"
 
 #' @rdname acdc_colours
 #' @export
-acdc_dark_green <- "#4B5430"
+acdc_blue            <- "#194F90"
+
+#' @rdname acdc_colours
+#' @export
+acdc_plum            <- "#AE1857"
+
+#' @rdname acdc_colours
+#' @export
+acdc_blue_grey       <- "#5B7E96"
+
+#' @rdname acdc_colours
+#' @export
+acdc_amber           <- "#FFB71B"
+
+#' @rdname acdc_colours
+#' @export
+acdc_cyan            <- "#1DCAD3"
+
+#' @rdname acdc_colours
+#' @export
+acdc_deep_orange     <- "#FF5C35"
+
+#' @rdname acdc_colours
+#' @export
+acdc_purple          <- "#8F4899"
+
+#' @rdname acdc_colours
+#' @export
+acdc_lime            <- "#DAE343"
+
+#' @rdname acdc_colours
+#' @export
+acdc_mauve           <- "#385CAD"
+
+#' @rdname acdc_colours
+#' @export
+acdc_pink            <- "#E81F76"
+
+#' @rdname acdc_colours
+#' @export
+acdc_teal            <- "#009383"
 
 
 #'
@@ -50,21 +90,22 @@ acdc_dark_green <- "#4B5430"
 #' @export
 #'
 acdc_palettes <- list(
-  acdc_primary     = c("#348F41", "#B4A269", "#000000"),
-  acdc_secondary   = c("#6B4C24", "#E08F2A", "#C45B39", "#782C2D", "#4B5430"),
-  acdc_greens      = c("#348F41", "#5CA567", "#85BB8D", "#ADD2B3", "#D6E8D9"),
-  acdc_golds       = c("#B4A269", "#C3B487", "#D2C7A5", "#E1D9C3", "#F0ECE1"),
-  acdc_blacks      = c("#000000", "#333333", "#666666", "#999999", "#CCCCCC"),
-  acdc_browns      = c("#6B4C24", "#886F4F", "#A6937B", "#C3B7A7", "#E1DBD3"),
-  acdc_yellows     = c("#E08F2A", "#E6A554", "#ECBB7F", "#F2D2A9", "#F8E8D4"),
-  acdc_oranges     = c("#C45B39", "#CF7B60", "#DB9C88", "#E7BDAF", "#F3DED7"),
-  acdc_reds        = c("#782C2D", "#935657", "#AE8081", "#C9AAAB", "#E4D4D5"),
-  acdc_dark_greens = c("#4B5430", "#6F7659", "#939882", "#B7BAAC", "#DBDCD5"),
-  acdc_triad_1     = c("#E08F2A", "#C45B39", "#782C2D"),
-  acdc_triad_2     = c("#782C2D", "#E08F2A", "#348F41"),
-  acdc_triad_3     = c("#782C2D", "#E08F2A", "#6B4C24"),
-  acdc_triad_3     = c("#782C2D", "#C45B39", "#6B4C24"),
-  acdc_triad_4     = c("#E08F2A", "#348F41", "#4B5430")
+  acdc_primary = c(acdc_green, acdc_red, acdc_gold),
+  acdc_secondary = c(
+    acdc_blue, acdc_plum, acdc_blue_grey, acdc_amber, acdc_cyan, 
+    acdc_deep_orange, acdc_purple, acdc_lime, acdc_mauve, acdc_pink, acdc_teal
+  ),
+  acdc_blues = c("#D1DBE8", "#A3B8D2", "#7595BC", "#4772A6", acdc_blue),
+  acdc_plums = c("#EED0DD", "#DEA2BB", "#CE749A", "#BE4678", acdc_plum),
+  acdc_blue_greys = c("#DEE5EA", "#BDCBD5", "#9CB1C0", "#7B97AB", acdc_blue_grey),
+  acdc_ambers = c("#FFF0D1", "#FFE2A3", "#FFD376", "#FFC548", acdc_amber),
+  acdc_cyans = c("#D1F4F6", "#A4E9ED", "#77DFE4", "#4AD4DB", acdc_cyan),
+  acdc_deep_oranges = c("#FFDED6", "#FFBDAE", "#FF9D85", "#FF7C5D", acdc_deep_orange),
+  acdc_purples = c("#E8DAEA", "#D2B5D6", "#BB91C1", "#A56CAD", acdc_purple),
+  acdc_limes = c("#F7F9D9", "#F0F3B3", "#E8EE8E", "#E1E868", acdc_lime),
+  acdc_mauves = c("#D7DEEE", "#AFBDDE", "#879DCD", "#5F7CBD", acdc_mauve),
+  acdc_pinks = c("#FAD2E3", "#F5A5C8", "#F178AC", "#EC4B91", acdc_pink),
+  acdc_teals = c("#CCE9E6", "#99D3CD", "#66BEB4", "#33A89B", acdc_teal)
 )
 
 
@@ -78,9 +119,8 @@ acdc_palettes <- list(
 #' @export
 #'
 acdc_fonts <- list(
-  acdc_acumin = "Acumin Pro",
-  acdc_brandon = "Brandon Text",
-  acdc_calibri = "Calibri",
+  acdc_univers = "Univers",
+  acdc_din_next_arabic = "Din Next Arabic",
   acdc_arial = "Arial"
 )
 
@@ -88,8 +128,8 @@ acdc_fonts <- list(
 #' Set ACDC font to use based on what is available from the system
 #'
 #' The function will search the system for availability of any of the Africa
-#' CDC fonts in heirarchical order starting with *Acumin Pro*, then
-#' *Brandon Text*, then *Calibri*, and then finally *Arial*. If none of these
+#' CDC fonts in hierarchical order starting with *Univers*, then
+#' *Din Next Arabic*, and then finally *Arial*. If none of these
 #' are found in the system, the function will return *Noto Sans* by default or
 #' the user can set which font to use as alternative by specifying `alt`.
 #'
@@ -110,20 +150,16 @@ set_acdc_font <- function(alt = paleta_fonts$paleta_noto) {
   fonts <- systemfonts::system_fonts()
 
   ## Check which Africa CDC font is available ----
-  if (any(fonts$family == acdc_fonts$acdc_acumin)) {
-    acdc_font <- acdc_fonts$acdc_acumin
+  if (any(fonts$family == acdc_fonts$acdc_univers)) {
+    acdc_font <- acdc_fonts$acdc_univers
   } else {
-    if (any(fonts$family == acdc_fonts$acdc_brandon)) {
-      acdc_font <- acdc_fonts$acdc_brandon
+    if (any(fonts$family == acdc_fonts$acdc_din_next_arabic)) {
+      acdc_font <- acdc_fonts$acdc_din_next_arabic
     } else {
-      if (any(fonts$family == acdc_fonts$acdc_calibri)) {
-        acdc_font <- acdc_fonts$acdc_calibri
-      } else {
-        if (any(fonts$family == acdc_fonts$acdc_arial)) {
+      if (any(fonts$family == acdc_fonts$acdc_arial)) {
           acdc_font <- acdc_fonts$acdc_arial
-        } else {
+      } else {
           acdc_font <- alt
-        }
       }
     }
   }
@@ -136,41 +172,42 @@ set_acdc_font <- function(alt = paleta_fonts$paleta_noto) {
 #'
 #' A [ggplot2] theme using Africa CDC fonts, colours, and palettes
 #'
-#' These are wrappers for `theme_paleta()` that use colours and fonts from the
+#' These are wrappers for [theme_paleta()] that use colours and fonts from the
 #' Africa CDC visual identity guidelines.
 #'
 #' @section Colours:
-#' The Africa CDC theme is based on the colours from the `acdc_palettes`. The
+#' The Africa CDC theme is based on the colours from the [acdc_palettes]. The
 #' primary palette consists of three colours: `acdc_palettes$acdc_primary`. The
-#' secondary palette consists of five colours: `acdc_palettes$acdc_secondary`.
+#' secondary palette consists of eleven colours: `acdc_palettes$acdc_secondary`.
 #'
 #' @section Fonts:
 #' The Africa CDC theme uses one or up to two fonts from the four fonts
 #' prescribed by the Africa CDC visual identity guidelines. These fonts (in
-#' hierarchical order of preference) are *Acumin Pro*, *Brandon Text*,
-#' *Calibri*, and/or *Arial*. Any or all of these fonts should be available in
-#' the user's system for them to be used in the theme. If none of these fonts
-#' are available in the user's system, a freely downloadable alternative called
-#' *Noto Sans* is the default fallback font and can be obtained from
+#' hierarchical order of preference) are *Univers*, *Din Next Arabic*, and/or 
+#' *Arial*. Any or all of these fonts should be available in the user's system 
+#' for them to be used in the theme. If none of these fonts are available in the 
+#' user's system, a freely downloadable alternative called *Noto Sans* is the 
+#' default fallback font and can be obtained from
 #' [Google Fonts](https://fonts.google.com/).
 #'
 #' @param base_family Base font family using Africa CDC fonts. Default is set
-#'   by what Africa CDC font is available in the system via `set_acdc_font()`.
+#'   by what Africa CDC font is available in the system via [set_acdc_font()].
 #'   If none of the Africa CDC fonts are available, the default becomes Noto
 #'   Sans.
 #' @param base_size Base font size. Default is 11.5.
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
 #' @param plot_title_colour Colour of the plot title text. Default
-#'   is `acdc_green`.
+#'   is `acdc_text`.
 #' @param subtitle_family Font family to use for the plot subtitle. Default is
 #'   `base_family`.
-#' @param subtitle_colour Colour of the subtitle text. Default is `acdc_gold`.
-#' @param caption_colour Colour of the caption text. Default is `acdc_gold`.
+#' @param subtitle_colour Colour of the subtitle text. Default is `acdc_text`.
+#' @param caption_colour Colour of the caption text. Default is `acdc_text`.
 #' @param axis_title_colour Colour of the axis title text. Default is
-#'   `acdc_gold`.
-#' @param legend_title_colour Colour of the legend title text. Default is NULL.
-#' @param legend_text_colour Colour of the legend text. Default is NULL.
+#'   `acdc_text`.
+#' @param legend_title_colour Colour of the legend title text. Default is
+#'   `acdc_text`.
+#' @param legend_text_colour Colour of the legend text. Default is `acdc_text`.
 #' @param plot_background_fill Fill colour for the plot background. Default is
 #'   NULL.
 #' @param grid_col Grid colour. Default to `acdc_gold`.
@@ -211,13 +248,13 @@ set_acdc_font <- function(alt = paleta_fonts$paleta_noto) {
 theme_acdc_light <- function(base_family = set_acdc_font(),
                              base_size = 11.5,
                              plot_title_family = base_family,
-                             plot_title_colour = acdc_green,
+                             plot_title_colour = acdc_text,
                              subtitle_family = base_family,
-                             subtitle_colour = acdc_gold,
-                             caption_colour = acdc_gold,
-                             axis_title_colour = acdc_gold,
-                             legend_title_colour = acdc_gold,
-                             legend_text_colour = acdc_gold,
+                             subtitle_colour = acdc_text,
+                             caption_colour = acdc_text,
+                             axis_title_colour = acdc_text,
+                             legend_title_colour = acdc_text,
+                             legend_text_colour = acdc_text,
                              grid_col = acdc_gold,
                              grid = TRUE,
                              axis_col = acdc_gold,
@@ -252,11 +289,11 @@ theme_acdc_dark <- function(base_family = set_acdc_font(),
                             plot_title_family = base_family,
                             plot_title_colour = acdc_green,
                             subtitle_family = base_family,
-                            subtitle_colour = acdc_black,
-                            caption_colour = acdc_black,
-                            axis_title_colour = acdc_black,
-                            legend_title_colour = acdc_black,
-                            legend_text_colour = acdc_black,
+                            subtitle_colour = acdc_white,
+                            caption_colour = acdc_white,
+                            axis_title_colour = acdc_white,
+                            legend_title_colour = acdc_white,
+                            legend_text_colour = acdc_white,
                             plot_background_fill = tint_colour(acdc_gold, 0.2),
                             grid_col = acdc_green,
                             grid = TRUE,

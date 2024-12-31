@@ -3,15 +3,45 @@
 \docType{data}
 \name{acdc_green}
 \alias{acdc_green}
-\alias{acdc_gold}
-\alias{acdc_black}
-\alias{acdc_brown}
-\alias{acdc_yellow}
-\alias{acdc_orange}
 \alias{acdc_red}
-\alias{acdc_dark_green}
+\alias{acdc_gold}
+\alias{acdc_white}
+\alias{acdc_grey}
+\alias{acdc_corporate_green}
+\alias{acdc_text}
+\alias{acdc_blue}
+\alias{acdc_plum}
+\alias{acdc_blue_grey}
+\alias{acdc_amber}
+\alias{acdc_cyan}
+\alias{acdc_deep_orange}
+\alias{acdc_purple}
+\alias{acdc_lime}
+\alias{acdc_mauve}
+\alias{acdc_pink}
+\alias{acdc_teal}
 \title{Africa CDC colours}
 \format{
+An object of class \code{character} of length 1.
+
+An object of class \code{character} of length 1.
+
+An object of class \code{character} of length 1.
+
+An object of class \code{character} of length 1.
+
+An object of class \code{character} of length 1.
+
+An object of class \code{character} of length 1.
+
+An object of class \code{character} of length 1.
+
+An object of class \code{character} of length 1.
+
+An object of class \code{character} of length 1.
+
+An object of class \code{character} of length 1.
+
 An object of class \code{character} of length 1.
 
 An object of class \code{character} of length 1.
@@ -31,27 +61,47 @@ An object of class \code{character} of length 1.
 \usage{
 acdc_green
 
-acdc_gold
-
-acdc_black
-
-acdc_brown
-
-acdc_yellow
-
-acdc_orange
-
 acdc_red
 
-acdc_dark_green
+acdc_gold
+
+acdc_white
+
+acdc_grey
+
+acdc_corporate_green
+
+acdc_text
+
+acdc_blue
+
+acdc_plum
+
+acdc_blue_grey
+
+acdc_amber
+
+acdc_cyan
+
+acdc_deep_orange
+
+acdc_purple
+
+acdc_lime
+
+acdc_mauve
+
+acdc_pink
+
+acdc_teal
 }
 \description{
 Africa CDC colours
 }
 \examples{
 acdc_green
+acdc_red
 acdc_gold
-acdc_brown
 
 }
 \keyword{datasets}
