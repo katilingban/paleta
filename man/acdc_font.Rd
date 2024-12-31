@@ -6,7 +6,7 @@
 \alias{set_acdc_font}
 \title{Africa CDC fonts}
 \format{
-An object of class \code{list} of length 4.
+An object of class \code{list} of length 3.
 }
 \usage{
 acdc_fonts
@@ -22,8 +22,8 @@ A character value for font family to use as Africa CDC font.
 }
 \description{
 The function will search the system for availability of any of the Africa
-CDC fonts in heirarchical order starting with \emph{Acumin Pro}, then
-\emph{Brandon Text}, then \emph{Calibri}, and then finally \emph{Arial}. If none of these
+CDC fonts in hierarchical order starting with \emph{Univers}, then
+\emph{Din Next Arabic}, and then finally \emph{Arial}. If none of these
 are found in the system, the function will return \emph{Noto Sans} by default or
 the user can set which font to use as alternative by specifying \code{alt}.
 }

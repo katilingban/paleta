@@ -9,13 +9,13 @@ theme_acdc_light(
   base_family = set_acdc_font(),
   base_size = 11.5,
   plot_title_family = base_family,
-  plot_title_colour = acdc_green,
+  plot_title_colour = acdc_text,
   subtitle_family = base_family,
-  subtitle_colour = acdc_gold,
-  caption_colour = acdc_gold,
-  axis_title_colour = acdc_gold,
-  legend_title_colour = acdc_gold,
-  legend_text_colour = acdc_gold,
+  subtitle_colour = acdc_text,
+  caption_colour = acdc_text,
+  axis_title_colour = acdc_text,
+  legend_title_colour = acdc_text,
+  legend_text_colour = acdc_text,
   grid_col = acdc_gold,
   grid = TRUE,
   axis_col = acdc_gold,
@@ -29,11 +29,11 @@ theme_acdc_dark(
   plot_title_family = base_family,
   plot_title_colour = acdc_green,
   subtitle_family = base_family,
-  subtitle_colour = acdc_black,
-  caption_colour = acdc_black,
-  axis_title_colour = acdc_black,
-  legend_title_colour = acdc_black,
-  legend_text_colour = acdc_black,
+  subtitle_colour = acdc_white,
+  caption_colour = acdc_white,
+  axis_title_colour = acdc_white,
+  legend_title_colour = acdc_white,
+  legend_text_colour = acdc_white,
   plot_background_fill = tint_colour(acdc_gold, 0.2),
   grid_col = acdc_green,
   grid = TRUE,
@@ -44,7 +44,7 @@ theme_acdc_dark(
 }
 \arguments{
 \item{base_family}{Base font family using Africa CDC fonts. Default is set
-by what Africa CDC font is available in the system via \code{set_acdc_font()}.
+by what Africa CDC font is available in the system via \code{\link[=set_acdc_font]{set_acdc_font()}}.
 If none of the Africa CDC fonts are available, the default becomes Noto
 Sans.}
 
@@ -54,21 +54,22 @@ Sans.}
 \code{base_family}.}
 
 \item{plot_title_colour}{Colour of the plot title text. Default
-is \code{acdc_green}.}
+is \code{acdc_text}.}
 
 \item{subtitle_family}{Font family to use for the plot subtitle. Default is
 \code{base_family}.}
 
-\item{subtitle_colour}{Colour of the subtitle text. Default is \code{acdc_gold}.}
+\item{subtitle_colour}{Colour of the subtitle text. Default is \code{acdc_text}.}
 
-\item{caption_colour}{Colour of the caption text. Default is \code{acdc_gold}.}
+\item{caption_colour}{Colour of the caption text. Default is \code{acdc_text}.}
 
 \item{axis_title_colour}{Colour of the axis title text. Default is
-\code{acdc_gold}.}
+\code{acdc_text}.}
 
-\item{legend_title_colour}{Colour of the legend title text. Default is NULL.}
+\item{legend_title_colour}{Colour of the legend title text. Default is
+\code{acdc_text}.}
 
-\item{legend_text_colour}{Colour of the legend text. Default is NULL.}
+\item{legend_text_colour}{Colour of the legend text. Default is \code{acdc_text}.}
 
 \item{grid_col}{Grid colour. Default to \code{acdc_gold}.}
 
@@ -89,25 +90,25 @@ NULL.}
 A \link{ggplot2} theme.
 }
 \description{
-These are wrappers for \code{theme_paleta()} that use colours and fonts from the
+These are wrappers for \code{\link[=theme_paleta]{theme_paleta()}} that use colours and fonts from the
 Africa CDC visual identity guidelines.
 }
 \section{Colours}{
 
-The Africa CDC theme is based on the colours from the \code{acdc_palettes}. The
+The Africa CDC theme is based on the colours from the \link{acdc_palettes}. The
 primary palette consists of three colours: \code{acdc_palettes$acdc_primary}. The
-secondary palette consists of five colours: \code{acdc_palettes$acdc_secondary}.
+secondary palette consists of eleven colours: \code{acdc_palettes$acdc_secondary}.
 }
 
 \section{Fonts}{
 
 The Africa CDC theme uses one or up to two fonts from the four fonts
 prescribed by the Africa CDC visual identity guidelines. These fonts (in
-hierarchical order of preference) are \emph{Acumin Pro}, \emph{Brandon Text},
-\emph{Calibri}, and/or \emph{Arial}. Any or all of these fonts should be available in
-the user's system for them to be used in the theme. If none of these fonts
-are available in the user's system, a freely downloadable alternative called
-\emph{Noto Sans} is the default fallback font and can be obtained from
+hierarchical order of preference) are \emph{Univers}, \emph{Din Next Arabic}, and/or
+\emph{Arial}. Any or all of these fonts should be available in the user's system
+for them to be used in the theme. If none of these fonts are available in the
+user's system, a freely downloadable alternative called \emph{Noto Sans} is the
+default fallback font and can be obtained from
 \href{https://fonts.google.com/}{Google Fonts}.
 }
 

@@ -31,18 +31,18 @@ organisations, government agencies, and United Nations units.
 Currently, `paleta` has colours, palettes, and `ggplot2` themes based on
 the following organisations’ branding/visual identity guidelines:
 
-- [Africa CDC](https://africacdc.org/) [visual identity
-  guidelines](https://africacdc.org/download/visual-identity-africa-cdc-branding-guide/);
+  - [Africa CDC](https://africacdc.org/) [communication style
+    guide](https://africacdc.org/download/communication-style-guide-africa-centres-for-disease-control-and-prevention/);
 
-- [World Bank](https://www.worldbank.org) [visual identity
-  guidelines](https://thedocs.worldbank.org/en/doc/723361567518322252-0060022019/original/WBGBrandingandVisualIdentityGuidelinesFebruary2016.pdf).
+  - [World Bank](https://www.worldbank.org) [visual identity
+    guidelines](https://thedocs.worldbank.org/en/doc/723361567518322252-0060022019/original/WBGBrandingandVisualIdentityGuidelinesFebruary2016.pdf).
 
-- [United Nations Children’s Fund](https://www.unicef.org/) [Brand Book
-  and Brand
-  Manual](https://www.unicef.org/jordan/media/7166/file/ANNEX_G_-_Brand_book_V3.1.pdf).
+  - [United Nations Children’s Fund](https://www.unicef.org/) [Brand
+    Book and Brand
+    Manual](https://www.unicef.org/jordan/media/7166/file/ANNEX_G_-_Brand_book_V3.1.pdf).
 
-- [NHS](https://www.nhs.uk/) [identity
-  guidelines](https://www.england.nhs.uk/nhsidentity/identity-guidelines/)
+  - [NHS](https://www.nhs.uk/) [identity
+    guidelines](https://www.england.nhs.uk/nhsidentity/identity-guidelines/)
 
 Additional colours, palettes, and themes will be provided over time.
 
@@ -50,7 +50,7 @@ Additional colours, palettes, and themes will be provided over time.
 
 `paleta` is not yet available on [CRAN](https://cran.r-project.org) but
 can be installed through the [Katilingban R
-universe](https://katilingban.r-universe.dev) repository as follows:
+Universe](https://katilingban.r-universe.dev) repository as follows:
 
 ``` r
 install.packages(
@@ -64,17 +64,17 @@ install.packages(
 
 ## Usage
 
-- [Using the Africa CDC colours, palettes, and
-  themes](https://katilingban.io/paleta/articles/africa-cdc.html)
+  - [Using the Africa CDC colours, palettes, and
+    themes](https://katilingban.io/paleta/articles/africa-cdc.html)
 
-- [Using the World Bank colours, palettes, and
-  themes](https://katilingban.io/paleta/articles/world-bank.html)
+  - [Using the World Bank colours, palettes, and
+    themes](https://katilingban.io/paleta/articles/world-bank.html)
 
-- [Using the UNICEF colours, palettes, and
-  themes](https://katilingban.io/paleta/articles/unicef.html)
+  - [Using the UNICEF colours, palettes, and
+    themes](https://katilingban.io/paleta/articles/unicef.html)
 
-- [Using the NHS colours, palettes, and
-  themes](https://katilingban.io/paleta/articles/nhs.html)
+  - [Using the NHS colours, palettes, and
+    themes](https://katilingban.io/paleta/articles/nhs.html)
 
 ## Community guidelines
 
