@@ -4,7 +4,9 @@
 
 * Changed Africa CDC colour palettes based on updated communication style guidelines
 
-* Created sequential and divergent Africa CDC colour palettes
+* Created Africa CDC brewer base palettes
+
+* Created palette brewer functions for sequential, divergent, and qualitative colour palettes
 
 ## General updates
 

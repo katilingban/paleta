@@ -108,6 +108,7 @@ acdc_palettes <- list(
   acdc_teals        = c("#CCE9E6", "#99D3CD", "#66BEB4", "#33A89B", acdc_teal)
 )
 
+
 #'
 #' @examples
 #' acdc_brewer_palettes
@@ -347,7 +348,7 @@ theme_acdc_dark <- function(base_family = set_acdc_font(),
                             axis_title_colour = acdc_white,
                             legend_title_colour = acdc_white,
                             legend_text_colour = acdc_white,
-                            plot_background_fill = tint_colour(acdc_gold, 0.2),
+                            plot_background_fill = tint_colour(acdc_gold, 0.8),
                             grid_col = acdc_green,
                             grid = TRUE,
                             axis_col = acdc_green,

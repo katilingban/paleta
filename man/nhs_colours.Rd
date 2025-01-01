@@ -19,12 +19,15 @@
 \alias{nhs_purple}
 \alias{nhs_dark_pink}
 \alias{nhs_pink}
+\alias{nhs_emergency_red}
 \alias{nhs_dark_red}
 \alias{nhs_orange}
 \alias{nhs_warm_yellow}
 \alias{nhs_yellow}
 \title{NHS colours}
 \format{
+An object of class \code{character} of length 1.
+
 An object of class \code{character} of length 1.
 
 An object of class \code{character} of length 1.
@@ -101,6 +104,8 @@ nhs_purple
 nhs_dark_pink
 
 nhs_pink
+
+nhs_emergency_red
 
 nhs_dark_red
 
