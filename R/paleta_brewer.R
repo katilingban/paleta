@@ -19,12 +19,18 @@
 #'
 #' @examples
 #' paleta_create_sequential(n = 5, org = "acdc", name = "blues")
+#' paleta_create_divergent(n = 5, org = "acdc", name = "rdylgn")
 #'
 #' @rdname create_paleta
 #' @export
 #'
 
-paleta_create_sequential <- function(n, org, name) {
+paleta_create_sequential <- function(n, 
+                                     org = c("acdc", "nhs"), 
+                                     name) {
+  ## Get org ----
+  org <- match.arg(org)
+  
   ## Check if specified palette is found in specified org palette ----
   paleta_check_colour(name = name, org = org)
 
@@ -34,8 +40,10 @@ paleta_create_sequential <- function(n, org, name) {
   ## Check if number of colours is compatible with sequential ----
   if (n < 3) {
     cli::cli_bullets(
-      "!" = "Sequential palettes have minimum 3 colours",
-      "i" = "Returning 3 colours"
+      c(
+        "!" = "Sequential palettes have minimum 3 colours",
+        "i" = "Returning 3 colours"
+      )
     )
 
     n <- 3
@@ -43,8 +51,10 @@ paleta_create_sequential <- function(n, org, name) {
 
   if (n > 9) {
     cli::cli_bullets(
-      "!" = "Sequential palettes have maximum 9 colours",
-      "i" = "Returning 9 colours"
+      c(
+        "!" = "Sequential palettes have maximum 9 colours",
+        "i" = "Returning 9 colours"
+      )
     )
 
     n <- 9
@@ -55,6 +65,15 @@ paleta_create_sequential <- function(n, org, name) {
 
   ## Update palette to n ----
   pal <- grDevices::colorRampPalette(pal)(n)
+
+  cli::cli_bullets(
+    c(
+      c(
+        "v" = "Sequential colour palette successfully created",
+        "i" = "Sequential palette: {pal}"
+      )
+    )
+  )
 
   ## Create palette class ----
   class(pal) <- "palette"
@@ -78,8 +97,10 @@ paleta_create_divergent <- function(n, name, org) {
   ## Check if number of colours is compatible with divergent ----
   if (n < 3) {
     cli::cli_bullets(
-      "!" = "Divergent palettes have minimum 3 colours",
-      "i" = "Returning 3 colours"
+      c(
+        "!" = "Divergent palettes have minimum 3 colours",
+        "i" = "Returning 3 colours"
+      )
     )
 
     n <- 3
@@ -87,8 +108,10 @@ paleta_create_divergent <- function(n, name, org) {
 
   if (n > 11) {
     cli::cli_bullets(
-      "!" = "Divergent palettes have maximum 11 colours",
-      "i" = "Returning 11 colours"
+      c(
+        "!" = "Divergent palettes have maximum 11 colours",
+        "i" = "Returning 11 colours"
+      )
     )
 
     n <- 11
@@ -99,6 +122,13 @@ paleta_create_divergent <- function(n, name, org) {
 
   ## Update palette to n ----
   pal <- grDevices::colorRampPalette(pal)(n)
+
+  cli::cli_bullets(
+    c(
+      "v" = "Divergent colour palette successfully created",
+      "i" = "Divergent palette: {pal}"
+    )
+  )
 
   ## Create palette class ----
   class(pal) <- "palette"
@@ -124,8 +154,10 @@ paleta_create_qualitative <- function(n, name, org) {
   ## Check that n is not more than length(pal) ----
   if (n > length(pal)) {
     cli::cli_bullets(
-      "!" = "{.code n = {n}} is greater than available colours in {name} palette",
-      "i" = "Returning all colours in {name} colour palette"
+      c(
+        "!" = "{.code n = {n}} is greater than available colours in {name} palette",
+        "i" = "Returning all colours in {name} colour palette"
+      )
     )
 
     n <- length(pal)
@@ -222,13 +254,9 @@ paleta_check_type <- function(name,
     cli::cli_abort(
       "{name} is not a {pal_type} colour palette"
     )
-
-    FALSE
   } else {
     cli::cli_alert_success(
       "{name} is a {pal_type} colour palette"
     )
-
-    TRUE
   }
 }

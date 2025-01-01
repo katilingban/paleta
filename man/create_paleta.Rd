@@ -7,7 +7,7 @@
 \alias{paleta_create_brewer}
 \title{Create new palettes based on organisational palettes}
 \usage{
-paleta_create_sequential(n, org, name)
+paleta_create_sequential(n, org = c("acdc", "nhs"), name)
 
 paleta_create_divergent(n, name, org)
 
@@ -44,5 +44,6 @@ syntax of the \code{RColorBrewer} package
 }
 \examples{
 paleta_create_sequential(n = 5, org = "acdc", name = "blues")
+paleta_create_divergent(n = 5, org = "acdc", name = "rdylgn")
 
 }
