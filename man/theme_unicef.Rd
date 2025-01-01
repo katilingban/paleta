@@ -24,7 +24,7 @@ theme_unicef(
 }
 \arguments{
 \item{base_family}{Base font family using UNICEF fonts. Default is set
-by what UNICEF font is available in the system via \code{set_unicef_font()}.
+by what UNICEF font is available in the system via \code{\link[=set_unicef_font]{set_unicef_font()}}.
 If none of the UNICEF fonts are available, the default becomes
 \emph{Noto Sans}.}
 
@@ -52,13 +52,13 @@ is \code{unicef_black}.}
 
 \item{legend_text_colour}{Colour of the legend text. Default is NULL.}
 
-\item{grid_col}{Grid colour. Default to \code{unicef_warm_grey}.}
+\item{grid_col}{Grid colour. Default to \link{unicef_warm_grey}.}
 
 \item{grid}{Panel grid. Either \code{TRUE}, \code{FALSE}, or a combination of
 \code{X} (major x grid), \code{x} (minor x grid), \code{Y} (major y grid), and/or
 \code{y} (minor y grid). Default is TRUE.}
 
-\item{axis_col}{Axis colours. Default to \code{unicef_warm_grey}.}
+\item{axis_col}{Axis colours. Default to \link{unicef_warm_grey}.}
 
 \item{axis}{Add x or y axes? \code{TRUE}, \code{FALSE}, "\code{xy}". Default is FALSE.}
 
@@ -68,12 +68,12 @@ is \code{unicef_black}.}
 A \link{ggplot2} theme.
 }
 \description{
-These are wrappers for \code{theme_paleta()} that use colours and fonts from the
+These are wrappers for \code{\link[=theme_paleta]{theme_paleta()}} that use colours and fonts from the
 UNICEF visual identity guidelines.
 }
 \section{Colours}{
 
-The UNICEF theme is based on the colours from the \code{unicef_palettes}. The
+The UNICEF theme is based on the colours from the \link{unicef_palettes}. The
 primary palette consists of one colour: \code{unicef_palettes$unicef_primary}.
 The secondary palette consists of eleven colours:
 \code{unicef_palettes$unicef_secondary}.

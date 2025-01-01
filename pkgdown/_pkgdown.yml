@@ -54,6 +54,10 @@ reference:
     - paleta_fonts
     - set_paleta_font
     - theme_paleta
+  
+  - title: Palette Brewer
+    contents:
+    - starts_with("paleta_create")
 
   - title: Africa CDC
     contents:

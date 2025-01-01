@@ -17,5 +17,6 @@
 #' @importFrom grid unit
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom graphics rect par image text
+#' @importFrom cli cli_abort  cli_alert_success cli_bullets
 #'
 "_PACKAGE"

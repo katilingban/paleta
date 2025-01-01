@@ -8,87 +8,87 @@
 #' @rdname nhs_colours
 #' @export
 #'
-nhs_blue          <- "#005EB8"
+nhs_blue        <- "#005EB8"
 
 #' @rdname nhs_colours
 #' @export
-nhs_white         <- "#FFFFFF"
+nhs_white       <- "#FFFFFF"
 
 #' @rdname nhs_colours
 #' @export
-nhs_dark_blue     <- "#003087"
+nhs_dark_blue   <- "#003087"
 
 #' @rdname nhs_colours
 #' @export
-nhs_bright_blue   <- "#0072CE"
+nhs_bright_blue <- "#0072CE"
 
 #' @rdname nhs_colours
 #' @export
-nhs_light_blue    <- "#41B6E6"
+nhs_light_blue  <- "#41B6E6"
 
 #' @rdname nhs_colours
 #' @export
-nhs_aqua_blue     <- "#00A9CE"
+nhs_aqua_blue   <- "#00A9CE"
 
 #' @rdname nhs_colours
 #' @export
-nhs_black         <- "#231f20"
+nhs_black       <- "#231f20"
 
 #' @rdname nhs_colours
 #' @export
-nhs_dark_grey     <- "#425563"
+nhs_dark_grey   <- "#425563"
 
 #' @rdname nhs_colours
 #' @export
-nhs_mid_grey      <- "#768692"
+nhs_mid_grey    <- "#768692"
 
 #' @rdname nhs_colours
 #' @export
-nhs_pale_grey     <- "#E8EDEE"
+nhs_pale_grey   <- "#E8EDEE"
 
 #' @rdname nhs_colours
 #' @export
-nhs_dark_green    <- "#006747"
+nhs_dark_green  <- "#006747"
 
 #' @rdname nhs_colours
 #' @export
-nhs_green         <- "#009639"
+nhs_green       <- "#009639"
 
 #' @rdname nhs_colours
 #' @export
-nhs_light_green   <- "#78BE20"
+nhs_light_green <- "#78BE20"
 
 #' @rdname nhs_colours
 #' @export
-nhs_aqua_green    <- "#00A499"
+nhs_aqua_green  <- "#00A499"
 
 #' @rdname nhs_colours
 #' @export
-nhs_purple        <- "#330072"
+nhs_purple      <- "#330072"
 
 #' @rdname nhs_colours
 #' @export
-nhs_dark_pink     <- "#7C2855"
+nhs_dark_pink   <- "#7C2855"
 
 #' @rdname nhs_colours
 #' @export
-nhs_pink          <- "#AE2573"
+nhs_pink        <- "#AE2573"
 
 #' @rdname nhs_colours
 #' @export
-nhs_dark_red      <- "#8A1538"
+nhs_dark_red    <- "#8A1538"
 
 #' @rdname nhs_colours
 #' @export
-nhs_orange        <- "#ED8B00"
+nhs_orange      <- "#ED8B00"
 
 #' @rdname nhs_colours
 #' @export
-nhs_warm_yellow   <- "#FFB81C"
+nhs_warm_yellow <- "#FFB81C"
 
 #' @rdname nhs_colours
 #' @export
-nhs_yellow        <- "#FAE100"
+nhs_yellow      <- "#FAE100"
 
 
 #'
@@ -149,7 +149,7 @@ nhs_fonts <- list(
 #' Set NHS font to use based on what is available from the system
 #'
 #' The function will search the system for availability of any of the NHS
-#' fonts in hierarchical order starting with *Andes*, and then *Arial*. If
+#' fonts in hierarchical order starting with *Frutiger*, and then *Arial*. If
 #' none of these are found in the system, the function will return *Noto Sans*
 #' by default or the user can set which font to use as alternative by specifying
 #' `alt`.
@@ -189,11 +189,11 @@ set_nhs_font <- function(alt = paleta_fonts$paleta_noto) {
 #'
 #' A [ggplot2] theme using NHS fonts, colours, and palettes
 #'
-#' These are wrappers for `theme_paleta()` that use colours and fonts from the
+#' These are wrappers for [theme_paleta()] that use colours and fonts from the
 #' NHS visual identity guidelines.
 #'
 #' @section Colours:
-#' The NHS theme is based on the colours from the `nhs_palettes`. The
+#' The NHS theme is based on the colours from the [nhs_palettes]. The
 #' primary palette consists of two colours: `nhs_palettes$nhs_primary`. The
 #' secondary palette consists of nineteen colours:.
 #'
@@ -207,7 +207,7 @@ set_nhs_font <- function(alt = paleta_fonts$paleta_noto) {
 #' [Google Fonts](https://fonts.google.com/).
 #'
 #' @param base_family Base font family using NHS fonts. Default is set
-#'   by what NHS font is available in the system via `set_nhs_font()`.
+#'   by what NHS font is available in the system via [set_nhs_font()].
 #'   If none of the NHS fonts are available, the default becomes
 #'   *Noto Sans*.
 #' @param base_size Base font size. Default is 11.5.
@@ -217,14 +217,14 @@ set_nhs_font <- function(alt = paleta_fonts$paleta_noto) {
 #'   is `nhs_blue`.
 #' @param subtitle_family Font family to use for the plot subtitle. Default is
 #'   `base_family`.
-#' @param subtitle_colour Colour of the subtitle text. Default is `nhs_mid_grey`.
-#' @param caption_colour Colour of the caption text. Default is `nhs_mid_grey`.
+#' @param subtitle_colour Colour of the subtitle text. Default is [nhs_mid_grey].
+#' @param caption_colour Colour of the caption text. Default is [nhs_mid_grey].
 #' @param axis_title_colour Colour of the axis title text. Default is
 #'   `nhs_cyan`.
 #' @param legend_title_colour Colour of the legend title text. Default is NULL.
 #' @param legend_text_colour Colour of the legend text. Default is NULL.
-#' @param grid_col Grid colour. Default to `nhs_pale_grey`.
-#' @param axis_col Axis colours. Default to `nhs_pale_grey`.
+#' @param grid_col Grid colour. Default to [nhs_pale_grey].
+#' @param axis_col Axis colours. Default to [nhs_pale_grey].
 #' @param grid Panel grid. Either `TRUE`, `FALSE`, or a combination of
 #'   `X` (major x grid), `x` (minor x grid), `Y` (major y grid), and/or
 #'   `y` (minor y grid). Default is TRUE.
