@@ -101,20 +101,20 @@ wb_palettes <- list(
   wb_neutrals = c(
     "#98252B", "#E16A2D", "#B88C1D", "#614776", "#006068", "#006450"
   ),
-  wb_bright_oranges = c("#F05023", "#F3734F", "#F6967B", "#F9B9A7", "#FCDCD3"),
-  wb_bright_yellows = c("#FDB714", "#FDC543", "#FDD372", "#FEE2A1", "#FEF0D0"),
-  wb_bright_reds =    c("#EB1C2D", "#EF4957", "#F37681", "#F7A4AB", "#FBD1D5"),
-  wb_light_oranges =  c("#F78D28", "#F8A353", "#FABA7E", "#FBD1A9", "#FDE8D4"),
-  wb_bright_aquas =   c("#009CA7", "#33AFB8", "#66C3CA", "#99D7DB", "#CCEBED"),
-  wb_bright_greens =  c("#00AB51", "#33BB73", "#66CC96", "#99DDB9", "#CCEEDC"),
-  wb_bright_purples = c("#872B90", "#9F55A6", "#B77FBC", "#CFAAD2", "#E7D4E8"),
-  wb_light_aquas =    c("#00A996", "#33BAAB", "#66CBC0", "#99DCD5", "#CCEDEA"),
-  wb_dark_reds =      c("#98252B", "#AC5055", "#C17C7F", "#D5A7AA", "#EAD3D4"),
-  wb_dark_oranges =   c("#E16A2D", "#E78757", "#EDA581", "#F3C3AB", "#F9E1D5"),
-  wb_browns =         c("#B88C1D", "#C6A34A", "#D4BA77", "#E2D1A4", "#F0E8D1"),
-  wb_dark_purples =   c("#614776", "#806B91", "#A090AC", "#BFB5C8", "#DFDAE3"),
-  wb_dark_aquas =     c("#006068", "#337F86", "#669FA4", "#99BFC2", "#CCDFE0"),
-  wb_dark_greens =    c("#006450", "#338373", "#66A296", "#99C1B9", "#CCE0DC")
+  wb_bright_oranges = rev(c("#F05023", "#F3734F", "#F6967B", "#F9B9A7", "#FCDCD3")),
+  wb_bright_yellows = rev(c("#FDB714", "#FDC543", "#FDD372", "#FEE2A1", "#FEF0D0")),
+  wb_bright_reds    = rev(c("#EB1C2D", "#EF4957", "#F37681", "#F7A4AB", "#FBD1D5")),
+  wb_light_oranges  = rev(c("#F78D28", "#F8A353", "#FABA7E", "#FBD1A9", "#FDE8D4")),
+  wb_bright_aquas   = rev(c("#009CA7", "#33AFB8", "#66C3CA", "#99D7DB", "#CCEBED")),
+  wb_bright_greens  = rev(c("#00AB51", "#33BB73", "#66CC96", "#99DDB9", "#CCEEDC")),
+  wb_bright_purples = rev(c("#872B90", "#9F55A6", "#B77FBC", "#CFAAD2", "#E7D4E8")),
+  wb_light_aquas    = rev(c("#00A996", "#33BAAB", "#66CBC0", "#99DCD5", "#CCEDEA")),
+  wb_dark_reds      = rev(c("#98252B", "#AC5055", "#C17C7F", "#D5A7AA", "#EAD3D4")),
+  wb_dark_oranges   = rev(c("#E16A2D", "#E78757", "#EDA581", "#F3C3AB", "#F9E1D5")),
+  wb_browns         = rev(c("#B88C1D", "#C6A34A", "#D4BA77", "#E2D1A4", "#F0E8D1")),
+  wb_dark_purples   = rev(c("#614776", "#806B91", "#A090AC", "#BFB5C8", "#DFDAE3")),
+  wb_dark_aquas     = rev(c("#006068", "#337F86", "#669FA4", "#99BFC2", "#CCDFE0")),
+  wb_dark_greens    = rev(c("#006450", "#338373", "#66A296", "#99C1B9", "#CCE0DC"))
 )
 
 
@@ -176,11 +176,11 @@ set_wb_font <- function(alt = paleta_fonts$paleta_noto) {
 #'
 #' A [ggplot2] theme using World Bank fonts, colours, and palettes
 #'
-#' These are wrappers for `theme_paleta()` that use colours and fonts from the
+#' These are wrappers for [theme_paleta()] that use colours and fonts from the
 #' World Bank visual identity guidelines.
 #'
 #' @section Colours:
-#' The World Bank theme is based on the colours from the `wb_palettes`. The
+#' The World Bank theme is based on the colours from the [wb_palettes]. The
 #' primary palette consists of four colours: `wb_palettes$wb_primary`. The
 #' secondary palette consists of fourteen colours: `wb_palettes$wb_secondary`.
 #'
@@ -194,7 +194,7 @@ set_wb_font <- function(alt = paleta_fonts$paleta_noto) {
 #' [Google Fonts](https://fonts.google.com/).
 #'
 #' @param base_family Base font family using World Bank fonts. Default is set
-#'   by what World Bank font is available in the system via `set_wb_font()`.
+#'   by what World Bank font is available in the system via [set_wb_font()].
 #'   If none of the World Bank fonts are available, the default becomes
 #'   *Noto Sans*.
 #' @param base_size Base font size. Default is 11.5.
@@ -204,14 +204,14 @@ set_wb_font <- function(alt = paleta_fonts$paleta_noto) {
 #'   is `wb_blue`.
 #' @param subtitle_family Font family to use for the plot subtitle. Default is
 #'   `base_family`.
-#' @param subtitle_colour Colour of the subtitle text. Default is `wb_cyan`.
-#' @param caption_colour Colour of the caption text. Default is `wb_cyan`.
+#' @param subtitle_colour Colour of the subtitle text. Default is [wb_cyan].
+#' @param caption_colour Colour of the caption text. Default is [wb_cyan].
 #' @param axis_title_colour Colour of the axis title text. Default is
 #'   `wb_cyan`.
 #' @param legend_title_colour Colour of the legend title text. Default is NULL.
 #' @param legend_text_colour Colour of the legend text. Default is NULL.
-#' @param grid_col Grid colour. Default to `wb_cyan`.
-#' @param axis_col Axis colours. Default to `wb_cyan`.
+#' @param grid_col Grid colour. Default to [wb_cyan].
+#' @param axis_col Axis colours. Default to [wb_cyan].
 #' @param grid Panel grid. Either `TRUE`, `FALSE`, or a combination of
 #'   `X` (major x grid), `x` (minor x grid), `Y` (major y grid), and/or
 #'   `y` (minor y grid). Default is TRUE.

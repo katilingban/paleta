@@ -9,23 +9,23 @@
 #' @rdname acdc_colours
 #' @export
 #'
-acdc_green          <- "#348F41"
+acdc_green           <- "#348F41"
 
 #' @rdname acdc_colours
 #' @export
-acdc_red            <- "#9F2241"
+acdc_red             <- "#9F2241"
 
 #' @rdname acdc_colours
 #' @export
-acdc_gold           <- "#B4A269"
+acdc_gold            <- "#B4A269"
 
 #' @rdname acdc_colours
 #' @export
-acdc_white          <- "#FFFFFF"
+acdc_white           <- "#FFFFFF"
 
 #' @rdname acdc_colours
 #' @export
-acdc_grey           <- "#58595B"
+acdc_grey            <- "#58595B"
 
 #' @rdname acdc_colours
 #' @export
@@ -95,17 +95,17 @@ acdc_palettes <- list(
     acdc_blue, acdc_plum, acdc_blue_grey, acdc_amber, acdc_cyan, 
     acdc_deep_orange, acdc_purple, acdc_lime, acdc_mauve, acdc_pink, acdc_teal
   ),
-  acdc_blues = c("#D1DBE8", "#A3B8D2", "#7595BC", "#4772A6", acdc_blue),
-  acdc_plums = c("#EED0DD", "#DEA2BB", "#CE749A", "#BE4678", acdc_plum),
-  acdc_blue_greys = c("#DEE5EA", "#BDCBD5", "#9CB1C0", "#7B97AB", acdc_blue_grey),
-  acdc_ambers = c("#FFF0D1", "#FFE2A3", "#FFD376", "#FFC548", acdc_amber),
-  acdc_cyans = c("#D1F4F6", "#A4E9ED", "#77DFE4", "#4AD4DB", acdc_cyan),
+  acdc_blues        = c("#D1DBE8", "#A3B8D2", "#7595BC", "#4772A6", acdc_blue),
+  acdc_plums        = c("#EED0DD", "#DEA2BB", "#CE749A", "#BE4678", acdc_plum),
+  acdc_blue_greys   = c("#DEE5EA", "#BDCBD5", "#9CB1C0", "#7B97AB", acdc_blue_grey),
+  acdc_ambers       = c("#FFF0D1", "#FFE2A3", "#FFD376", "#FFC548", acdc_amber),
+  acdc_cyans        = c("#D1F4F6", "#A4E9ED", "#77DFE4", "#4AD4DB", acdc_cyan),
   acdc_deep_oranges = c("#FFDED6", "#FFBDAE", "#FF9D85", "#FF7C5D", acdc_deep_orange),
-  acdc_purples = c("#E8DAEA", "#D2B5D6", "#BB91C1", "#A56CAD", acdc_purple),
-  acdc_limes = c("#F7F9D9", "#F0F3B3", "#E8EE8E", "#E1E868", acdc_lime),
-  acdc_mauves = c("#D7DEEE", "#AFBDDE", "#879DCD", "#5F7CBD", acdc_mauve),
-  acdc_pinks = c("#FAD2E3", "#F5A5C8", "#F178AC", "#EC4B91", acdc_pink),
-  acdc_teals = c("#CCE9E6", "#99D3CD", "#66BEB4", "#33A89B", acdc_teal)
+  acdc_purples      = c("#E8DAEA", "#D2B5D6", "#BB91C1", "#A56CAD", acdc_purple),
+  acdc_limes        = c("#F7F9D9", "#F0F3B3", "#E8EE8E", "#E1E868", acdc_lime),
+  acdc_mauves       = c("#D7DEEE", "#AFBDDE", "#879DCD", "#5F7CBD", acdc_mauve),
+  acdc_pinks        = c("#FAD2E3", "#F5A5C8", "#F178AC", "#EC4B91", acdc_pink),
+  acdc_teals        = c("#CCE9E6", "#99D3CD", "#66BEB4", "#33A89B", acdc_teal)
 )
 
 
@@ -201,17 +201,17 @@ set_acdc_font <- function(alt = paleta_fonts$paleta_noto) {
 #'   is `acdc_text`.
 #' @param subtitle_family Font family to use for the plot subtitle. Default is
 #'   `base_family`.
-#' @param subtitle_colour Colour of the subtitle text. Default is `acdc_text`.
-#' @param caption_colour Colour of the caption text. Default is `acdc_text`.
+#' @param subtitle_colour Colour of the subtitle text. Default is [acdc_text].
+#' @param caption_colour Colour of the caption text. Default is [acdc_text].
 #' @param axis_title_colour Colour of the axis title text. Default is
 #'   `acdc_text`.
 #' @param legend_title_colour Colour of the legend title text. Default is
 #'   `acdc_text`.
-#' @param legend_text_colour Colour of the legend text. Default is `acdc_text`.
+#' @param legend_text_colour Colour of the legend text. Default is [acdc_text].
 #' @param plot_background_fill Fill colour for the plot background. Default is
 #'   NULL.
-#' @param grid_col Grid colour. Default to `acdc_gold`.
-#' @param axis_col Axis colours. Default to `acdc_gold`.
+#' @param grid_col Grid colour. Default to [acdc_gold].
+#' @param axis_col Axis colours. Default to [acdc_gold].
 #' @param grid Panel grid. Either `TRUE`, `FALSE`, or a combination of
 #'   `X` (major x grid), `x` (minor x grid), `Y` (major y grid), and/or
 #'   `y` (minor y grid). Default is TRUE.
@@ -287,7 +287,7 @@ theme_acdc_light <- function(base_family = set_acdc_font(),
 theme_acdc_dark <- function(base_family = set_acdc_font(),
                             base_size = 11.5,
                             plot_title_family = base_family,
-                            plot_title_colour = acdc_green,
+                            plot_title_colour = acdc_white,
                             subtitle_family = base_family,
                             subtitle_colour = acdc_white,
                             caption_colour = acdc_white,
@@ -319,5 +319,3 @@ theme_acdc_dark <- function(base_family = set_acdc_font(),
     ticks = ticks
   )
 }
-
-

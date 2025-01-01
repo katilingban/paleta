@@ -67,7 +67,7 @@ set_paleta_font <- function() {
 #' [Google Fonts](https://fonts.google.com/).
 #'
 #' @param base_family Base font family using Africa CDC fonts. Default is set
-#'   by what Africa CDC font is available in the system via `set_paleta_font()`.
+#'   by what Africa CDC font is available in the system via [set_paleta_font()].
 #' @param base_size Base font size. Default is 11.5.
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
@@ -115,7 +115,7 @@ set_paleta_font <- function() {
 #' @param legend_text_family Font family to use for the legend text. Default
 #'   is `subtitle_family`.
 #' @param legend_text_colour Colour of the legend text. Default is NULL.
-#' @param plot_margin Plot margins (specify with `ggplot2::margin()`).
+#' @param plot_margin Plot margins (specify with [ggplot2::margin()]).
 #' @param plot_background_fill Fill colour for the plot background. Default is
 #'   NULL.
 #' @param grid_col Grid colour. Default to NULL.

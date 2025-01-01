@@ -143,7 +143,7 @@ tint_colour <- function(hex, p) {
   col_rgb <- grDevices::col2rgb(col = hex)
 
   (255 - col_rgb) |>
-    (\(x) x * p)() |>
+    (\(x) x * (1 - p))() |>
     (\(x) col_rgb + x)() |>
     (\(x) grDevices::rgb(x[1], x[2], x[3], maxColorValue = 255))()
 }
@@ -204,7 +204,7 @@ tint_colours <- function(hex, p, label = FALSE) {
 shade_colour <- function(hex, p) {
   col_rgb <- grDevices::col2rgb(col = hex)
 
-  (col_rgb * p) |>
+  (col_rgb * (1 - p)) |>
     (\(x) col_rgb - x)() |>
     round() |>
     (\(x) grDevices::rgb(x[1], x[2], x[3], maxColorValue = 255))()
@@ -242,4 +242,3 @@ shade_colours <- function(hex, p, label = FALSE) {
 
   pal
 }
-

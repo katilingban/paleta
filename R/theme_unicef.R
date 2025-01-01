@@ -65,12 +65,14 @@ unicef_dark_blue     <- "#374EA2"
 #' @export
 #'
 unicef_palettes <- list(
-  unicef_primary     = "#1CABE2",
-  unicef_secondary   = c(
+  unicef_primary = "#1CABE2",
+  unicef_secondary = c(
     "#00833D", "#80BD41", "#FFC20E", "#F26A21", "#E2231A", "#961A49",
     "#6A1E74", "#D8D1C9", "#777779", "#2D2926", "#374EA2"
   ),
-  unicef_brights = c("#00833D", "#80BD41", "#FFC20E", "#F26A21", "#E2231A"),
+  unicef_brights = c(
+    "#00833D", "#80BD41", "#FFC20E", "#F26A21", "#E2231A"
+  ),
   unicef_neutrals = c(
     "#961A49", "#6A1E74", "#D8D1C9", "#777779", "#2D2926", "#374EA2"
   )
@@ -141,11 +143,11 @@ set_unicef_font <- function(alt = paleta_fonts$paleta_noto) {
 #'
 #' A [ggplot2] theme using UNICEF fonts, colours, and palettes
 #'
-#' These are wrappers for `theme_paleta()` that use colours and fonts from the
+#' These are wrappers for [theme_paleta()] that use colours and fonts from the
 #' UNICEF visual identity guidelines.
 #'
 #' @section Colours:
-#' The UNICEF theme is based on the colours from the `unicef_palettes`. The
+#' The UNICEF theme is based on the colours from the [unicef_palettes]. The
 #' primary palette consists of one colour: `unicef_palettes$unicef_primary`.
 #' The secondary palette consists of eleven colours:
 #' `unicef_palettes$unicef_secondary`.
@@ -160,7 +162,7 @@ set_unicef_font <- function(alt = paleta_fonts$paleta_noto) {
 #' can be obtained from [Google Fonts](https://fonts.google.com/).
 #'
 #' @param base_family Base font family using UNICEF fonts. Default is set
-#'   by what UNICEF font is available in the system via `set_unicef_font()`.
+#'   by what UNICEF font is available in the system via [set_unicef_font()].
 #'   If none of the UNICEF fonts are available, the default becomes
 #'   *Noto Sans*.
 #' @param base_size Base font size. Default is 11.5.
@@ -178,8 +180,8 @@ set_unicef_font <- function(alt = paleta_fonts$paleta_noto) {
 #'   `unicef_cool_grey`.
 #' @param legend_title_colour Colour of the legend title text. Default is NULL.
 #' @param legend_text_colour Colour of the legend text. Default is NULL.
-#' @param grid_col Grid colour. Default to `unicef_warm_grey`.
-#' @param axis_col Axis colours. Default to `unicef_warm_grey`.
+#' @param grid_col Grid colour. Default to [unicef_warm_grey].
+#' @param axis_col Axis colours. Default to [unicef_warm_grey].
 #' @param grid Panel grid. Either `TRUE`, `FALSE`, or a combination of
 #'   `X` (major x grid), `x` (minor x grid), `Y` (major y grid), and/or
 #'   `y` (minor y grid). Default is TRUE.

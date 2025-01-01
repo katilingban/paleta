@@ -4,12 +4,17 @@
 
 * Changed Africa CDC colour palettes based on updated communication style guidelines
 
+* Created sequential and divergent Africa CDC colour palettes
+
 ## General updates
 
-* refresh `pkgdown` website
-* refresh GitHub Actions workflows to include Netlify pull request deployment
+* refreshed `pkgdown` website
+* refreshed GitHub Actions workflows to include Netlify pull request deployment
 * added appropriate `fig.alt` specifications in all package documentation
 
+## Bug fixes
+
+* fixed issue with `tint_colour*()` and `shade_colour*()` functions in which they return the opposite percentage tint or shade of a colour or a set of colours
 
 # paleta (version 0.0.0.9001)
 
