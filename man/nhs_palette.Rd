@@ -3,18 +3,25 @@
 \docType{data}
 \name{nhs_palettes}
 \alias{nhs_palettes}
+\alias{nhs_brewer_palettes}
 \title{NHS palettes}
 \format{
-An object of class \code{list} of length 25.
+An object of class \code{list} of length 26.
+
+An object of class \code{list} of length 23.
 }
 \usage{
 nhs_palettes
+
+nhs_brewer_palettes
 }
 \description{
 NHS palettes
 }
 \examples{
 nhs_palettes
+
+nhs_brewer_palettes
 
 }
 \keyword{datasets}

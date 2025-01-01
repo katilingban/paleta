@@ -8,87 +8,91 @@
 #' @rdname nhs_colours
 #' @export
 #'
-nhs_blue        <- "#005EB8"
+nhs_blue          <- "#005EB8"
 
 #' @rdname nhs_colours
 #' @export
-nhs_white       <- "#FFFFFF"
+nhs_white         <- "#FFFFFF"
 
 #' @rdname nhs_colours
 #' @export
-nhs_dark_blue   <- "#003087"
+nhs_dark_blue     <- "#003087"
 
 #' @rdname nhs_colours
 #' @export
-nhs_bright_blue <- "#0072CE"
+nhs_bright_blue   <- "#0072CE"
 
 #' @rdname nhs_colours
 #' @export
-nhs_light_blue  <- "#41B6E6"
+nhs_light_blue    <- "#41B6E6"
 
 #' @rdname nhs_colours
 #' @export
-nhs_aqua_blue   <- "#00A9CE"
+nhs_aqua_blue     <- "#00A9CE"
 
 #' @rdname nhs_colours
 #' @export
-nhs_black       <- "#231f20"
+nhs_black         <- "#231f20"
 
 #' @rdname nhs_colours
 #' @export
-nhs_dark_grey   <- "#425563"
+nhs_dark_grey     <- "#425563"
 
 #' @rdname nhs_colours
 #' @export
-nhs_mid_grey    <- "#768692"
+nhs_mid_grey      <- "#768692"
 
 #' @rdname nhs_colours
 #' @export
-nhs_pale_grey   <- "#E8EDEE"
+nhs_pale_grey     <- "#E8EDEE"
 
 #' @rdname nhs_colours
 #' @export
-nhs_dark_green  <- "#006747"
+nhs_dark_green    <- "#006747"
 
 #' @rdname nhs_colours
 #' @export
-nhs_green       <- "#009639"
+nhs_green         <- "#009639"
 
 #' @rdname nhs_colours
 #' @export
-nhs_light_green <- "#78BE20"
+nhs_light_green   <- "#78BE20"
 
 #' @rdname nhs_colours
 #' @export
-nhs_aqua_green  <- "#00A499"
+nhs_aqua_green    <- "#00A499"
 
 #' @rdname nhs_colours
 #' @export
-nhs_purple      <- "#330072"
+nhs_purple        <- "#330072"
 
 #' @rdname nhs_colours
 #' @export
-nhs_dark_pink   <- "#7C2855"
+nhs_dark_pink     <- "#7C2855"
 
 #' @rdname nhs_colours
 #' @export
-nhs_pink        <- "#AE2573"
+nhs_pink          <- "#AE2573"
 
 #' @rdname nhs_colours
 #' @export
-nhs_dark_red    <- "#8A1538"
+nhs_emergency_red <- "#DA291C"
 
 #' @rdname nhs_colours
 #' @export
-nhs_orange      <- "#ED8B00"
+nhs_dark_red      <- "#8A1538"
 
 #' @rdname nhs_colours
 #' @export
-nhs_warm_yellow <- "#FFB81C"
+nhs_orange        <- "#ED8B00"
 
 #' @rdname nhs_colours
 #' @export
-nhs_yellow      <- "#FAE100"
+nhs_warm_yellow   <- "#FFB81C"
+
+#' @rdname nhs_colours
+#' @export
+nhs_yellow        <- "#FAE100"
 
 
 #'
@@ -108,26 +112,71 @@ nhs_palettes <- list(
   nhs_highlights = c(
     "#330072", "#7C2855", "#AE2573", "#8A1538", "#ED8B00", "#FFB81C", "#FAE100"
   ),
-  nhs_dark_blues =   c("#003087", "#33599F", "#6682B7", "#99ACCF", "#CCD5E7"),
-  nhs_blues =        c("#005EB8", "#337EC6", "#669ED4", "#99BEE2", "#CCDEF0"),
-  nhs_bright_blues = c("#0072CE", "#338ED7", "#66AAE1", "#99C6EB", "#CCE2F5"),
-  nhs_light_blues =  c("#41B6E6", "#67C4EB", "#8DD3F0", "#B3E1F5", "#D9F0FA"),
-  nhs_aqua_blues =   c("#00A9CE", "#33BAD7", "#66CBE1", "#99DCEB", "#CCEDF5"),
-  nhs_blacks =       c("#231f20", "#4F4B4C", "#7B7879", "#A7A5A5", "#D3D2D2"),
-  nhs_dark_greys =   c("#425563", "#677782", "#8D99A1", "#B3BBC0", "#D9DDDF"),
-  nhs_mid_greys =    c("#768692", "#919EA7", "#ACB6BD", "#C8CED3", "#E3E6E9"),
-  nhs_pale_greys =   c("#E8EDEE", "#ECF0F1", "#F1F4F4", "#F5F7F8", "#FAFBFB"),
-  nhs_dark_greens =  c("#006747", "#33856B", "#66A390", "#99C2B5", "#CCE0DA"),
-  nhs_greens =       c("#009639", "#33AB60", "#66C088", "#99D5AF", "#CCEAD7"),
-  nhs_light_greens = c("#78BE20", "#93CB4C", "#AED879", "#C9E5A5", "#E4F2D2"),
-  nhs_aqua_greens =  c("#00A499", "#33B6AD", "#66C8C1", "#99DAD6", "#CCECEA"),
-  nhs_purples =      c("#330072", "#5B338E", "#8466AA", "#AD99C6", "#D6CCE2"),
-  nhs_dark_pinks =   c("#7C2855", "#965377", "#B07E99", "#CAA9BB", "#E4D4DD"),
-  nhs_pinks =        c("#AE2573", "#BE508F", "#CE7CAB", "#DEA7C7", "#EED3E3"),
-  nhs_dark_reds =    c("#8A1538", "#A1435F", "#B87287", "#D0A1AF", "#E7D0D7"),
-  nhs_oranges =      c("#ED8B00", "#F0A233", "#F4B966", "#F7D099", "#FBE7CC"),
-  nhs_warm_yellows = c("#FFB81C", "#FFC649", "#FFD476", "#FFE2A4", "#FFF0D1"),
-  nhs_yellows =      c("#FAE100", "#FBE733", "#FCED66", "#FDF399", "#FEF9CC")
+  nhs_dark_blues   = rev(c("#003087", "#33599F", "#6682B7", "#99ACCF", "#CCD5E7")),
+  nhs_blues        = rev(c("#005EB8", "#337EC6", "#669ED4", "#99BEE2", "#CCDEF0")),
+  nhs_bright_blues = rev(c("#0072CE", "#338ED7", "#66AAE1", "#99C6EB", "#CCE2F5")),
+  nhs_light_blues  = rev(c("#41B6E6", "#67C4EB", "#8DD3F0", "#B3E1F5", "#D9F0FA")),
+  nhs_aqua_blues   = rev(c("#00A9CE", "#33BAD7", "#66CBE1", "#99DCEB", "#CCEDF5")),
+  nhs_blacks       = rev(c("#231f20", "#4F4B4C", "#7B7879", "#A7A5A5", "#D3D2D2")),
+  nhs_dark_greys   = rev(c("#425563", "#677782", "#8D99A1", "#B3BBC0", "#D9DDDF")),
+  nhs_mid_greys    = rev(c("#768692", "#919EA7", "#ACB6BD", "#C8CED3", "#E3E6E9")),
+  nhs_pale_greys   = rev(c("#E8EDEE", "#ECF0F1", "#F1F4F4", "#F5F7F8", "#FAFBFB")),
+  nhs_dark_greens  = rev(c("#006747", "#33856B", "#66A390", "#99C2B5", "#CCE0DA")),
+  nhs_greens       = rev(c("#009639", "#33AB60", "#66C088", "#99D5AF", "#CCEAD7")),
+  nhs_light_greens = rev(c("#78BE20", "#93CB4C", "#AED879", "#C9E5A5", "#E4F2D2")),
+  nhs_aqua_greens  = rev(c("#00A499", "#33B6AD", "#66C8C1", "#99DAD6", "#CCECEA")),
+  nhs_purples      = rev(c("#330072", "#5B338E", "#8466AA", "#AD99C6", "#D6CCE2")),
+  nhs_dark_pinks   = rev(c("#7C2855", "#965377", "#B07E99", "#CAA9BB", "#E4D4DD")),
+  nhs_pinks        = rev(c("#AE2573", "#BE508F", "#CE7CAB", "#DEA7C7", "#EED3E3")),
+  nhs_dark_reds    = rev(c("#8A1538", "#A1435F", "#B87287", "#D0A1AF", "#E7D0D7")),
+  nhs_reds         = rev(c("#DA291C", "#E15349", "#E87E76", "#F0A9A4", "#F7D4D1")),
+  nhs_oranges      = rev(c("#ED8B00", "#F0A233", "#F4B966", "#F7D099", "#FBE7CC")),
+  nhs_warm_yellows = rev(c("#FFB81C", "#FFC649", "#FFD476", "#FFE2A4", "#FFF0D1")),
+  nhs_yellows      = rev(c("#FAE100", "#FBE733", "#FCED66", "#FDF399", "#FEF9CC"))
+)
+
+
+#'
+#' @examples
+#' nhs_brewer_palettes
+#' 
+#' @rdname nhs_palette
+#' @export
+#' 
+
+nhs_brewer_palettes <- list(
+  blues  = c(nhs_light_blue, nhs_blue, nhs_bright_blue),
+  bugn   = c(nhs_light_blue, nhs_aqua_green, nhs_green),
+  bupu   = c(nhs_dark_blue, nhs_dark_pink, nhs_purple),
+  gnbu   = c(nhs_aqua_green, nhs_aqua_blue, nhs_bright_blue),
+  greens = c(nhs_light_green, nhs_green, nhs_dark_green),
+  greys  = c(nhs_pale_grey, nhs_mid_grey, nhs_dark_grey),
+  pubu   = c(nhs_purple, nhs_dark_pink, nhs_dark_blue),
+  pubugn = c(nhs_purple, nhs_blue, nhs_green),
+  purd   = c(nhs_purple, nhs_dark_pink, nhs_dark_red),
+  rdpu   = c(nhs_dark_red, nhs_dark_pink, nhs_purple),
+  reds   = c(nhs_emergency_red, nhs_pink, nhs_dark_red),
+  ylgn   = c(nhs_yellow, nhs_aqua_green, nhs_dark_green),
+  ylgnbu = c(nhs_yellow, nhs_aqua_blue, nhs_dark_blue),
+  ylorrd = c(nhs_yellow, nhs_orange, nhs_dark_red),
+  piylgn = c(nhs_pink, nhs_yellow, nhs_green),
+  prgn   = c(nhs_purple, nhs_pink, nhs_dark_green),
+  puor   = c(nhs_purple, nhs_emergency_red, nhs_orange),
+  rdbu   = c(nhs_dark_red, nhs_purple, nhs_dark_blue),
+  rdgy   = c(nhs_dark_red, nhs_emergency_red, nhs_mid_grey),
+  rdylbu = c(nhs_emergency_red, nhs_yellow, nhs_bright_blue),
+  rdylgn = c(nhs_emergency_red, nhs_yellow, nhs_green),
+  pastel1 = c(
+    nhs_palettes$nhs_light_blues[3], nhs_palettes$nhs_bright_blues[3],
+    nhs_palettes$nhs_greens[3], nhs_palettes$nhs_light_greens[3],
+    nhs_palettes$nhs_pinks[3], nhs_palettes$nhs_purples[3],
+    nhs_palettes$nhs_reds[3], nhs_palettes$nhs_oranges[3]
+  ),
+  dark   = c(
+    nhs_palettes$nhs_dark_blues[4], nhs_palettes$nhs_dark_greens[4],
+    nhs_palettes$nhs_dark_reds[4], nhs_palettes$nhs_purples[4],
+    nhs_palettes$nhs_dark_greys[4]
+  )
 )
 
 
