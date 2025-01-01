@@ -62,6 +62,7 @@ reference:
   - title: Africa CDC
     contents:
     - acdc_palettes
+    - acdc_brewer_palettes
     - acdc_fonts
     - acdc_green
     - acdc_red
@@ -127,6 +128,7 @@ reference:
   - title: NHS
     contents:
     - nhs_palettes
+    - nhs_brewer_palettes
     - nhs_fonts
     - nhs_blue
     - nhs_white
