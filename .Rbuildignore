@@ -10,3 +10,4 @@
 ^pkgdown$
 ^_pkgdown\.yml$
 ^README\.html$
+^CODE_OF_CONDUCT\.md$
