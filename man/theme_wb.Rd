@@ -24,7 +24,7 @@ theme_wb(
 }
 \arguments{
 \item{base_family}{Base font family using World Bank fonts. Default is set
-by what World Bank font is available in the system via \code{set_wb_font()}.
+by what World Bank font is available in the system via \code{\link[=set_wb_font]{set_wb_font()}}.
 If none of the World Bank fonts are available, the default becomes
 \emph{Noto Sans}.}
 
@@ -39,9 +39,9 @@ is \code{wb_blue}.}
 \item{subtitle_family}{Font family to use for the plot subtitle. Default is
 \code{base_family}.}
 
-\item{subtitle_colour}{Colour of the subtitle text. Default is \code{wb_cyan}.}
+\item{subtitle_colour}{Colour of the subtitle text. Default is \link{wb_cyan}.}
 
-\item{caption_colour}{Colour of the caption text. Default is \code{wb_cyan}.}
+\item{caption_colour}{Colour of the caption text. Default is \link{wb_cyan}.}
 
 \item{axis_title_colour}{Colour of the axis title text. Default is
 \code{wb_cyan}.}
@@ -50,13 +50,13 @@ is \code{wb_blue}.}
 
 \item{legend_text_colour}{Colour of the legend text. Default is NULL.}
 
-\item{grid_col}{Grid colour. Default to \code{wb_cyan}.}
+\item{grid_col}{Grid colour. Default to \link{wb_cyan}.}
 
 \item{grid}{Panel grid. Either \code{TRUE}, \code{FALSE}, or a combination of
 \code{X} (major x grid), \code{x} (minor x grid), \code{Y} (major y grid), and/or
 \code{y} (minor y grid). Default is TRUE.}
 
-\item{axis_col}{Axis colours. Default to \code{wb_cyan}.}
+\item{axis_col}{Axis colours. Default to \link{wb_cyan}.}
 
 \item{axis}{Add x or y axes? \code{TRUE}, \code{FALSE}, "\code{xy}". Default is FALSE.}
 
@@ -66,12 +66,12 @@ is \code{wb_blue}.}
 A \link{ggplot2} theme.
 }
 \description{
-These are wrappers for \code{theme_paleta()} that use colours and fonts from the
+These are wrappers for \code{\link[=theme_paleta]{theme_paleta()}} that use colours and fonts from the
 World Bank visual identity guidelines.
 }
 \section{Colours}{
 
-The World Bank theme is based on the colours from the \code{wb_palettes}. The
+The World Bank theme is based on the colours from the \link{wb_palettes}. The
 primary palette consists of four colours: \code{wb_palettes$wb_primary}. The
 secondary palette consists of fourteen colours: \code{wb_palettes$wb_secondary}.
 }

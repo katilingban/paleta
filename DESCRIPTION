@@ -16,6 +16,7 @@ License: GPL (>= 3)
 Depends: 
     R (>= 4.1.0)
 Imports: 
+    cli,
     ggplot2,
     stringr,
     systemfonts,

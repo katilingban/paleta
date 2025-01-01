@@ -46,7 +46,7 @@ theme_paleta(
 }
 \arguments{
 \item{base_family}{Base font family using Africa CDC fonts. Default is set
-by what Africa CDC font is available in the system via \code{set_paleta_font()}.}
+by what Africa CDC font is available in the system via \code{\link[=set_paleta_font]{set_paleta_font()}}.}
 
 \item{base_size}{Base font size. Default is 11.5.}
 
@@ -125,7 +125,7 @@ is \code{subtitle_family}.}
 
 \item{legend_text_colour}{Colour of the legend text. Default is NULL.}
 
-\item{plot_margin}{Plot margins (specify with \code{ggplot2::margin()}).}
+\item{plot_margin}{Plot margins (specify with \code{\link[ggplot2:element]{ggplot2::margin()}}).}
 
 \item{plot_background_fill}{Fill colour for the plot background. Default is
 NULL.}

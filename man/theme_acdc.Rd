@@ -27,7 +27,7 @@ theme_acdc_dark(
   base_family = set_acdc_font(),
   base_size = 11.5,
   plot_title_family = base_family,
-  plot_title_colour = acdc_green,
+  plot_title_colour = acdc_white,
   subtitle_family = base_family,
   subtitle_colour = acdc_white,
   caption_colour = acdc_white,
@@ -59,9 +59,9 @@ is \code{acdc_text}.}
 \item{subtitle_family}{Font family to use for the plot subtitle. Default is
 \code{base_family}.}
 
-\item{subtitle_colour}{Colour of the subtitle text. Default is \code{acdc_text}.}
+\item{subtitle_colour}{Colour of the subtitle text. Default is \link{acdc_text}.}
 
-\item{caption_colour}{Colour of the caption text. Default is \code{acdc_text}.}
+\item{caption_colour}{Colour of the caption text. Default is \link{acdc_text}.}
 
 \item{axis_title_colour}{Colour of the axis title text. Default is
 \code{acdc_text}.}
@@ -69,15 +69,15 @@ is \code{acdc_text}.}
 \item{legend_title_colour}{Colour of the legend title text. Default is
 \code{acdc_text}.}
 
-\item{legend_text_colour}{Colour of the legend text. Default is \code{acdc_text}.}
+\item{legend_text_colour}{Colour of the legend text. Default is \link{acdc_text}.}
 
-\item{grid_col}{Grid colour. Default to \code{acdc_gold}.}
+\item{grid_col}{Grid colour. Default to \link{acdc_gold}.}
 
 \item{grid}{Panel grid. Either \code{TRUE}, \code{FALSE}, or a combination of
 \code{X} (major x grid), \code{x} (minor x grid), \code{Y} (major y grid), and/or
 \code{y} (minor y grid). Default is TRUE.}
 
-\item{axis_col}{Axis colours. Default to \code{acdc_gold}.}
+\item{axis_col}{Axis colours. Default to \link{acdc_gold}.}
 
 \item{axis}{Add x or y axes? \code{TRUE}, \code{FALSE}, "\code{xy}". Default is FALSE.}
 

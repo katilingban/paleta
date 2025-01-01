@@ -108,6 +108,59 @@ acdc_palettes <- list(
   acdc_teals        = c("#CCE9E6", "#99D3CD", "#66BEB4", "#33A89B", acdc_teal)
 )
 
+#'
+#' @examples
+#' acdc_brewer_palettes
+#'
+#' @rdname acdc_palette
+#' @export
+#'
+acdc_brewer_palettes <- list(
+  blues  = rev(c(acdc_blue, acdc_blue_grey, acdc_palettes$acdc_blues[2])),
+  bugn   = c(acdc_blue, acdc_lime, acdc_teal),
+  bupu   = c(acdc_blue, acdc_blue_grey, acdc_purple),
+  gnbu   = c(acdc_teal, acdc_lime, acdc_blue),
+  pubu   = c(acdc_purple, acdc_blue_grey, acdc_blue),
+  pubugn = c(acdc_purple, acdc_blue, acdc_lime),
+  purd   = c(acdc_purple, acdc_plum, acdc_pink),
+  rdpu   = c(acdc_red, acdc_pink, acdc_purple),
+  ylgn   = c(acdc_amber, acdc_teal, acdc_green),
+  ylgnbu = c(acdc_amber, acdc_lime, acdc_blue),
+  ylorrd = c(acdc_amber, acdc_deep_orange, acdc_red),
+  piylgn = c(acdc_pink, acdc_amber, acdc_lime),
+  prgn   = c(acdc_purple, acdc_mauve, acdc_green),
+  puor   = c(acdc_purple, acdc_amber, acdc_deep_orange),
+  rdbu   = c(acdc_red, acdc_plum, acdc_blue),
+  rdylbu = c(acdc_red, acdc_amber, acdc_blue),
+  rdylgn = c(acdc_red, acdc_amber, acdc_lime),
+  pastel1 = c(
+    acdc_palettes$acdc_blues[3], 
+    acdc_palettes$acdc_plums[3], 
+    acdc_palettes$acdc_blue_grey[3], 
+    acdc_palettes$acdc_amber[3], 
+    acdc_palettes$acdc_cyan[3], 
+    acdc_palettes$acdc_deep_orange[3], 
+    acdc_palettes$acdc_purple[3], 
+    acdc_palettes$acdc_lime[3], 
+    acdc_palettes$acdc_mauve[3], 
+    acdc_palettes$acdc_pink[3], 
+    acdc_palettes$acdc_teal[3]
+  ),
+  pastel2 = c(
+    acdc_palettes$acdc_blues[2], 
+    acdc_palettes$acdc_plums[2], 
+    acdc_palettes$acdc_blue_grey[2], 
+    acdc_palettes$acdc_amber[2], 
+    acdc_palettes$acdc_cyan[2], 
+    acdc_palettes$acdc_deep_orange[2], 
+    acdc_palettes$acdc_purple[2], 
+    acdc_palettes$acdc_lime[2], 
+    acdc_palettes$acdc_mauve[2], 
+    acdc_palettes$acdc_pink[2], 
+    acdc_palettes$acdc_teal[2]
+  )
+)
+
 
 #'
 #' Africa CDC fonts
