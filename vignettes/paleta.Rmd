@@ -11,6 +11,7 @@ vignette: >
 knitr::opts_chunk$set(
   message = FALSE, 
   warning = FALSE,
+  error = FALSE,
   collapse = TRUE,
   comment = "#>",
   dev = "ragg_png"

@@ -11,6 +11,7 @@ vignette: >
 knitr::opts_chunk$set(
   message = FALSE,
   warning = FALSE,
+  error = FALSE,
   collapse = TRUE,
   comment = "#>",
   dev = "ragg_png"
@@ -28,23 +29,23 @@ UNICEF, which stands for the United Nations International Children's Emergency F
 
 UNICEF main colour is the iconic **UNICEF Blue**.
 
-```{r unicef-blue, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r unicef-blue, echo = FALSE, fig.alt = "UNICEF Blue", fig.align = "center", fig.height = 1}
 structure(unicef_blue, class = "palette", name = "UNICEF Blue")
 ```
 
 Complementing **UNICEF Blue** is a set of 11 secondary colours.
 
-```{r unicef-secondary, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r unicef-secondary, echo = FALSE, fig.alt = "UNICEF secondary colours palette", fig.align = "center", fig.height = 1}
 structure(unicef_palettes$unicef_secondary, class = "palette", name = "UNICEF Secondary")
 ```
 
 The secondary colours can be further subdivided into a set of 5 bright colours and a set of 6 neutral colours.
 
-```{r unicef-brights, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r unicef-brights, echo = FALSE, fig.alt = "UNICEF bright colours palette", fig.align = "center", fig.height = 1}
 structure(unicef_palettes$unicef_brights, class = "palette", name = "UNICEF Brights")
 ```
 
-```{r unicef-neutrals, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r unicef-neutrals, echo = FALSE, fig.alt = "UNICEF bright colours palette", fig.align = "center", fig.height = 1}
 structure(unicef_palettes$unicef_neutrals, class = "palette", name = "UNICEF Neutrals")
 ```
 
@@ -52,7 +53,7 @@ structure(unicef_palettes$unicef_neutrals, class = "palette", name = "UNICEF Neu
 
 A UNICEF `ggplot2` theme function called `theme_unicef()` is included in the `paleta` package. Following are examples of how it can be used.
 
-```{r unicef-theme-bar, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+```{r unicef-theme-bar, echo = FALSE, fig.alt = "A bar plot showcasing the UNICEF ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## barplot using theme_unicef()
 ggplot(
   data = mtcars,
@@ -73,7 +74,7 @@ ggplot(
   theme_unicef(grid = "Y")
 ```
 
-```{r unicef-theme-scatter, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+```{r unicef-theme-scatter, echo = FALSE, fig.alt = "A scatter plot showcasing the UNICEF ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## scatterplot using theme_unicef()
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   geom_point(size = 3) +

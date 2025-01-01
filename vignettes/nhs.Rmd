@@ -11,6 +11,7 @@ vignette: >
 knitr::opts_chunk$set(
   message = FALSE,
   warning = FALSE,
+  error = FALSE,
   collapse = TRUE,
   comment = "#>",
   dev = "ragg_png"
@@ -32,7 +33,7 @@ The NHS covers a wide range of healthcare services, including general practition
 
 The core NHS colours are blue and white:
 
-```{r nhs-blue, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r nhs-blue, echo = FALSE, fig.alt = "NHS primary colour palette", fig.align = "center", fig.height = 1}
 structure(nhs_palettes$nhs_primary, class = "palette", name = "NHS Core Colours")
 ```
 
@@ -42,7 +43,7 @@ This is supplemented by four additional groups of colours. All colours in the pa
 
 Level 1 of the NHS colour palette consists of various shades of blue, emphasizing the association with blue and white. It provides lighter and darker alternatives to the main NHS Blue colour, offering tonal variety while maintaining the core brand identity.
 
-```{r nhs-blue-tones, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r nhs-blue-tones, echo = FALSE, fig.alt = "NHS blue tones palette", fig.align = "center", fig.height = 1}
 structure(nhs_palettes$nhs_blue_tones, class = "palette", name = "NHS Blues")
 ```
 
@@ -50,7 +51,7 @@ structure(nhs_palettes$nhs_blue_tones, class = "palette", name = "NHS Blues")
 
 These additional colours complement the primary blues in the palette. Black and dark grey are suitable for text depending on the context. Lighter greys can serve as backgrounds, especially online. White serves as the primary neutral base. Proper use of these colours enhances the overall blue and white aesthetic.
 
-```{r nhs-neutrals, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r nhs-neutrals, echo = FALSE, fig.alt = "NHS neutrals palette", fig.align = "center", fig.height = 1}
 structure(nhs_palettes$nhs_neutrals, class = "palette", name = "NHS Neutrals")
 ```
 
@@ -58,7 +59,7 @@ structure(nhs_palettes$nhs_neutrals, class = "palette", name = "NHS Neutrals")
 
 Green, being closely related to blue in the colour spectrum, complements the blue and white palette. When used moderately and in a supporting role, it maintains the association with blue and white without compromising it. However, if green becomes too dominant, it may hinder people's ability to instantly recognize the NHS as the source of information.
 
-```{r nhs-support-green, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r nhs-support-green, echo = FALSE, fig.alt = "NHS support greens palette", fig.align = "center", fig.height = 1}
 structure(nhs_palettes$nhs_support_greens, class = "palette", name = "NHS Support Greens")
 ```
 
@@ -66,7 +67,7 @@ structure(nhs_palettes$nhs_support_greens, class = "palette", name = "NHS Suppor
 
 Highlights are effective for emphasizing details, adding warmth to the blue theme, and offering accent colours for NHS entities to distinguish themselves. However, excessive use can drastically alter the overall appearance and disassociate the communication from the NHS brand. Therefore, it's advised to use highlights sparingly and avoid large blocks of these colours.
 
-```{r nhs-highlights, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r nhs-highlights, echo = FALSE, fig.alt = "NHS highlights palette", fig.align = "center", fig.height = 1}
 structure(nhs_palettes$nhs_highlights, class = "palette", name = "NHS Highlights")
 ```
 
@@ -74,7 +75,7 @@ structure(nhs_palettes$nhs_highlights, class = "palette", name = "NHS Highlights
 
 An NHS `ggplot2` theme function called `theme_nhs()` is included in the `paleta` package. Following are examples of how it can be used.
 
-```{r nhs-theme-bar, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+```{r nhs-theme-bar, echo = FALSE, fig.alt = "A bar plot showcasing the NHS ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## barplot using theme_nhs()
 ggplot(
   data = mtcars,
@@ -95,7 +96,7 @@ ggplot(
   theme_nhs(grid = "Y")
 ```
 
-```{r nhs-theme-scatter, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+```{r nhs-theme-scatter, echo = FALSE, fig.alt = "A scatter plot showcasing the NHS ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## scatterplot using theme_nhs()
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   geom_point(size = 3) +

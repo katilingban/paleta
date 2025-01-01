@@ -5,28 +5,40 @@
 acdc_colours <- tibble::tibble(
   organisation = "Africa CDC",
   name = c(
-    "ACDC Green", "ACDC Gold", "ACDC Black", "ACDC Brown",
-    "ACDC Yellow", "ACDC Orange", "ACDC Red", "ACDC Dark Green"
+    "ACDC Green", "ACDC Red", "ACDC Gold", "ACDC White", "ACDC Grey",
+    "ACDC Corporate Green", "ACDC Text", "ACDC Blue", "ACDC Plum",
+    "ACDC Blue Grey", "ACDC Amber", "ACDC Cyan", "ACDC Deep Orange",
+    "ACDC Purple", "ACDC Lime", "ACDC Mauve", "ACDC Pink", "ACDC Teal"
   ),
   code = c(
-    "acdc_green", "acdc_gold", "acdc_black", "acdc_brown",
-    "acdc_yellow", "acdc_orange", "acdc_red", "acdc_dark_green"
+    "acdc_green", "acdc_red", "acdc_gold", "acdc_white", "acdc_grey",
+    "acdc_corporate_green", "acdc_text", "acdc_blue", "acdc_plum",
+    "acdc_blue_grey", "acdc_amber", "acdc_cyan", "acdc_deep_orange",
+    "acdc_purple", "acdc_lime", "acdc_mauve", "acdc_pink", "acdc_teal"
   ),
   rgb = c(
-    "52, 143, 65", "180, 162, 105", "0, 0, 0", "107, 76, 36",
-    "224, 143, 42", "196, 91, 57", "120, 44, 45", "75, 84, 48"
+    "52, 143, 65", "159, 34, 65", "180, 162, 105", "255, 255, 255", 
+    "88, 89, 91", "26, 86, 50", "83, 87, 90", "25, 79, 144", "174, 24, 87",
+    "91, 126, 150", "255, 183, 27", "29, 202, 211", "255, 92, 53",
+    "143, 72, 153", "218, 227, 67", "56, 92, 173", "232, 31, 118", 
+    "0, 147, 131"
   ),
   cmyk = c(
-    "81, 20, 100, 6", "31, 31, 69, 2", "0, 0, 0, 100", "43, 61, 93, 39",
-    "11, 50, 98, 0", "18, 76, 86, 5", "33, 87, 76, 39", "69, 43, 95, 37"
+    "81, 20, 100, 6", "27, 98, 66, 18", "31, 31, 69, 2", "0, 0, 0, 0", 
+    "65, 56, 53, 29", "86, 40, 91, 39", "66, 56, 53, 29", "98, 77, 14, 2",
+    "26, 100, 47, 8", "69, 43, 30, 4", "1, 25, 98, 0", "70, 1, 16, 0",
+    "0, 80, 92, 0", "51, 90, 0, 0", "23, 0, 95, 0", "84, 75, 1, 0",
+    "2, 98, 41, 0", "82, 18, 54, 2"
   ),
   hex = c(
-    "#348F41", "#B4A269", "#000000", "#6B4C24",
-    "#E08F2A", "#C45B39", "#782C2D", "#4B5430"
+    "#348F41", "#9F2241", "#B4A269", "#FFFFFF", "#58595B", "#1A5632",
+    "#53575A", "#194F90", "#AE1857", "#5B7E96", "#FFB71B", "#1DCAD3",
+    "#FF5C35", "#8F4899", "#DAE343", "#385CAD", "#E81F76", "#009383"
   ),
   pantone = c(
-    "7740C", "4515C", "Black C", "1405C",
-    "129C", "158C", "1807C", "364C"
+    "7740C", "7420C", "4515C", "11-0601TCX", "425C", "3415C", "425C", "7686C",
+    "215C", "5415C", "1235C", "319C", "171C", "258C", "380C", "7455C", "213C",
+    "3285C" 
   )
 )
 
