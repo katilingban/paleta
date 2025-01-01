@@ -2,11 +2,13 @@
 
 ## Major changes
 
+* Changed Africa CDC colour palettes based on updated communication style guidelines
 
 ## General updates
 
 * refresh `pkgdown` website
 * refresh GitHub Actions workflows to include Netlify pull request deployment
+* added appropriate `fig.alt` specifications in all package documentation
 
 
 # paleta (version 0.0.0.9001)

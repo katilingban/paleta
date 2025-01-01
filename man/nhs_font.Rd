@@ -22,7 +22,7 @@ A character value for font family to use as NHS font.
 }
 \description{
 The function will search the system for availability of any of the NHS
-fonts in heirarchical order starting with \emph{Andes}, and then \emph{Arial}. If
+fonts in hierarchical order starting with \emph{Andes}, and then \emph{Arial}. If
 none of these are found in the system, the function will return \emph{Noto Sans}
 by default or the user can set which font to use as alternative by specifying
 \code{alt}.

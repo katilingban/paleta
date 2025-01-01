@@ -136,7 +136,7 @@ wb_fonts <- list(
 #' Set World Bank font to use based on what is available from the system
 #'
 #' The function will search the system for availability of any of the World Bank
-#' fonts in heirarchical order starting with *Andes*, and then *Arial*. If
+#' fonts in hierarchical order starting with *Andes*, and then *Arial*. If
 #' none of these are found in the system, the function will return *Noto Sans*
 #' by default or the user can set which font to use as alternative by specifying
 #' `alt`.

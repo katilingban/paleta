@@ -11,7 +11,7 @@ A character value for font family to use as paleta font.
 }
 \description{
 The function will search the system for availability of any of the paleta
-fonts in heirarchical order starting with \emph{Roboto Condensed}, then
+fonts in hierarchical order starting with \emph{Roboto Condensed}, then
 \emph{Noto Sans}, and then \emph{Roboto}.
 }
 \examples{

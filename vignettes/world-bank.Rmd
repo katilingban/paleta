@@ -11,6 +11,7 @@ vignette: >
 knitr::opts_chunk$set(
   message = FALSE,
   warning = FALSE,
+  error = FALSE,
   collapse = TRUE,
   comment = "#>",
   dev = "ragg_png"
@@ -38,13 +39,13 @@ The World Bank Group (WBG) comprises five global institutions working with a sin
 
 The World Bank employs four corporate colours: Blue, Cyan, Black, and White.
 
-```{r wb-primary, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-primary, echo = FALSE, fig.alt = "World Bank primary colour palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_primary, class = "palette", name = "World Bank Primary Colours")
 ```
 
 These are complemented by a set of fourteen secondary colours.
 
-```{r wb-secondary, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-secondary, echo = FALSE, fig.alt = "World Bank secondary colours palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_secondary, class = "palette", name = "World Bank Secondary Colours")
 ```
 
@@ -54,97 +55,97 @@ In addition to the primary and secondary colours, the colours can be grouped int
 
 ### Bright palette
 
-```{r wb-bright, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-bright, echo = FALSE, fig.alt = "World Bank brights palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_brights, class = "palette", name = "World Bank Bright Palette")
 ```
 
 ### Neutral palette
 
-```{r wb-neutral, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-neutral, echo = FALSE, fig.alt = "World Bank neutrals palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_neutrals, class = "palette", name = "World Bank Neutral Palette")
 ```
 
 ### Tinted bright orange palette
 
-```{r wb-bright-oranges, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-bright-oranges, echo = FALSE, fig.alt = "World Bank tinted bright orange palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_bright_oranges, class = "palette", name = "World Bank Bright Oranges Palette")
 ```
 
 ### Tinted bright yellow palette
 
-```{r wb-bright-yellows, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-bright-yellows, echo = FALSE, fig.alt = "World Bank tinted bright yellow palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_bright_yellows, class = "palette", name = "World Bank Bright Yellows Palette")
 ```
 
 ### Tinted bright red palette
 
-```{r wb-bright-reds, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-bright-reds, echo = FALSE, fig.alt = "World Bank tinted bright red palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_bright_reds, class = "palette", name = "World Bank Bright Reds Palette")
 ```
 
 ### Tinted light orange palette
 
-```{r wb-light-oranges, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-light-oranges, echo = FALSE, fig.alt = "World Bank tinted light orange palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_light_oranges, class = "palette", name = "World Bank Light Oranges Palette")
 ```
 
 ### Tinted bright aqua palette
 
-```{r wb-bright-aquas, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-bright-aquas, echo = FALSE, fig.alt = "World Bank tinted bright aqua palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_bright_aquas, class = "palette", name = "World Bank Bright Aquas Palette")
 ```
 
 ### Tinted bright green palette
 
-```{r wb-bright-greens, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-bright-greens, echo = FALSE, fig.alt = "World Bank tinted bright green palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_bright_greens, class = "palette", name = "World Bank Bright Greens Palette")
 ```
 
 ### Tinted bright purple palette
 
-```{r wb-bright-purples, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-bright-purples, echo = FALSE, fig.alt = "World Bank tinted bright purple palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_bright_purples, class = "palette", name = "World Bank Bright Purples Palette")
 ```
 
 ### Tinted light aqua palette
 
-```{r wb-light-aquas, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-light-aquas, echo = FALSE, fig.alt = "World Bank tinted light aqua palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_light_aquas, class = "palette", name = "World Bank Light Aquas Palette")
 ```
 
 ### Tinted dark red palette
 
-```{r wb-dark-reds, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-dark-reds, echo = FALSE, fig.alt = "World Bank tinted dark red palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_dark_reds, class = "palette", name = "World Bank Dark Reds Palette")
 ```
 
 ### Tinted dark orange palette
 
-```{r wb-dark-oranges, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-dark-oranges, echo = FALSE, fig.alt = "World Bank tinted dark orange palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_dark_oranges, class = "palette", name = "World Bank Dark Oranges Palette")
 ```
 
 ### Tinted brown palette
 
-```{r wb-browns, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-browns, echo = FALSE, fig.alt = "World Bank tinted brown palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_browns, class = "palette", name = "World Bank Browns Palette")
 ```
 
 ### Tinted dark purple palette
 
-```{r wb-dark-purples, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-dark-purples, echo = FALSE, fig.alt = "World Bank tinted dark purple palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_dark_purples, class = "palette", name = "World Bank Dark Purples Palette")
 ```
 
 ### Tinted dark aqua palette
 
-```{r wb-dark-aquas, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-dark-aquas, echo = FALSE, fig.alt = "World Bank tinted dark aqua palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_dark_aquas, class = "palette", name = "World Bank Dark Aquas Palette")
 ```
 
 ### Tinted dark green palette
 
-```{r wb-dark-greens, echo = FALSE, fig.align = "center", fig.height = 1}
+```{r wb-dark-greens, echo = FALSE, fig.alt = "World Bank tinted dark green palette", fig.align = "center", fig.height = 1}
 structure(wb_palettes$wb_dark_greens, class = "palette", name = "World Bank Dark Greens Palette")
 ```
 
@@ -152,7 +153,7 @@ structure(wb_palettes$wb_dark_greens, class = "palette", name = "World Bank Dark
 
 A World Bank `ggplot2` theme function called `theme_wb()` is included in the `paleta` package. Following are examples of how it can be used.
 
-```{r wb-theme-bar, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+```{r wb-theme-bar, echo = FALSE, fig.alt = "A bar plot showcasing the World Bank ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## barplot using theme_wb()
 ggplot(
   data = mtcars,
@@ -173,7 +174,7 @@ ggplot(
   theme_wb(grid = "Y")
 ```
 
-```{r wb-theme-scatter, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+```{r wb-theme-scatter, echo = FALSE, fig.alt = "A scatter plot showcasing the World Bank ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## scatterplot using theme_wb()
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   geom_point(size = 3) +
