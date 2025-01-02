@@ -118,34 +118,32 @@ acdc_palettes <- list(
 #'
 acdc_brewer_palettes <- list(
   blues  = rev(c(acdc_blue, acdc_blue_grey, acdc_palettes$acdc_blues[2])),
-  bugn   = c(acdc_blue, acdc_lime, acdc_teal),
+  bugn   = c(acdc_blue, acdc_lime),
   bupu   = c(acdc_blue, acdc_blue_grey, acdc_purple),
-  gnbu   = c(acdc_teal, acdc_lime, acdc_blue),
+  gnbu   = c(acdc_lime, acdc_blue),
   pubu   = c(acdc_purple, acdc_blue_grey, acdc_blue),
-  pubugn = c(acdc_purple, acdc_blue, acdc_lime),
-  purd   = c(acdc_purple, acdc_plum, acdc_pink),
-  rdpu   = c(acdc_red, acdc_pink, acdc_purple),
-  ylgn   = c(acdc_amber, acdc_teal, acdc_green),
-  ylgnbu = c(acdc_amber, acdc_lime, acdc_blue),
+  pubugn = c(acdc_purple, acdc_blue, acdc_green),
+  ylgn   = c(acdc_amber, acdc_green),
+  ylgnbu = c(acdc_amber, acdc_green, acdc_blue),
   ylorrd = c(acdc_amber, acdc_deep_orange, acdc_red),
-  piylgn = c(acdc_pink, acdc_amber, acdc_lime),
+  piylgn = c(acdc_pink, acdc_amber, acdc_green),
   prgn   = c(acdc_purple, acdc_mauve, acdc_green),
   puor   = c(acdc_purple, acdc_amber, acdc_deep_orange),
-  rdbu   = c(acdc_red, acdc_plum, acdc_blue),
+  rdbu   = c(acdc_red, acdc_blue),
   rdylbu = c(acdc_red, acdc_amber, acdc_blue),
-  rdylgn = c(acdc_red, acdc_amber, acdc_lime),
+  rdylgn = c(acdc_red, acdc_amber, acdc_green),
   pastel1 = c(
-    acdc_palettes$acdc_blues[3], 
-    acdc_palettes$acdc_plums[3], 
-    acdc_palettes$acdc_blue_grey[3], 
-    acdc_palettes$acdc_amber[3], 
-    acdc_palettes$acdc_cyan[3], 
-    acdc_palettes$acdc_deep_orange[3], 
-    acdc_palettes$acdc_purple[3], 
-    acdc_palettes$acdc_lime[3], 
-    acdc_palettes$acdc_mauve[3], 
-    acdc_palettes$acdc_pink[3], 
-    acdc_palettes$acdc_teal[3]
+    acdc_palettes$acdc_blues[4], 
+    acdc_palettes$acdc_plums[4], 
+    acdc_palettes$acdc_blue_grey[4], 
+    acdc_palettes$acdc_amber[4], 
+    acdc_palettes$acdc_cyan[4], 
+    acdc_palettes$acdc_deep_orange[4], 
+    acdc_palettes$acdc_purple[4], 
+    acdc_palettes$acdc_lime[4], 
+    acdc_palettes$acdc_mauve[4], 
+    acdc_palettes$acdc_pink[4], 
+    acdc_palettes$acdc_teal[4]
   ),
   pastel2 = c(
     acdc_palettes$acdc_blues[2], 
@@ -177,6 +175,7 @@ acdc_fonts <- list(
   acdc_din_next_arabic = "Din Next Arabic",
   acdc_arial = "Arial"
 )
+
 
 #'
 #' Set ACDC font to use based on what is available from the system
