@@ -330,7 +330,7 @@ structure(
 An NHS `ggplot2` theme function called `theme_nhs()` is included in the `paleta` package. Following are examples of how it can be used.
 
 ```{r nhs-theme-bar, echo = FALSE, fig.alt = "A bar plot showcasing the NHS ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
-## barplot using theme_nhs()
+## bar plot using theme_nhs()
 ggplot(
   data = mtcars,
   mapping = aes(

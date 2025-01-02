@@ -34,7 +34,7 @@ If none of the World Bank fonts are available, the default becomes
 \code{base_family}.}
 
 \item{plot_title_colour}{Colour of the plot title text. Default
-is \code{wb_blue}.}
+is \link{wb_blue}.}
 
 \item{subtitle_family}{Font family to use for the plot subtitle. Default is
 \code{base_family}.}
@@ -44,7 +44,7 @@ is \code{wb_blue}.}
 \item{caption_colour}{Colour of the caption text. Default is \link{wb_cyan}.}
 
 \item{axis_title_colour}{Colour of the axis title text. Default is
-\code{wb_cyan}.}
+\link{wb_cyan}.}
 
 \item{legend_title_colour}{Colour of the legend title text. Default is NULL.}
 

@@ -251,15 +251,15 @@ set_acdc_font <- function(alt = paleta_fonts$paleta_noto) {
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
 #' @param plot_title_colour Colour of the plot title text. Default
-#'   is `acdc_text`.
+#'   is [acdc_text].
 #' @param subtitle_family Font family to use for the plot subtitle. Default is
 #'   `base_family`.
 #' @param subtitle_colour Colour of the subtitle text. Default is [acdc_text].
 #' @param caption_colour Colour of the caption text. Default is [acdc_text].
 #' @param axis_title_colour Colour of the axis title text. Default is
-#'   `acdc_text`.
+#'   [acdc_text].
 #' @param legend_title_colour Colour of the legend title text. Default is
-#'   `acdc_text`.
+#'   [acdc_text].
 #' @param legend_text_colour Colour of the legend text. Default is [acdc_text].
 #' @param plot_background_fill Fill colour for the plot background. Default is
 #'   NULL.

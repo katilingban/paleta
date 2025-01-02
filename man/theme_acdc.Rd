@@ -54,7 +54,7 @@ Sans.}
 \code{base_family}.}
 
 \item{plot_title_colour}{Colour of the plot title text. Default
-is \code{acdc_text}.}
+is \link{acdc_text}.}
 
 \item{subtitle_family}{Font family to use for the plot subtitle. Default is
 \code{base_family}.}
@@ -64,10 +64,10 @@ is \code{acdc_text}.}
 \item{caption_colour}{Colour of the caption text. Default is \link{acdc_text}.}
 
 \item{axis_title_colour}{Colour of the axis title text. Default is
-\code{acdc_text}.}
+\link{acdc_text}.}
 
 \item{legend_title_colour}{Colour of the legend title text. Default is
-\code{acdc_text}.}
+\link{acdc_text}.}
 
 \item{legend_text_colour}{Colour of the legend text. Default is \link{acdc_text}.}
 

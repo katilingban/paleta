@@ -154,7 +154,7 @@ structure(wb_palettes$wb_dark_greens, class = "palette", name = "World Bank Dark
 A World Bank `ggplot2` theme function called `theme_wb()` is included in the `paleta` package. Following are examples of how it can be used.
 
 ```{r wb-theme-bar, echo = FALSE, fig.alt = "A bar plot showcasing the World Bank ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
-## barplot using theme_wb()
+## bar plot using theme_wb()
 ggplot(
   data = mtcars,
   mapping = aes(
