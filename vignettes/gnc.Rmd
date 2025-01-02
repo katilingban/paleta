@@ -1,0 +1,79 @@
+---
+title: "Global Nutrition Cluster Colours, Palettes, and Themes"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Global Nutrition Cluster Colours, Palettes, and Themes}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  dev = "ragg_png"
+)
+```
+
+```{r setup, echo = FALSE}
+library(paleta)
+library(ggplot2)
+```
+
+The Global Nutrition Cluster (GNC) is a coordination mechanism that supports nutrition responses in humanitarian emergencies. It is one of the clusters established by the Inter-Agency Standing Committee (IASC) to ensure effective and efficient humanitarian responses across various sectors, including nutrition.
+
+## GNC colours
+
+GNC main colour is the **GNC Green**.
+
+```{r gnc-green, echo = FALSE, fig.alt = "GNC Green", fig.align = "center", fig.height = 1}
+structure(gnc_green, class = "palette", name = "GNC Green")
+```
+
+Complementing **GNC Green** is a set of 10 secondary colours.
+
+```{r gnc-secondary, echo = FALSE, fig.alt = "GNC secondary colours palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_secondary, class = "palette", name = "GNC Secondary")
+```
+
+## GNC `ggplot2` theme
+
+A GNC `ggplot2` theme function called `theme_gnc()` is included in the `paleta` package. Following are examples of how it can be used.
+
+```{r gnc-theme-bar, echo = FALSE, fig.alt = "A bar plot showcasing the GNC ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+## barplot using theme_gnc()
+ggplot(
+  data = mtcars,
+  mapping = aes(
+  x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")),
+  fill = factor(cyl))
+) +
+  geom_bar() +
+  scale_fill_manual(
+    name = "Cylinders", 
+    values = gnc_palettes$gnc_secondary
+  ) +
+  labs(
+    title = "GNC Theme",
+    subtitle = "GNC secondary palette",
+    x = "Engine Shape", y = "Counts"
+  ) +
+  theme_gnc(grid = "Y")
+```
+
+```{r gnc-theme-scatter, echo = FALSE, fig.alt = "A scatter plot showcasing the GNC ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+## scatterplot using theme_gnc()
+ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
+  geom_point(size = 3) +
+  scale_colour_manual(
+    name = "Cylinders", 
+    values = gnc_palettes$gnc_secondary
+  ) +
+  labs(
+    title = "GNC Theme",
+    subtitle = "GNC secondary palette",
+  ) +
+  theme_gnc(grid = "XY")
+```
+
+
