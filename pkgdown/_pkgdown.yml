@@ -27,14 +27,16 @@ navbar:
     articles:
       text: Articles
       menu:
-      - text: "Africa CDC"
+      - text: "Africa Centres for Disease Control and Prevention"
         href: articles/africa-cdc.html
       - text: "World Bank"
         href: articles/world-bank.html
-      - text: "UNICEF"
+      - text: "United Nations Children's Fund"
         href: articles/unicef.html
-      - text: "NHS"
+      - text: "National Health Service"
         href: articles/nhs.html
+      - text: "Global Nutrition Cluster"
+        href: articles/gnc.html
     mastodon:
       icon: "fab fa-mastodon fa-lg"
       aria-label: Mastodon
