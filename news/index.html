@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">paleta</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,10 +19,11 @@
 <li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
-  <ul class="dropdown-menu" aria-labelledby="dropdown-articles"><li><a class="dropdown-item" href="../articles/africa-cdc.html">Africa CDC</a></li>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles"><li><a class="dropdown-item" href="../articles/africa-cdc.html">Africa Centres for Disease Control and Prevention</a></li>
     <li><a class="dropdown-item" href="../articles/world-bank.html">World Bank</a></li>
-    <li><a class="dropdown-item" href="../articles/unicef.html">UNICEF</a></li>
-    <li><a class="dropdown-item" href="../articles/nhs.html">NHS</a></li>
+    <li><a class="dropdown-item" href="../articles/unicef.html">United Nations Children's Fund</a></li>
+    <li><a class="dropdown-item" href="../articles/nhs.html">National Health Service</a></li>
+    <li><a class="dropdown-item" href="../articles/gnc.html">Global Nutrition Cluster</a></li>
   </ul></li>
 <li class="active nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul><ul class="navbar-nav"><li class="nav-item"><form class="form-inline" role="search">
@@ -45,13 +46,21 @@
 <h2 class="pkg-version" data-toc-text="0.1.0" id="paleta-version-010">paleta (version 0.1.0)<a class="anchor" aria-label="anchor" href="#paleta-version-010"></a></h2>
 <div class="section level3">
 <h3 id="major-changes-0-1-0">Major changes<a class="anchor" aria-label="anchor" href="#major-changes-0-1-0"></a></h3>
-<ul><li>Changed Africa CDC colour palettes based on updated communication style guidelines</li>
+<ul><li><p>changed Africa CDC colour palettes based on updated communication style guidelines</p></li>
+<li><p>created Africa CDC brewer base palettes</p></li>
+<li><p>created NHS brewer base palettes</p></li>
+<li><p>created Global Nutrition Cluster palettes and themes</p></li>
+<li><p>created palette brewer functions for sequential, divergent, and qualitative colour palettes</p></li>
 </ul></div>
 <div class="section level3">
 <h3 id="general-updates-0-1-0">General updates<a class="anchor" aria-label="anchor" href="#general-updates-0-1-0"></a></h3>
-<ul><li>refresh <code>pkgdown</code> website</li>
-<li>refresh GitHub Actions workflows to include Netlify pull request deployment</li>
+<ul><li>refreshed <code>pkgdown</code> website</li>
+<li>refreshed GitHub Actions workflows to include Netlify pull request deployment</li>
 <li>added appropriate <code>fig.alt</code> specifications in all package documentation</li>
+</ul></div>
+<div class="section level3">
+<h3 id="bug-fixes-0-1-0">Bug fixes<a class="anchor" aria-label="anchor" href="#bug-fixes-0-1-0"></a></h3>
+<ul><li>fixed issue with <code>tint_colour*()</code> and <code>shade_colour*()</code> functions in which they return the opposite percentage tint or shade of a colour or a set of colours</li>
 </ul></div>
 </div>
     <div class="section level2">

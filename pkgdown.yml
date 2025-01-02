@@ -3,11 +3,12 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   africa-cdc: africa-cdc.html
+  gnc: gnc.html
   nhs: nhs.html
   paleta: paleta.html
   unicef: unicef.html
   world-bank: world-bank.html
-last_built: 2025-01-01T02:19Z
+last_built: 2025-01-02T12:02Z
 urls:
   reference: https://katilingban.io/paleta/reference
   article: https://katilingban.io/paleta/articles
