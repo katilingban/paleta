@@ -31,18 +31,23 @@ organisations, government agencies, and United Nations units.
 Currently, `paleta` has colours, palettes, and `ggplot2` themes based on
 the following organisations’ branding/visual identity guidelines:
 
-  - [Africa CDC](https://africacdc.org/) [communication style
+  - [Africa Centres for Disease Control and
+    Prevention](https://africacdc.org/) [communication style
     guide](https://africacdc.org/download/communication-style-guide-africa-centres-for-disease-control-and-prevention/);
 
   - [World Bank](https://www.worldbank.org) [visual identity
-    guidelines](https://thedocs.worldbank.org/en/doc/723361567518322252-0060022019/original/WBGBrandingandVisualIdentityGuidelinesFebruary2016.pdf).
+    guidelines](https://thedocs.worldbank.org/en/doc/723361567518322252-0060022019/original/WBGBrandingandVisualIdentityGuidelinesFebruary2016.pdf);
 
   - [United Nations Children’s Fund](https://www.unicef.org/) [Brand
     Book and Brand
-    Manual](https://www.unicef.org/jordan/media/7166/file/ANNEX_G_-_Brand_book_V3.1.pdf).
+    Manual](https://www.unicef.org/jordan/media/7166/file/ANNEX_G_-_Brand_book_V3.1.pdf);
 
-  - [NHS](https://www.nhs.uk/) [identity
-    guidelines](https://www.england.nhs.uk/nhsidentity/identity-guidelines/)
+  - [National Health Service](https://www.nhs.uk/) [identity
+    guidelines](https://www.england.nhs.uk/nhsidentity/identity-guidelines/);
+    and,
+
+  - [Global Nutrition Cluster](https://www.nutritioncluster.net/) [Brand
+    Book](https://www.nutritioncluster.net/resources/nutrition-cluster-brand-book).
 
 Additional colours, palettes, and themes will be provided over time.
 
@@ -75,6 +80,9 @@ install.packages(
 
   - [Using the NHS colours, palettes, and
     themes](https://katilingban.io/paleta/articles/nhs.html)
+
+  - [Using the GNC colours, palettes, and
+    themes](https://katilingban.io/paleta/articles/gnc.html)
 
 ## Community guidelines
 
