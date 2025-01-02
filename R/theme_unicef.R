@@ -153,7 +153,7 @@ set_unicef_font <- function(alt = paleta_fonts$paleta_noto) {
 #' `unicef_palettes$unicef_secondary`.
 #'
 #' @section Fonts:
-#' The UNICEF theme uses two fonts as prescribed by the UNICEF visual identity
+#' The UNICEF theme uses four fonts as prescribed by the UNICEF visual identity
 #' guidelines. These fonts (in hierarchical order of preference) are
 #' *Univers LT Pro*, *Arial*, *Roboto*, and *Aleo*. Any or all of these fonts
 #' should be available in the user's system for them to be used in the theme.
@@ -169,15 +169,15 @@ set_unicef_font <- function(alt = paleta_fonts$paleta_noto) {
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
 #' @param plot_title_colour Colour of the plot title text. Default
-#'   is `unicef_black`.
+#'   is [unicef_black].
 #' @param subtitle_family Font family to use for the plot subtitle. Default is
 #'   `base_family`.
 #' @param subtitle_colour Colour of the subtitle text. Default is
-#'   `unicef_cool_grey`.
+#'   [unicef_cool_grey].
 #' @param caption_colour Colour of the caption text. Default is
-#'   `unicef_cool_grey`.
+#'   [unicef_cool_grey].
 #' @param axis_title_colour Colour of the axis title text. Default is
-#'   `unicef_cool_grey`.
+#'   [unicef_cool_grey].
 #' @param legend_title_colour Colour of the legend title text. Default is NULL.
 #' @param legend_text_colour Colour of the legend text. Default is NULL.
 #' @param grid_col Grid colour. Default to [unicef_warm_grey].

@@ -153,6 +153,23 @@ reference:
     - nhs_yellow
     - theme_nhs
 
+  - title: Global Nutrition Cluster
+    contents:
+    - gnc_palettes
+    - gnc_fonts
+    - gnc_green
+    - gnc_grey
+    - gnc_sage
+    - gnc_dark_green
+    - gnc_lime
+    - gnc_aqua_green
+    - gnc_cyan
+    - gnc_blue
+    - gnc_orange
+    - gnc_moss_green
+    - gnc_gold
+    - theme_gnc
+
   - title: Utilities
     contents:
     - get_colour

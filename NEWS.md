@@ -2,11 +2,13 @@
 
 ## Major changes
 
-* Changed Africa CDC colour palettes based on updated communication style guidelines
+* changed Africa CDC colour palettes based on updated communication style guidelines
 
-* Created Africa CDC brewer base palettes
+* created Africa CDC brewer base palettes
 
-* Created palette brewer functions for sequential, divergent, and qualitative colour palettes
+* created NHS brewer base palettes
+
+* created palette brewer functions for sequential, divergent, and qualitative colour palettes
 
 ## General updates
 
