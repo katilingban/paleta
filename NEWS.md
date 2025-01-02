@@ -8,6 +8,8 @@
 
 * created NHS brewer base palettes
 
+* created Global Nutrition Cluster palettes and themes
+
 * created palette brewer functions for sequential, divergent, and qualitative colour palettes
 
 ## General updates
