@@ -10,6 +10,9 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE,
   comment = "#>",
   dev = "ragg_png"
 )
@@ -73,7 +76,7 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
     title = "GNC Theme",
     subtitle = "GNC secondary palette",
   ) +
-  theme_gnc(grid = "XY")
+  theme_gnc(grid = "Y")
 ```
 
 
