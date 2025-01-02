@@ -130,6 +130,198 @@ structure(acdc_palettes$acdc_pinks, class = "palette", name = "Africa CDC Pinks"
 structure(acdc_palettes$acdc_teals, class = "palette", name = "Africa CDC Teals")
 ```
 
+## Africa CDC sequential brewer palettes
+
+### Blues 
+
+```{r acdc-blues-sequential, echo = FALSE, fig.alt = "Africa CDC sequential blues palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "blues", org = "acdc"), 
+  class = "palette", 
+  name = "Africa CDC Sequential Blues"
+)
+```
+
+### Blue to green
+
+```{r acdc-blue-green-sequential, echo = FALSE, fig.alt = "Africa CDC sequential blue to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "bugn", org = "acdc"), 
+  class = "palette", 
+  name = "Africa CDC Sequential Blue to Green"
+)
+```
+
+### Blue to purple
+
+```{r acdc-blue-purple-sequential, echo = FALSE, fig.alt = "Africa CDC sequential blue to purple palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "bupu", org = "acdc"), 
+  class = "palette", 
+  name = "Africa CDC Sequential Blue to Purple"
+)
+```
+
+### Green to blue
+
+```{r acdc-green-blue-sequential, echo = FALSE, fig.alt = "Africa CDC sequential green to blue palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "gnbu", org = "acdc"), 
+  class = "palette", 
+  name = "Africa CDC Sequential Green to Blue"
+)
+```
+
+### Purple to blue
+
+```{r acdc-purple-blue-sequential, echo = FALSE, fig.alt = "Africa CDC sequential purple to blue palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "pubu", org = "acdc"), 
+  class = "palette", 
+  name = "Africa CDC Sequential Purple to Blue"
+)
+```
+
+### Purple to blue to green
+
+```{r acdc-purple-blue-green-sequential, echo = FALSE, fig.alt = "Africa CDC sequential purple to blue to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "pubugn", org = "acdc"), 
+  class = "palette", 
+  name = "Africa CDC Sequential Purple to Blue to Green"
+)
+```
+
+### Yellow to green
+
+```{r acdc-yellow-green-sequential, echo = FALSE, fig.alt = "Africa CDC sequential yellow to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "ylgn", org = "acdc"), 
+  class = "palette", 
+  name = "Africa CDC Sequential Yellow to Green"
+)
+```
+
+### Yellow to green to blue
+
+```{r acdc-yellow-green-blue-sequential, echo = FALSE, fig.alt = "Africa CDC sequential yellow to green to blue palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "ylgnbu", org = "acdc"), 
+  class = "palette", 
+  name = "Africa CDC Sequential Yellow to Green to Blue"
+)
+```
+
+### Yellow to orange to red
+
+```{r acdc-yellow-orange-red-sequential, echo = FALSE, fig.alt = "Africa CDC sequential yellow to orange to red palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "ylorrd", org = "acdc"), 
+  class = "palette", 
+  name = "Africa CDC Sequential Yellow to Orange to Red"
+)
+```
+
+## Africa CDC divergent brewer palettes
+
+### Pink to yellow to green
+
+```{r acdc-pink-yellow-green-sequential, echo = FALSE, fig.alt = "Africa CDC sequential pink to yellow to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "piylgn", org = "acdc", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "Africa CDC Sequential Pink to Yellow to Green"
+)
+```
+
+### Purple to green
+
+```{r acdc-purple-green-sequential, echo = FALSE, fig.alt = "Africa CDC sequential purple to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "prgn", org = "acdc", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "Africa CDC Sequential Purple to Green"
+)
+```
+
+### Purple to orange
+
+```{r acdc-purple-orange-sequential, echo = FALSE, fig.alt = "Africa CDC sequential purple to orange palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "puor", org = "acdc", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "Africa CDC Sequential Purple to Orange"
+)
+```
+
+### Red to blue
+
+```{r acdc-red-blue-sequential, echo = FALSE, fig.alt = "Africa CDC sequential red to blue palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "rdbu", org = "acdc", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "Africa CDC Sequential Red to Blue"
+)
+```
+
+### Red to yellow to blue
+
+```{r acdc-red-yellow-blue-sequential, echo = FALSE, fig.alt = "Africa CDC sequential red to yellow to blue palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "rdylbu", org = "acdc", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "Africa CDC Sequential Red to Yellow to Blue"
+)
+```
+
+### Red to yellow to green
+
+```{r acdc-red-yellow-green-sequential, echo = FALSE, fig.alt = "Africa CDC sequential red to yellow to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "rdylgn", org = "acdc", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "Africa CDC Sequential Red to Yellow to Green"
+)
+```
+
+## Africa CDC qualitative palettes
+
+### Pastel set 1
+
+```{r acdc-pastel1-qualitative, echo = FALSE, fig.alt = "Africa CDC qualitative pastel set 1 palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "pastel1", org = "acdc", type = "qualitative"
+  ), 
+  class = "palette", 
+  name = "Africa CDC Qualitative Pastel Set 1"
+)
+```
+
+### Pastel set 2
+
+```{r acdc-pastel2-qualitative, echo = FALSE, fig.alt = "Africa CDC qualitative pastel set 2 palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "pastel2", org = "acdc", type = "qualitative"
+  ), 
+  class = "palette", 
+  name = "Africa CDC Qualitative Pastel Set 2"
+)
+```
+
 ## Africa CDC `ggplot2` theme
 
 ### Africa CDC light theme

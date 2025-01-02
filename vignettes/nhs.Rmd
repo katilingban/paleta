@@ -71,6 +71,260 @@ Highlights are effective for emphasizing details, adding warmth to the blue them
 structure(nhs_palettes$nhs_highlights, class = "palette", name = "NHS Highlights")
 ```
 
+## NHS sequential brewer palettes
+
+### Blues 
+
+```{r nhs-blues-sequential, echo = FALSE, fig.alt = "NHS sequential blues palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "blues", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Blues"
+)
+```
+
+### Blue to green
+
+```{r nhs-blue-green-sequential, echo = FALSE, fig.alt = "NHS sequential blue to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "bugn", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Blue to Green"
+)
+```
+
+### Blue to purple
+
+```{r nhs-blue-purple-sequential, echo = FALSE, fig.alt = "NHS sequential blue to purple palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "bupu", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Blue to Purple"
+)
+```
+
+### Green to blue
+
+```{r nhs-green-blue-sequential, echo = FALSE, fig.alt = "NHS sequential green to blue palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "gnbu", org = "nhs"), 
+  class = "palette", 
+  name = "NHA Sequential Green to Blue"
+)
+```
+
+### Greens 
+
+```{r nhs-greens-sequential, echo = FALSE, fig.alt = "NHS sequential greens palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "greens", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Greens"
+)
+```
+
+### Greys
+
+```{r nhs-greys-sequential, echo = FALSE, fig.alt = "NHS sequential greys palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "greys", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Greys"
+)
+```
+
+### Purple to blue
+
+```{r nhs-purple-blue-sequential, echo = FALSE, fig.alt = "NHS sequential purple to blue palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "pubu", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Purple to Blue"
+)
+```
+
+### Purple to blue to green
+
+```{r nhs-purple-blue-green-sequential, echo = FALSE, fig.alt = "NHS sequential purple to blue to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "pubugn", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Purple to Blue to Green"
+)
+```
+
+### Purple to red
+
+```{r nhs-purple-red-sequential, echo = FALSE, fig.alt = "NHS sequential purple to red palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "purd", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Purple to Red"
+)
+```
+
+### Red to purple
+
+```{r nhs-red-purple-sequential, echo = FALSE, fig.alt = "NHS sequential red to purple palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "rdpu", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Red to Purple"
+)
+```
+
+### Reds
+
+```{r nhs-reds-sequential, echo = FALSE, fig.alt = "NHS sequential reds palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "reds", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Reds"
+)
+```
+
+### Yellow to green
+
+```{r nhs-yellow-green-sequential, echo = FALSE, fig.alt = "NHS sequential yellow to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "ylgn", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Yellow to Green"
+)
+```
+
+### Yellow to green to blue
+
+```{r nhs-yellow-green-blue-sequential, echo = FALSE, fig.alt = "NHS sequential yellow to green to blue palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "ylgnbu", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Yellow to Green to Blue"
+)
+```
+
+### Yellow to orange to red
+
+```{r nhs-yellow-orange-red-sequential, echo = FALSE, fig.alt = "NHS sequential yellow to orange to red palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(n = 9, name = "ylorrd", org = "nhs"), 
+  class = "palette", 
+  name = "NHS Sequential Yellow to Orange to Red"
+)
+```
+
+## NHS divergent brewer palettes
+
+### Pink to yellow to green
+
+```{r nhs-pink-yellow-green-sequential, echo = FALSE, fig.alt = "NHS sequential pink to yellow to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "piylgn", org = "nhs", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "NHS Sequential Pink to Yellow to Green"
+)
+```
+
+### Purple to green
+
+```{r nhs-purple-green-sequential, echo = FALSE, fig.alt = "NHS sequential purple to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "prgn", org = "nhs", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "NHS Sequential Purple to Green"
+)
+```
+
+### Purple to orange
+
+```{r nhs-purple-orange-sequential, echo = FALSE, fig.alt = "NHS sequential purple to orange palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "puor", org = "nhs", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "NHS Sequential Purple to Orange"
+)
+```
+
+### Red to blue
+
+```{r nhs-red-blue-sequential, echo = FALSE, fig.alt = "NHS sequential red to blue palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "rdbu", org = "nhs", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "NHS Sequential Red to Blue"
+)
+```
+
+### Red to grey
+
+```{r nhs-red-greye-sequential, echo = FALSE, fig.alt = "NHS sequential red to grey palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "rdgy", org = "nhs", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "NHA Sequential Red to Grey"
+)
+```
+
+### Red to yellow to blue
+
+```{r nhs-red-yellow-blue-sequential, echo = FALSE, fig.alt = "NHS sequential red to yellow to blue palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "rdylbu", org = "nhs", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "NHS Sequential Red to Yellow to Blue"
+)
+```
+
+### Red to yellow to green
+
+```{r nhs-red-yellow-green-sequential, echo = FALSE, fig.alt = "NHS sequential red to yellow to green palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 11, name = "rdylgn", org = "nhs", type = "divergent"
+  ), 
+  class = "palette", 
+  name = "NHS Sequential Red to Yellow to Green"
+)
+```
+
+## Africa CDC qualitative palettes
+
+### Pastel set 1
+
+```{r nhs-pastel1-qualitative, echo = FALSE, fig.alt = "NHS qualitative pastel set 1 palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 8, name = "pastel1", org = "nhs", type = "qualitative"
+  ), 
+  class = "palette", 
+  name = "NHS Qualitative Pastel Set 1"
+)
+```
+
+### Dark
+
+```{r nhs-dark-qualitative, echo = FALSE, fig.alt = "NHS qualitative dark palette", fig.align = "center", fig.height = 1}
+structure(
+  paleta_create_brewer(
+    n = 5, name = "dark", org = "nhs", type = "qualitative"
+  ), 
+  class = "palette", 
+  name = "NHS Qualitative Dark"
+)
+```
+
 ## NHS `ggplot2` theme
 
 An NHS `ggplot2` theme function called `theme_nhs()` is included in the `paleta` package. Following are examples of how it can be used.
