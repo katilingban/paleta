@@ -34,17 +34,17 @@ If none of the NHS fonts are available, the default becomes
 \code{base_family}.}
 
 \item{plot_title_colour}{Colour of the plot title text. Default
-is \code{nhs_blue}.}
+is \link{nhs_blue}.}
 
 \item{subtitle_family}{Font family to use for the plot subtitle. Default is
-\code{base_family}.}
+`base_family``.}
 
 \item{subtitle_colour}{Colour of the subtitle text. Default is \link{nhs_mid_grey}.}
 
 \item{caption_colour}{Colour of the caption text. Default is \link{nhs_mid_grey}.}
 
 \item{axis_title_colour}{Colour of the axis title text. Default is
-\code{nhs_cyan}.}
+\link{nhs_mid_grey}.}
 
 \item{legend_title_colour}{Colour of the legend title text. Default is NULL.}
 

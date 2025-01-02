@@ -54,7 +54,7 @@ structure(unicef_palettes$unicef_neutrals, class = "palette", name = "UNICEF Neu
 A UNICEF `ggplot2` theme function called `theme_unicef()` is included in the `paleta` package. Following are examples of how it can be used.
 
 ```{r unicef-theme-bar, echo = FALSE, fig.alt = "A bar plot showcasing the UNICEF ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
-## barplot using theme_unicef()
+## bar plot using theme_unicef()
 ggplot(
   data = mtcars,
   mapping = aes(

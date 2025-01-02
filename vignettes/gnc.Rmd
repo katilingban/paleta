@@ -39,12 +39,82 @@ Complementing **GNC Green** is a set of 10 secondary colours.
 structure(gnc_palettes$gnc_secondary, class = "palette", name = "GNC Secondary")
 ```
 
+## GNC palettes
+
+In addition to the primary and secondary colours, a set of tinted palettes for each of the GNC primary and secondary colours is available.
+
+### Tinted green palette
+
+```{r gnc-tinted-green, echo = FALSE, fig.alt = "GNC tinted green palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_greens, class = "palette", name = "GNC tinted green palette")
+```
+
+### Tinted grey palette
+
+```{r gnc-tinted-grey, echo = FALSE, fig.alt = "GNC tinted grey palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_greys, class = "palette", name = "GNC tinted grey palette")
+```
+
+### Tinted sage palette
+
+```{r gnc-tinted-sage, echo = FALSE, fig.alt = "GNC tinted sage palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_sages, class = "palette", name = "GNC tinted sage palette")
+```
+
+### Tinted dark green palette
+
+```{r gnc-tinted-dark-green, echo = FALSE, fig.alt = "GNC tinted dark green palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_dark_greens, class = "palette", name = "GNC tinted dark green palette")
+```
+
+### Tinted lime palette
+
+```{r gnc-tinted-lime, echo = FALSE, fig.alt = "GNC tinted lime palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_limes, class = "palette", name = "GNC tinted lime palette")
+```
+
+### Tinted aqua green palette
+
+```{r gnc-tinted-aqua-green, echo = FALSE, fig.alt = "GNC tinted aqua green palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_aqua_greens, class = "palette", name = "GNC tinted aqua green palette")
+```
+
+### Tinted cyan palette
+
+```{r gnc-tinted-cyan, echo = FALSE, fig.alt = "GNC tinted cyan palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_cyans, class = "palette", name = "GNC tinted cyan palette")
+```
+
+### Tinted blue palette
+
+```{r gnc-tinted-blue, echo = FALSE, fig.alt = "GNC tinted blue palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_blues, class = "palette", name = "GNC tinted blue palette")
+```
+
+### Tinted orange palette
+
+```{r gnc-tinted-orange, echo = FALSE, fig.alt = "GNC tinted orange palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_oranges, class = "palette", name = "GNC tinted orange palette")
+```
+
+### Tinted moss green palette
+
+```{r gnc-tinted-moss-green, echo = FALSE, fig.alt = "GNC tinted moss green palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_moss_greens, class = "palette", name = "GNC tinted moss green palette")
+```
+
+### Tinted gold palette
+
+```{r gnc-tinted-gold, echo = FALSE, fig.alt = "GNC tinted gold palette", fig.align = "center", fig.height = 1}
+structure(gnc_palettes$gnc_golds, class = "palette", name = "GNC tinted gold palette")
+```
+
 ## GNC `ggplot2` theme
 
 A GNC `ggplot2` theme function called `theme_gnc()` is included in the `paleta` package. Following are examples of how it can be used.
 
 ```{r gnc-theme-bar, echo = FALSE, fig.alt = "A bar plot showcasing the GNC ggplot2 theme", fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
-## barplot using theme_gnc()
+## bar plot using theme_gnc()
 ggplot(
   data = mtcars,
   mapping = aes(
@@ -76,7 +146,7 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
     title = "GNC Theme",
     subtitle = "GNC secondary palette",
   ) +
-  theme_gnc(grid = "Y")
+  theme_gnc(grid = "XY")
 ```
 
 

@@ -263,13 +263,13 @@ set_nhs_font <- function(alt = paleta_fonts$paleta_noto) {
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
 #' @param plot_title_colour Colour of the plot title text. Default
-#'   is `nhs_blue`.
+#'   is [nhs_blue].
 #' @param subtitle_family Font family to use for the plot subtitle. Default is
-#'   `base_family`.
+#'   `base_family``.
 #' @param subtitle_colour Colour of the subtitle text. Default is [nhs_mid_grey].
 #' @param caption_colour Colour of the caption text. Default is [nhs_mid_grey].
 #' @param axis_title_colour Colour of the axis title text. Default is
-#'   `nhs_cyan`.
+#'   [nhs_mid_grey].
 #' @param legend_title_colour Colour of the legend title text. Default is NULL.
 #' @param legend_text_colour Colour of the legend text. Default is NULL.
 #' @param grid_col Grid colour. Default to [nhs_pale_grey].
