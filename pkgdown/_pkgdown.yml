@@ -59,11 +59,12 @@ reference:
     contents:
     - starts_with("paleta_create")
 
-  - title: Africa CDC
+  - title: Africa Centres for Disease Control and Prevention
     contents:
+    - acdc_fonts
+    - set_acdc_font
     - acdc_palettes
     - acdc_brewer_palettes
-    - acdc_fonts
     - acdc_green
     - acdc_red
     - acdc_gold
@@ -87,8 +88,9 @@ reference:
 
   - title: World Bank
     contents:
-    - wb_palettes
     - wb_fonts
+    - set_wb_font
+    - wb_palettes
     - wb_blue
     - wb_cyan
     - wb_bright_orange
@@ -107,10 +109,11 @@ reference:
     - wb_dark_green
     - theme_wb
 
-  - title: UNICEF
+  - title: United Nations Children's Fund
     contents:
-    - unicef_palettes
     - unicef_fonts
+    - set_unicef_font
+    - unicef_palettes
     - unicef_blue
     - unicef_green
     - unicef_lime_green
@@ -125,11 +128,12 @@ reference:
     - unicef_dark_blue
     - theme_unicef
 
-  - title: NHS
+  - title: National Health Service
     contents:
+    - nhs_fonts
+    - set_nhs_font
     - nhs_palettes
     - nhs_brewer_palettes
-    - nhs_fonts
     - nhs_blue
     - nhs_white
     - nhs_dark_blue
@@ -152,6 +156,24 @@ reference:
     - nhs_warm_yellow
     - nhs_yellow
     - theme_nhs
+
+  - title: Global Nutrition Cluster
+    contents:
+    - gnc_fonts
+    - set_gnc_font
+    - gnc_palettes
+    - gnc_green
+    - gnc_grey
+    - gnc_sage
+    - gnc_dark_green
+    - gnc_lime
+    - gnc_aqua_green
+    - gnc_cyan
+    - gnc_blue
+    - gnc_orange
+    - gnc_moss_green
+    - gnc_gold
+    - theme_gnc
 
   - title: Utilities
     contents:
