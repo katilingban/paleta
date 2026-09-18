@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_paleta.R
 \name{theme_paleta}
 \alias{theme_paleta}
-\title{A generic/base \link{ggplot2} theme for the paleta package}
+\title{A generic/base \link[ggplot2:ggplot2]{ggplot2} theme for the paleta package}
 \usage{
 theme_paleta(
   base_family = set_paleta_font(),
@@ -73,7 +73,7 @@ set at 10.}
 for plot subtitle. Default is "plain".}
 
 \item{subtitle_colour}{Colour of the subtitle text. Default is NULL to use
-default \link{ggplot2} colour.}
+default \link[ggplot2:ggplot2]{ggplot2} colour.}
 
 \item{subtitle_margin}{Margin at the bottom of the plot subtitle. Default
 set at 15.}
@@ -107,7 +107,7 @@ set at 10.}
 \item{axis_title_size}{Axis title text size in pts. Default is 9.}
 
 \item{axis_title_colour}{Colour of the axis title text. Default is NULL to
-use default \link{ggplot2} colour.}
+use default \link[ggplot2:ggplot2]{ggplot2} colour.}
 
 \item{axis_title_face}{Font face ("plain", "italic", "bold", "bold.italic")
 for axis title. Default is "plain".}
@@ -125,7 +125,7 @@ is \code{subtitle_family}.}
 
 \item{legend_text_colour}{Colour of the legend text. Default is NULL.}
 
-\item{plot_margin}{Plot margins (specify with \code{\link[ggplot2:element]{ggplot2::margin()}}).}
+\item{plot_margin}{Plot margins (specify with \code{\link[ggplot2:margin]{ggplot2::margin()}}).}
 
 \item{plot_background_fill}{Fill colour for the plot background. Default is
 NULL.}
@@ -143,10 +143,10 @@ NULL.}
 \item{ticks}{Logical. Should ticks be added? Default is FALSE.}
 }
 \value{
-A \link{ggplot2} theme.
+A \link[ggplot2:ggplot2]{ggplot2} theme.
 }
 \description{
-This generic/base \link{ggplot2} theme is the template from which all other
+This generic/base \link[ggplot2:ggplot2]{ggplot2} theme is the template from which all other
 themes in the \link{paleta} package is built on. This theme is inspired by
 Bob Rudis' \href{https://github.com/hrbrmstr/hrbrthemes}{hrbrthemes} package
 drawing heavily on its typography-centric focus.
