@@ -51,8 +51,7 @@ Additional colours, palettes, and themes will be provided over time.
 ```R
 install.packages(
   "paleta", 
-  repos = c(
-    'https://katilingban.r-universe.dev', 'https://cloud.r-project.org')
+  repos = c('https://katilingban.r-universe.dev', 'https://cloud.r-project.org')
 )
 ```
 

@@ -60,8 +60,7 @@ Universe](https://katilingban.r-universe.dev) repository as follows:
 ``` r
 install.packages(
   "paleta", 
-  repos = c(
-    'https://katilingban.r-universe.dev', 'https://cloud.r-project.org')
+  repos = c('https://katilingban.r-universe.dev', 'https://cloud.r-project.org')
 )
 ```
 
