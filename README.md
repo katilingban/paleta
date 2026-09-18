@@ -5,9 +5,9 @@
 
 <!-- badges: start -->
 
-[![Project Status: WIP – Initial development is in progress, but there
-has not yet been a stable, usable release suitable for the
-public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/katilingban/paleta/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/katilingban/paleta/actions/workflows/R-CMD-check.yaml)
@@ -61,9 +61,7 @@ Universe](https://katilingban.r-universe.dev) repository as follows:
 install.packages(
   "paleta", 
   repos = c(
-    'https://katilingban.r-universe.dev', 
-    'https://cloud.r-project.org'
-  )
+    'https://katilingban.r-universe.dev', 'https://cloud.r-project.org')
 )
 ```
 

@@ -4,7 +4,7 @@ bibentry(
   title    = "paleta: Collection of Palettes, Themes, and Theme Components",
   author   = person("Ernest Guevarra"),
   year     = 2025,
-  note     = "R package version 0.1.0",
+  note     = "R package version 0.1.0.9000",
   url      = "https://katilingban.io/paleta/",
   doi      = "10.5281/zenodo.10809367"
 )
