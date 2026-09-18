@@ -1,5 +1,5 @@
-pandoc: 3.1.11
-pkgdown: 2.1.1
+pandoc: 3.8.3
+pkgdown: 2.2.1
 pkgdown_sha: ~
 articles:
   africa-cdc: africa-cdc.html
@@ -8,7 +8,7 @@ articles:
   paleta: paleta.html
   unicef: unicef.html
   world-bank: world-bank.html
-last_built: 2025-01-02T11:17Z
+last_built: 2026-09-18T21:58Z
 urls:
-  reference: https://katilingban.io/paleta/reference
-  article: https://katilingban.io/paleta/articles
+  reference: http://katilingban.io/paleta/reference
+  article: http://katilingban.io/paleta/articles

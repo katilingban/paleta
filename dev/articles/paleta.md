@@ -1,0 +1,77 @@
+# Introduction
+
+A **data visualisation design system** is a framework or set of
+guidelines that provides standards, components, and best practices for
+creating effective and consistent data visualisations within an
+organization or project. It’s essentially a systematic approach to
+designing and implementing data visualisations to ensure they are both
+visually appealing and communicate insights effectively.
+
+Key components of a data visualisation design system include:
+
+- **Style Guidelines:** Establishing consistent visual styles such as
+  colour palettes, typography, iconography, and layout principles to
+  maintain coherence across all visualisations.
+
+- **Data visualisation Principles:** Defining principles for effective
+  data visualisation design, such as emphasizing clarity, simplicity,
+  accuracy, and relevance.
+
+- **Component Library:** Providing a library of pre-designed
+  visualisation components (e.g., charts, graphs, maps) that adhere to
+  the established style guidelines. These components can be reused
+  across different projects to ensure consistency.
+
+- **Interaction Patterns:** Defining guidelines for interactive elements
+  within visualisations, including hover effects, click interactions,
+  tooltips, and filtering mechanisms, to enhance user engagement and
+  exploration.
+
+- **Accessibility Standards:** Ensuring that visualisations are
+  accessible to all users, including those with disabilities, by
+  following accessibility standards for colour contrast, text size,
+  alternative text, and keyboard navigation.
+
+- **Responsive Design:** Guidelines for designing visualisations that
+  adapt gracefully to different screen sizes and devices, ensuring a
+  consistent user experience across desktop, tablet, and mobile devices.
+
+- **Documentation and Training:** Providing documentation and training
+  materials to help designers and developers understand and implement
+  the design system effectively, including tutorials, code examples, and
+  design principles.
+
+- **Feedback Mechanisms:** Establishing channels for collecting feedback
+  from users and stakeholders to continuously improve the design system
+  and address any usability or accessibility issues.
+
+Overall, a data visualisation design system serves as a valuable
+resource for designers, developers, and analysts to create high-quality
+and consistent data visualisations that effectively communicate insights
+and drive decision-making. It promotes efficiency, scalability, and
+collaboration within an organization by providing a common language and
+framework for visualizing data.
+
+With more and more organisations developing their style guidelines and
+making them available publicly, the `paleta` package aims to consolidate
+these guidelines and express them within the R language for statistical
+computing’s graphics and publishing ecosystem.
+
+`paleta` provides or will be providing utilities for applying the visual
+identity and/or branding guidelines of various non-governmental
+organisations, government agencies, and United Nations units.
+
+Currently, `paleta` has colours, palettes, and `ggplot2` themes based on
+the following organisations’ branding/visual identity guidelines:
+
+- [Africa CDC](https://africacdc.org/) [visual identity
+  guidelines](https://africacdc.org/download/visual-identity-africa-cdc-branding-guide/).
+
+- [UNICEF](https://www.unicef.org/) [brand
+  manual](https://www.unicef.org/jordan/media/7166/file/ANNEX_G_-_Brand_book_V3.1.pdf)
+
+- [World Bank](https://www.worldbank.org) [visual identity
+  guidelines](https://thedocs.worldbank.org/en/doc/723361567518322252-0060022019/original/WBGBrandingandVisualIdentityGuidelinesFebruary2016.pdf).
+
+- [NHS](https://www.nhs.uk/) [identity
+  guidelines](https://www.england.nhs.uk/nhsidentity/identity-guidelines/)

@@ -1,0 +1,80 @@
+# paleta: Collection of Palettes, Themes, and Theme Components
+
+A collection of palettes, themes, and theme components based on publicly
+available branding guidelines of various non-governmental organisations,
+government agencies, and United Nations units.
+
+## What does `paleta` do?
+
+`paleta` provides or will be providing utilities for applying the visual
+identity and/or branding guidelines of various non-governmental
+organisations, government agencies, and United Nations units.
+
+Currently, `paleta` has colours, palettes, and `ggplot2` themes based on
+the following organisations’ branding/visual identity guidelines:
+
+- [Africa Centres for Disease Control and
+  Prevention](https://africacdc.org/) [communication style
+  guide](https://africacdc.org/download/communication-style-guide-africa-centres-for-disease-control-and-prevention/);
+
+- [World Bank](https://www.worldbank.org) [visual identity
+  guidelines](https://thedocs.worldbank.org/en/doc/723361567518322252-0060022019/original/WBGBrandingandVisualIdentityGuidelinesFebruary2016.pdf);
+
+- [United Nations Children’s Fund](https://www.unicef.org/) [Brand Book
+  and Brand
+  Manual](https://www.unicef.org/jordan/media/7166/file/ANNEX_G_-_Brand_book_V3.1.pdf);
+
+- [National Health Service](https://www.nhs.uk/) [identity
+  guidelines](https://www.england.nhs.uk/nhsidentity/identity-guidelines/);
+  and,
+
+- [Global Nutrition Cluster](https://www.nutritioncluster.net/) [Brand
+  Book](https://www.nutritioncluster.net/resources/nutrition-cluster-brand-book).
+
+Additional colours, palettes, and themes will be provided over time.
+
+## Installation
+
+`paleta` is not yet available on [CRAN](https://cran.r-project.org) but
+can be installed through the [Katilingban R
+Universe](https://katilingban.r-universe.dev) repository as follows:
+
+``` r
+
+install.packages(
+  "paleta", 
+  repos = c(
+    'https://katilingban.r-universe.dev', 
+    'https://cloud.r-project.org'
+  )
+)
+```
+
+## Usage
+
+- [Using the Africa CDC colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/africa-cdc.html)
+
+- [Using the World Bank colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/world-bank.html)
+
+- [Using the UNICEF colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/unicef.html)
+
+- [Using the NHS colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/nhs.html)
+
+- [Using the GNC colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/gnc.html)
+
+## Community guidelines
+
+Feedback, bug reports and feature requests are welcome; file issues or
+seek support [here](https://github.com/katilingban/paleta/issues). If
+you would like to contribute to the package, please see our
+[contributing
+guidelines](https://katilingban.io/paleta/CONTRIBUTING.html).
+
+This project is released with a [Contributor Code of
+Conduct](https://katilingban.io/paleta/CODE_OF_CONDUCT.html). By
+participating in this project you agree to abide by its terms.
