@@ -3,7 +3,7 @@
 \name{theme_acdc_light}
 \alias{theme_acdc_light}
 \alias{theme_acdc_dark}
-\title{A \link{ggplot2} theme using Africa CDC fonts, colours, and palettes}
+\title{A \link[ggplot2:ggplot2]{ggplot2} theme using Africa CDC fonts, colours, and palettes}
 \usage{
 theme_acdc_light(
   base_family = set_acdc_font(),
@@ -87,7 +87,7 @@ is \link{acdc_text}.}
 NULL.}
 }
 \value{
-A \link{ggplot2} theme.
+A \link[ggplot2:ggplot2]{ggplot2} theme.
 }
 \description{
 These are wrappers for \code{\link[=theme_paleta]{theme_paleta()}} that use colours and fonts from the

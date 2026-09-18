@@ -10,9 +10,6 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "man/figures/README-"
 )
-
-library(paleta)
-library(ggplot2)
 ```
 
 # paleta: Collection of Palettes, Themes, and Theme Components <img src="man/figures/logo.png" width="200" align="right" />
@@ -22,7 +19,7 @@ library(ggplot2)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/katilingban/paleta/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/katilingban/paleta/actions/workflows/R-CMD-check.yaml)
 [![test-coverage](https://github.com/katilingban/paleta/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/katilingban/paleta/actions/workflows/test-coverage.yaml)
-[![Codecov test coverage](https://codecov.io/gh/katilingban/paleta/branch/main/graph/badge.svg)](https://app.codecov.io/gh/katilingban/paleta?branch=main)
+[![Codecov test coverage](https://codecov.io/gh/katilingban/paleta/graph/badge.svg)](https://app.codecov.io/gh/katilingban/paleta)
 [![CodeFactor](https://www.codefactor.io/repository/github/katilingban/paleta/badge)](https://www.codefactor.io/repository/github/katilingban/paleta)
 [![DOI](https://zenodo.org/badge/765052888.svg)](https://zenodo.org/doi/10.5281/zenodo.10809366)
 <!-- badges: end -->

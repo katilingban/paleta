@@ -3,7 +3,7 @@
 \name{theme_gnc}
 \alias{theme_gnc}
 \alias{theme_unicef}
-\title{A \link{ggplot2} theme using GNC fonts, colours, and palettes}
+\title{A \link[ggplot2:ggplot2]{ggplot2} theme using GNC fonts, colours, and palettes}
 \usage{
 theme_gnc(
   base_family = set_gnc_font(),
@@ -84,9 +84,9 @@ is \link{unicef_black}.}
 \item{ticks}{Logical. Should ticks be added? Default is FALSE.}
 }
 \value{
-A \link{ggplot2} theme.
+A \link[ggplot2:ggplot2]{ggplot2} theme.
 
-A \link{ggplot2} theme.
+A \link[ggplot2:ggplot2]{ggplot2} theme.
 }
 \description{
 These are wrappers for \code{\link[=theme_paleta]{theme_paleta()}} that use colours and fonts from the

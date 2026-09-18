@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_wb.R
 \name{theme_wb}
 \alias{theme_wb}
-\title{A \link{ggplot2} theme using World Bank fonts, colours, and palettes}
+\title{A \link[ggplot2:ggplot2]{ggplot2} theme using World Bank fonts, colours, and palettes}
 \usage{
 theme_wb(
   base_family = set_wb_font(),
@@ -63,7 +63,7 @@ is \link{wb_blue}.}
 \item{ticks}{Logical. Should ticks be added? Default is FALSE.}
 }
 \value{
-A \link{ggplot2} theme.
+A \link[ggplot2:ggplot2]{ggplot2} theme.
 }
 \description{
 These are wrappers for \code{\link[=theme_paleta]{theme_paleta()}} that use colours and fonts from the

@@ -13,7 +13,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![R-CMD-check](https://github.com/katilingban/paleta/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/katilingban/paleta/actions/workflows/R-CMD-check.yaml)
 [![test-coverage](https://github.com/katilingban/paleta/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/katilingban/paleta/actions/workflows/test-coverage.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/katilingban/paleta/branch/main/graph/badge.svg)](https://app.codecov.io/gh/katilingban/paleta?branch=main)
+coverage](https://codecov.io/gh/katilingban/paleta/graph/badge.svg)](https://app.codecov.io/gh/katilingban/paleta)
 [![CodeFactor](https://www.codefactor.io/repository/github/katilingban/paleta/badge)](https://www.codefactor.io/repository/github/katilingban/paleta)
 [![DOI](https://zenodo.org/badge/765052888.svg)](https://zenodo.org/doi/10.5281/zenodo.10809366)
 <!-- badges: end -->
@@ -31,23 +31,23 @@ organisations, government agencies, and United Nations units.
 Currently, `paleta` has colours, palettes, and `ggplot2` themes based on
 the following organisations’ branding/visual identity guidelines:
 
-  - [Africa Centres for Disease Control and
-    Prevention](https://africacdc.org/) [communication style
-    guide](https://africacdc.org/download/communication-style-guide-africa-centres-for-disease-control-and-prevention/);
+- [Africa Centres for Disease Control and
+  Prevention](https://africacdc.org/) [communication style
+  guide](https://africacdc.org/download/communication-style-guide-africa-centres-for-disease-control-and-prevention/);
 
-  - [World Bank](https://www.worldbank.org) [visual identity
-    guidelines](https://thedocs.worldbank.org/en/doc/723361567518322252-0060022019/original/WBGBrandingandVisualIdentityGuidelinesFebruary2016.pdf);
+- [World Bank](https://www.worldbank.org) [visual identity
+  guidelines](https://thedocs.worldbank.org/en/doc/723361567518322252-0060022019/original/WBGBrandingandVisualIdentityGuidelinesFebruary2016.pdf);
 
-  - [United Nations Children’s Fund](https://www.unicef.org/) [Brand
-    Book and Brand
-    Manual](https://www.unicef.org/jordan/media/7166/file/ANNEX_G_-_Brand_book_V3.1.pdf);
+- [United Nations Children’s Fund](https://www.unicef.org/) [Brand Book
+  and Brand
+  Manual](https://www.unicef.org/jordan/media/7166/file/ANNEX_G_-_Brand_book_V3.1.pdf);
 
-  - [National Health Service](https://www.nhs.uk/) [identity
-    guidelines](https://www.england.nhs.uk/nhsidentity/identity-guidelines/);
-    and,
+- [National Health Service](https://www.nhs.uk/) [identity
+  guidelines](https://www.england.nhs.uk/nhsidentity/identity-guidelines/);
+  and,
 
-  - [Global Nutrition Cluster](https://www.nutritioncluster.net/) [Brand
-    Book](https://www.nutritioncluster.net/resources/nutrition-cluster-brand-book).
+- [Global Nutrition Cluster](https://www.nutritioncluster.net/) [Brand
+  Book](https://www.nutritioncluster.net/resources/nutrition-cluster-brand-book).
 
 Additional colours, palettes, and themes will be provided over time.
 
@@ -69,20 +69,20 @@ install.packages(
 
 ## Usage
 
-  - [Using the Africa CDC colours, palettes, and
-    themes](https://katilingban.io/paleta/articles/africa-cdc.html)
+- [Using the Africa CDC colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/africa-cdc.html)
 
-  - [Using the World Bank colours, palettes, and
-    themes](https://katilingban.io/paleta/articles/world-bank.html)
+- [Using the World Bank colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/world-bank.html)
 
-  - [Using the UNICEF colours, palettes, and
-    themes](https://katilingban.io/paleta/articles/unicef.html)
+- [Using the UNICEF colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/unicef.html)
 
-  - [Using the NHS colours, palettes, and
-    themes](https://katilingban.io/paleta/articles/nhs.html)
+- [Using the NHS colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/nhs.html)
 
-  - [Using the GNC colours, palettes, and
-    themes](https://katilingban.io/paleta/articles/gnc.html)
+- [Using the GNC colours, palettes, and
+  themes](https://katilingban.io/paleta/articles/gnc.html)
 
 ## Community guidelines
 

@@ -1,6 +1,6 @@
 title: paleta
 
-url: https://katilingban.io/paleta/
+url: http://katilingban.io/paleta/
 
 development:
   mode: auto
@@ -9,7 +9,17 @@ template:
   bootstrap: 5
   bootswatch: sandstone
   theme: breeze-light
-  ganalytics: "G-D6R7DT84NL"
+  includes:
+    in_header: |
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6R7DT84NL"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-D6R7DT84NL');
+      </script>
 
 home:
   links:
@@ -20,170 +30,167 @@ navbar:
   bg: primary
   type: light
   structure:
-    left:  [home, intro, reference, articles, news]
-    right: [search, mastodon, linkedin, github]
-
+    left:
+    - home
+    - intro
+    - reference
+    - articles
+    - news
+    right:
+    - search
+    - mastodon
+    - linkedin
+    - github
   components:
     articles:
       text: Articles
       menu:
-      - text: "Africa Centres for Disease Control and Prevention"
+      - text: Africa Centres for Disease Control and Prevention
         href: articles/africa-cdc.html
-      - text: "World Bank"
+      - text: World Bank
         href: articles/world-bank.html
-      - text: "United Nations Children's Fund"
+      - text: United Nations Children's Fund
         href: articles/unicef.html
-      - text: "National Health Service"
+      - text: National Health Service
         href: articles/nhs.html
-      - text: "Global Nutrition Cluster"
+      - text: Global Nutrition Cluster
         href: articles/gnc.html
     mastodon:
-      icon: "fab fa-mastodon fa-lg"
+      icon: fab fa-mastodon fa-lg
       aria-label: Mastodon
       href: https://fosstodon.org/@katilingban
     linkedin:
-      icon: "fab fa-linkedin fa-lg"
+      icon: fab fa-linkedin fa-lg
       aria-label: LinkedIn
       href: https://www.linkedin.com/company/katilingban
 
 reference:
-  - title: Description
-    contents:
-    - paleta
+- title: Description
+  contents: paleta
+- title: Base Palettes, Themes, and Fonts
+  contents:
+  - paleta_fonts
+  - set_paleta_font
+  - theme_paleta
+- title: Palette Brewer
+  contents: starts_with("paleta_create")
+- title: Africa Centres for Disease Control and Prevention
+  contents:
+  - acdc_fonts
+  - set_acdc_font
+  - acdc_palettes
+  - acdc_brewer_palettes
+  - acdc_green
+  - acdc_red
+  - acdc_gold
+  - acdc_white
+  - acdc_grey
+  - acdc_corporate_green
+  - acdc_text
+  - acdc_blue
+  - acdc_plum
+  - acdc_blue_grey
+  - acdc_amber
+  - acdc_cyan
+  - acdc_deep_orange
+  - acdc_purple
+  - acdc_lime
+  - acdc_mauve
+  - acdc_pink
+  - acdc_teal
+  - theme_acdc_light
+  - theme_acdc_dark
+- title: World Bank
+  contents:
+  - wb_fonts
+  - set_wb_font
+  - wb_palettes
+  - wb_blue
+  - wb_cyan
+  - wb_bright_orange
+  - wb_bright_yellow
+  - wb_bright_red
+  - wb_light_orange
+  - wb_bright_aqua
+  - wb_bright_green
+  - wb_bright_purple
+  - wb_light_aqua
+  - wb_dark_red
+  - wb_dark_orange
+  - wb_brown
+  - wb_dark_purple
+  - wb_dark_aqua
+  - wb_dark_green
+  - theme_wb
+- title: United Nations Children's Fund
+  contents:
+  - unicef_fonts
+  - set_unicef_font
+  - unicef_palettes
+  - unicef_blue
+  - unicef_green
+  - unicef_lime_green
+  - unicef_yellow
+  - unicef_orange
+  - unicef_bright_red
+  - unicef_dark_red
+  - unicef_purple
+  - unicef_warm_grey
+  - unicef_cool_grey
+  - unicef_black
+  - unicef_dark_blue
+  - theme_unicef
+- title: National Health Service
+  contents:
+  - nhs_fonts
+  - set_nhs_font
+  - nhs_palettes
+  - nhs_brewer_palettes
+  - nhs_blue
+  - nhs_white
+  - nhs_dark_blue
+  - nhs_bright_blue
+  - nhs_light_blue
+  - nhs_aqua_blue
+  - nhs_black
+  - nhs_dark_grey
+  - nhs_mid_grey
+  - nhs_pale_grey
+  - nhs_dark_green
+  - nhs_green
+  - nhs_light_green
+  - nhs_aqua_green
+  - nhs_purple
+  - nhs_dark_pink
+  - nhs_pink
+  - nhs_dark_red
+  - nhs_orange
+  - nhs_warm_yellow
+  - nhs_yellow
+  - theme_nhs
+- title: Global Nutrition Cluster
+  contents:
+  - gnc_fonts
+  - set_gnc_font
+  - gnc_palettes
+  - gnc_green
+  - gnc_grey
+  - gnc_sage
+  - gnc_dark_green
+  - gnc_lime
+  - gnc_aqua_green
+  - gnc_cyan
+  - gnc_blue
+  - gnc_orange
+  - gnc_moss_green
+  - gnc_gold
+  - theme_gnc
+- title: Utilities
+  contents:
+  - get_colour
+  - print.palette
+  - tint_colour
+  - shade_colour
+- title: Datasets
+  contents: paleta_colours
 
-  - title: Base Palettes, Themes, and Fonts
-    contents:
-    - paleta_fonts
-    - set_paleta_font
-    - theme_paleta
-  
-  - title: Palette Brewer
-    contents:
-    - starts_with("paleta_create")
-
-  - title: Africa Centres for Disease Control and Prevention
-    contents:
-    - acdc_fonts
-    - set_acdc_font
-    - acdc_palettes
-    - acdc_brewer_palettes
-    - acdc_green
-    - acdc_red
-    - acdc_gold
-    - acdc_white
-    - acdc_grey
-    - acdc_corporate_green
-    - acdc_text
-    - acdc_blue
-    - acdc_plum
-    - acdc_blue_grey
-    - acdc_amber
-    - acdc_cyan
-    - acdc_deep_orange
-    - acdc_purple
-    - acdc_lime
-    - acdc_mauve
-    - acdc_pink
-    - acdc_teal
-    - theme_acdc_light
-    - theme_acdc_dark
-
-  - title: World Bank
-    contents:
-    - wb_fonts
-    - set_wb_font
-    - wb_palettes
-    - wb_blue
-    - wb_cyan
-    - wb_bright_orange
-    - wb_bright_yellow
-    - wb_bright_red
-    - wb_light_orange
-    - wb_bright_aqua
-    - wb_bright_green
-    - wb_bright_purple
-    - wb_light_aqua
-    - wb_dark_red
-    - wb_dark_orange
-    - wb_brown
-    - wb_dark_purple
-    - wb_dark_aqua
-    - wb_dark_green
-    - theme_wb
-
-  - title: United Nations Children's Fund
-    contents:
-    - unicef_fonts
-    - set_unicef_font
-    - unicef_palettes
-    - unicef_blue
-    - unicef_green
-    - unicef_lime_green
-    - unicef_yellow
-    - unicef_orange
-    - unicef_bright_red
-    - unicef_dark_red
-    - unicef_purple
-    - unicef_warm_grey
-    - unicef_cool_grey
-    - unicef_black
-    - unicef_dark_blue
-    - theme_unicef
-
-  - title: National Health Service
-    contents:
-    - nhs_fonts
-    - set_nhs_font
-    - nhs_palettes
-    - nhs_brewer_palettes
-    - nhs_blue
-    - nhs_white
-    - nhs_dark_blue
-    - nhs_bright_blue
-    - nhs_light_blue
-    - nhs_aqua_blue
-    - nhs_black
-    - nhs_dark_grey
-    - nhs_mid_grey
-    - nhs_pale_grey
-    - nhs_dark_green
-    - nhs_green
-    - nhs_light_green
-    - nhs_aqua_green
-    - nhs_purple
-    - nhs_dark_pink
-    - nhs_pink
-    - nhs_dark_red
-    - nhs_orange
-    - nhs_warm_yellow
-    - nhs_yellow
-    - theme_nhs
-
-  - title: Global Nutrition Cluster
-    contents:
-    - gnc_fonts
-    - set_gnc_font
-    - gnc_palettes
-    - gnc_green
-    - gnc_grey
-    - gnc_sage
-    - gnc_dark_green
-    - gnc_lime
-    - gnc_aqua_green
-    - gnc_cyan
-    - gnc_blue
-    - gnc_orange
-    - gnc_moss_green
-    - gnc_gold
-    - theme_gnc
-
-  - title: Utilities
-    contents:
-    - get_colour
-    - print.palette
-    - tint_colour
-    - shade_colour
-
-  - title: Datasets
-    contents:
-    - paleta_colours

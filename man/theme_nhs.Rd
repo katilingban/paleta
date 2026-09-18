@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_nhs.R
 \name{theme_nhs}
 \alias{theme_nhs}
-\title{A \link{ggplot2} theme using NHS fonts, colours, and palettes}
+\title{A \link[ggplot2:ggplot2]{ggplot2} theme using NHS fonts, colours, and palettes}
 \usage{
 theme_nhs(
   base_family = set_nhs_font(),
@@ -63,7 +63,7 @@ is \link{nhs_blue}.}
 \item{ticks}{Logical. Should ticks be added? Default is FALSE.}
 }
 \value{
-A \link{ggplot2} theme.
+A \link[ggplot2:ggplot2]{ggplot2} theme.
 }
 \description{
 These are wrappers for \code{\link[=theme_paleta]{theme_paleta()}} that use colours and fonts from the
