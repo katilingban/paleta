@@ -22,14 +22,15 @@ A collection of palettes, themes, and theme components based on publicly
 available branding guidelines of various non-governmental organisations,
 government agencies, and United Nations units.
 
-## What does `paleta` do?
+## What does the package do?
 
-`paleta` provides or will be providing utilities for applying the visual
-identity and/or branding guidelines of various non-governmental
+`{paleta}` provides or will be providing utilities for applying the
+visual identity and/or branding guidelines of various non-governmental
 organisations, government agencies, and United Nations units.
 
-Currently, `paleta` has colours, palettes, and `ggplot2` themes based on
-the following organisations’ branding/visual identity guidelines:
+Currently, `{paleta}` has colours, palettes, and `{ggplot2}` themes
+based on the following organisations’ branding/visual identity
+guidelines:
 
 - [Africa Centres for Disease Control and
   Prevention](https://africacdc.org/) [communication style
@@ -53,8 +54,8 @@ Additional colours, palettes, and themes will be provided over time.
 
 ## Installation
 
-`paleta` is not yet available on [CRAN](https://cran.r-project.org) but
-can be installed through the [Katilingban R
+`{paleta}` is not yet available on [CRAN](https://cran.r-project.org)
+but can be installed through the [Katilingban R
 Universe](https://katilingban.r-universe.dev) repository as follows:
 
 ``` r
